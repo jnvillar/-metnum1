@@ -10,24 +10,26 @@
 class Matriz{
 
 	private:
-		vector< vector <int> > m;
+		vector< vector <float> > m;
 		int filas;
 		int columnas;
 
 	public:	
 		Matriz(int n){
+			m.clear();
 			for (int i = 0; i < n; ++i){
-				vector< int> fila;
-				for (int j = 0; j < n; ++j){
-					m.push_back(fila);
-					m[j].push_back(0);
+				vector< float> fila;
+				for (int j = 0; j < n; ++j){					
+					fila.push_back(0);
 				}
+				m.push_back(fila);
 			}
 			filas = n;
 			columnas = n;
+		
 		};
 
-		Matriz(vector< vector<int> > v){
+		Matriz(vector< vector<float> > v){
 			filas = v.size();
 			columnas = v[0].size();
 			m = v;
@@ -36,7 +38,7 @@ class Matriz{
 
 		Matriz(int f, int c){
 			for (int i = 0; i < f; ++i){
-				vector< int> fila;
+				vector< float> fila;
 				for (int j = 0; j < c; ++j){					
 					m[j].push_back(0);
 				}
@@ -46,7 +48,7 @@ class Matriz{
 			columnas = c;
 		};
 
-		int Obtener(int f, int c){
+		float Obtener(int f, int c){
 			return m[f][c];
 		}
 
@@ -55,14 +57,11 @@ class Matriz{
 		}
 
 		Matriz Identidad(int n){
-			Matriz m = Matriz(n);
-			for (int i = 0; i < n; ++i){				
-				for (int j = 0; j < n; ++j){					
-					if(i=j){
-						Cambiar(i,j,1);										
-					}
-				}
-			}			
+			Matriz a = Matriz(n);
+			for (int i = 0; i < n; i++){				
+				a.Cambiar(i,i,1);
+			}
+			return a;	
 		};
 
 		int Filas(){
@@ -74,7 +73,7 @@ class Matriz{
 		}
 
 		void Permutar(int i, int j){
-			vector<int> aux = m[j];
+			vector<float> aux = m[j];
 			m[j] = m[i];
 			m[i] = aux;
 
@@ -131,35 +130,32 @@ class Matriz{
 
 		Matriz Gauss0(vector<int> &p){
 
-			Matriz res = Matriz(filas);
+			Matriz res = Identidad(filas);
 
-			for (int i = 0; i <columnas-1; ++i){						//COLUMNAS
-				for (int j = i+1; j < filas; ++j){				//FILAS
-					
-					bool todos0 = false;
-					if(m[i][i] == 0){
-						int h = i;						
-						while(h<columnas){
-							if(m[h][i] != 0){
-								Permutar(i,h);
-								res.Permutar(i,h);
-								Reordenar(p,i,h);
-								h = h +columnas;
-							}
-							h++;
-						}
-						todos0 = true;
-					}		
 
-					if(!todos0){									
-					int aux = m[j][i]/m[i][i];					
-					res.Cambiar(j,i,aux);
-					m[j][i] = m[j][i]-aux*m[i][i];		
-					}	
-				}	
-			}
-
-			return res;
+			for (int i = 0; i<filas-1; i++){
+        				if (m[i][i] == 0){
+		            		for (int u = i+1; u<filas; u++){
+		             			if (m[u][u] != 0){
+					                    vector<float> swap = m[u];
+					                    m[u] = m[i];
+					                    m[i] = swap;
+					                    int aux2 = p[u];
+					                    p[u]=p[i];
+					                    p[i]= aux2;
+					                    break;
+					           }
+					}
+		       		}
+			       	for (int h = i+1; h<filas; h++){
+			       		float aux = m[h][i]/m[i][i];
+			       		res.Cambiar(h,i,aux);
+			            	for (int j = 0; j<filas; j++){
+			                		m[h][j] = m[h][j]-aux*m[i][j];
+			            	}
+			        	}
+   			}
+		return res;
 		};
 		
 };
@@ -180,16 +176,16 @@ int main() {
 
 	
 
-	vector< vector<int> > a;
-    vector<int> f1;
-    vector<int> f2;
-    vector<int> f3;
+    vector< vector<float> > a;
+    vector<float> f1;
+    vector<float> f2;
+    vector<float> f3;
     f1.push_back(3);
     f1.push_back(2);
     f1.push_back(1);
-    f2.push_back(1);
-    f2.push_back(4);
     f2.push_back(6);
+    f2.push_back(4);
+    f2.push_back(2);
     f3.push_back(2);
     f3.push_back(1);
     f3.push_back(3);
@@ -201,9 +197,9 @@ int main() {
 	p.push_back(1);
 	p.push_back(2);
 	p.push_back(3);
-	p.push_back(4);
-	p.push_back(5);
-	p.push_back(6);
+	//p.push_back(4);
+	//p.push_back(5);
+	//p.push_back(6);
 
 	Matriz h(a);
 	
