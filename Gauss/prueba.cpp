@@ -13,7 +13,7 @@ class Matriz{
 		vector< vector <int> > m;
 		int filas;
 		int columnas;
-		
+
 	public:	
 		Matriz(int n){
 			for (int i = 0; i < n; ++i){
@@ -71,6 +71,13 @@ class Matriz{
 
 		int Columnas(){
 			return columnas;
+		}
+
+		void Permutar(int i, int j){
+			vector<int> aux = m[i];
+			m[j] = m[i];
+			m[i] = aux;
+
 		}		
 
 		void Llenar0(){
@@ -79,28 +86,59 @@ class Matriz{
 					Cambiar(i,j,0);	
 
 				}
-			}			
-
+			}
 		};
 
 		void Imprimir(){
+
+			cout << "Imprimiendo matriz" << endl;
+
 			for (int i = 0; i < filas; i++){				
 				for (int j = 0; j < columnas; j++){
-					if(j == 0){cout << "| ";}					
-					cout << m[i][j];
-					if(j == columnas-1){cout << " |" << endl;}
-					else{ cout << " ";}									
+					if(j == 0){cout << "|";}
+						if(m[i][j]<0){					
+							cout << m[i][j];
+						}else{
+							cout << " " << m[i][j];
+						} 
+					if(j == columnas-1){cout << "|" << endl;}
+					else{ cout << "  ";}									
 				}			
 			}
+			cout << endl;
 		}
 
-		void Gauss(){
-			for (int i = 1; i <columnas-1; ++i){						//COLUMNAS
+		Matriz Gauss(){
+
+			Matriz res = Matriz(filas);
+
+			for (int i = 0; i <columnas-1; ++i){						//COLUMNAS
 				for (int j = i+1; j < filas; ++j){				//FILAS
-					double aux = m[j][i]/m[i][i];					
-					m[j][i] = m[j][i]-(aux*m[i][j]);			
+					int aux = m[j][i]/m[i][i];					
+					res.Cambiar(j,i,aux);
+					m[j][i] = m[j][i]-aux*m[i][i];			
 				}	
 			}
+
+			return res;
+		};
+
+		Matriz Gauss0(vector<int> p){
+
+			Matriz res = Matriz(filas);
+
+			for (int i = 0; i <columnas-1; ++i){						//COLUMNAS
+				for (int j = i+1; j < filas; ++j){				//FILAS
+					
+
+					
+					int aux = m[j][i]/m[i][i];					
+					res.Cambiar(j,i,aux);
+					m[j][i] = m[j][i]-aux*m[i][i];			
+				}	
+			}
+
+			return res;
 		};
 		
 };
@@ -108,28 +146,57 @@ class Matriz{
 int main() {
 
 	vector< int > a;
-	a.push_back(1);
+	a.push_back(2);
 	a.push_back(2);
 	a.push_back(3);
+	a.push_back(3);
+	a.push_back(4);
 	vector< int > b;
 	b.push_back(1);
 	b.push_back(2);
 	b.push_back(3);
+	b.push_back(3);
+	b.push_back(4);
 	vector< int > c;
 	c.push_back(1);
 	c.push_back(2);
 	c.push_back(3);
+	c.push_back(3);
+	c.push_back(4);
+	vector< int > d;
+	d.push_back(1);
+	d.push_back(2);
+	d.push_back(3);
+	d.push_back(3);
+	d.push_back(4);
+	vector< int > f;
+	f.push_back(1);
+	f.push_back(2);
+	f.push_back(3);
+	f.push_back(3);
+	f.push_back(4);
 
 	vector< vector <int> > m;
 	m.push_back(a);
 	m.push_back(b);
 	m.push_back(c);
+	m.push_back(d);
+	m.push_back(f);
 
 	Matriz h(m);
 	
-	h.Gauss();
+	/* Prueba gauss sin 0
 	h.Imprimir();
-	
+	Matriz j = h.Gauss();	
+	h.Imprimir();
+	j.Imprimir();
+	*/
+
+	/* Prueba permutar
+	h.Imprimir();
+	h.Permutar(1,2);
+	h.Imprimir();
+	*/
 	
 
 	return 0;
