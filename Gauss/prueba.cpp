@@ -136,8 +136,9 @@ class Matriz{
 			for (int i = 0; i <columnas-1; ++i){						//COLUMNAS
 				for (int j = i+1; j < filas; ++j){				//FILAS
 					
+					bool todos0 = false;
 					if(m[i][i] == 0){
-						int h = i;
+						int h = i;						
 						while(h<columnas){
 							if(m[h][i] != 0){
 								Permutar(i,h);
@@ -147,11 +148,14 @@ class Matriz{
 							}
 							h++;
 						}
-					}					
-										
+						todos0 = true;
+					}		
+
+					if(!todos0){									
 					int aux = m[j][i]/m[i][i];					
 					res.Cambiar(j,i,aux);
-					m[j][i] = m[j][i]-aux*m[i][i];			
+					m[j][i] = m[j][i]-aux*m[i][i];		
+					}	
 				}	
 			}
 
@@ -177,31 +181,31 @@ int main() {
 	
 
 	vector< int > a;
-	a.push_back(1);
+	a.push_back(0);
 	a.push_back(2);
 	a.push_back(3);
 	a.push_back(3);
 	a.push_back(4);
 	vector< int > b;
-	b.push_back(1);
 	b.push_back(0);
+	b.push_back(2);
 	b.push_back(3);
 	b.push_back(3);
 	b.push_back(4);
 	vector< int > c;
-	c.push_back(1);
+	c.push_back(0);
 	c.push_back(2);
 	c.push_back(3);
 	c.push_back(3);
 	c.push_back(4);
 	vector< int > d;
-	d.push_back(1);
+	d.push_back(0);
 	d.push_back(2);
 	d.push_back(3);
-	d.push_back(3);
+	d.push_back(0);
 	d.push_back(4);
 	vector< int > f;
-	f.push_back(1);
+	f.push_back(0);
 	f.push_back(2);
 	f.push_back(3);
 	f.push_back(3);
