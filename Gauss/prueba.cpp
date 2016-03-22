@@ -180,43 +180,22 @@ int main() {
 
 	
 
-	vector< int > a;
-	a.push_back(0);
-	a.push_back(2);
-	a.push_back(3);
-	a.push_back(3);
-	a.push_back(4);
-	vector< int > b;
-	b.push_back(0);
-	b.push_back(2);
-	b.push_back(3);
-	b.push_back(3);
-	b.push_back(4);
-	vector< int > c;
-	c.push_back(0);
-	c.push_back(2);
-	c.push_back(3);
-	c.push_back(3);
-	c.push_back(4);
-	vector< int > d;
-	d.push_back(0);
-	d.push_back(2);
-	d.push_back(3);
-	d.push_back(0);
-	d.push_back(4);
-	vector< int > f;
-	f.push_back(0);
-	f.push_back(2);
-	f.push_back(3);
-	f.push_back(3);
-	f.push_back(4);
-
-	vector< vector <int> > m;
-	m.push_back(a);
-	m.push_back(b);
-	m.push_back(c);
-	m.push_back(d);
-	m.push_back(f);
+	vector< vector<int> > a;
+    vector<int> f1;
+    vector<int> f2;
+    vector<int> f3;
+    f1.push_back(3);
+    f1.push_back(2);
+    f1.push_back(1);
+    f2.push_back(1);
+    f2.push_back(4);
+    f2.push_back(6);
+    f3.push_back(2);
+    f3.push_back(1);
+    f3.push_back(3);
+    a.push_back(f1);
+    a.push_back(f2);
+    a.push_back(f3);
 
 	vector<int> p;
 	p.push_back(1);
@@ -226,7 +205,7 @@ int main() {
 	p.push_back(5);
 	p.push_back(6);
 
-	Matriz h(m);
+	Matriz h(a);
 	
 	/* Prueba gauss sin 0*/
 	/*
