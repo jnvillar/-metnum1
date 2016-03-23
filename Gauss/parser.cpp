@@ -9,7 +9,7 @@
 
 using namespace std;
 
-int main() {	
+void parser() {	
 
 vector<float> vec;
 
@@ -118,7 +118,6 @@ cout << endl;
   */
  
     
-    return 0;
     
 
 }

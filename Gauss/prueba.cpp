@@ -5,6 +5,14 @@
 #include <sstream>
 #include <vector>
 
+#include <iostream>
+#include <utility>
+#include <string>
+#include <set>
+#include <sstream>
+#include <fstream>
+
+
  using namespace std;
 
 class Matriz{
