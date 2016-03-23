@@ -13,8 +13,11 @@ class Matriz{
 		vector< vector <float> > m;
 		int filas;
 		int columnas;
+		vector <float> result;
 
 	public:	
+
+
 		Matriz(int n){
 			m.clear();
 			for (int i = 0; i < n; ++i){
@@ -115,7 +118,8 @@ class Matriz{
 				for (int j = i+1; j < filas; ++j){				//FILAS
 					int aux = m[j][i]/m[i][i];					
 					res.Cambiar(j,i,aux);
-					m[j][i] = m[j][i]-aux*m[i][i];			
+					m[j][i] = m[j][i]-aux*m[i][i];
+					result[j] = result[j]-aux*m[i][i];
 				}	
 			}
 
@@ -143,6 +147,9 @@ class Matriz{
 					                    int aux2 = p[u];
 					                    p[u]=p[i];
 					                    p[i]= aux2;
+					                    int aux3 = result[u]
+					                    result[u] = result[i];
+					                    result[i] = aux;
 					                    break;
 					           }
 					}
@@ -221,12 +228,15 @@ int main() {
 	/* Prueba gauss con 0 */
 	
 	h.Imprimir();	
-	Matriz j = h.Gauss0(p);	
-	h.Imprimir();
-	Imprimir(p);
-	j.Imprimir();
-	
-	
+	//Matriz j = h.Gauss0(p);	
+	//h.Imprimir();
+	//Imprimir(p);
+	//j.Imprimir();
+	/*
+	for (int i = 0; i<h[1].size(); i++){
+		cout << h[1][i] << endl;
+	}
+	*/
 
 	return 0;
 }
