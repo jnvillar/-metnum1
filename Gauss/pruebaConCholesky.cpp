@@ -100,10 +100,11 @@ class Matriz{
 		}
 
 		void cholesky(){
+			// assert(es def positiva y simetrica)
 			vector< vector <float> > l;
-			for (int i = 0; i < filas; ++i){
+			for (int i = 0; i < filas; i++){
 				vector< float> fila;
-				for (int j = 0; j < filas; ++j){					
+				for (int j = 0; j < filas; j++){					
 					fila.push_back(0);
 				}
 				l.push_back(fila);
@@ -124,13 +125,46 @@ class Matriz{
 							suma += l[i][h]*l[j][h]; 
 						}
 						l[i][j] = (m[i][j]-suma)/l[j][j];
-						
+					}	
 				}
 			}
 			m = l;
 		}
 		
-		
+		void resolverTriangInf(){
+			// assert(es triangular inferior y la diagonal no tiene 0)
+			for (int i = 0; i<filas; i++){
+				float sumaProd = 0;
+				for(int j = 0; j<i; j++){
+					sumaProd += result[j]*m[i][j];
+					cout << sumaProd << endl;
+
+				}
+				result[i] = (result[i] - sumaProd)/m[i][i];
+			}			
+		}
+
+		void resolverTriangSup(){
+			// assert(es triangular superior y la diagonal no tiene 0)
+			for (int i = filas-1; i>=0; i--){
+				float sumaProd = 0;
+				for(int j = filas-1; j>i; j--){
+					sumaProd += result[j]*m[i][j];
+				}
+				result[i] = (result[i] - sumaProd)/m[i][i];
+			}			
+		}
+
+		void matrizTraspuesta(){
+			for (int i = 0; i < filas; i++){
+				for (int j = 0; j<i; j++){	
+					float swap = m[i][j];				
+					m[i][j] = m[j][i];
+					m[j][i] = swap;
+				}
+				
+			}
+		}
 };
 
 
@@ -185,31 +219,23 @@ int main() {
     res.push_back(1);
     res.push_back(1);
 
-	Matriz h(a,res);
-	
-	/* Prueba gauss sin 0*/
-	/*
-	h.Imprimir();
-	Matriz j = h.Gauss();	
-	h.Imprimir();
-	j.Imprimir();
-	*/
 
-	/* Prueba permutar*/
-	/*
-	h.Imprimir();
-	h.Permutar(1,2);
-	h.Imprimir();
-	*/
+	Matriz hChole(a,res);
+	Matriz hGauss(a,res);
 
-	/* Prueba gauss con 0*/
 	
-	//h.Imprimir();	
-	//h.Gauss0();	
-	h.Imprimir();
-	h.cholesky();
-	h.Imprimir();
-	
+	hChole.cholesky();
+	hChole.resolverTriangInf();
+	hChole.matrizTraspuesta();
+	hChole.resolverTriangSup();
+	hChole.Imprimir();
+		
+
+
+	hGauss.Gauss0();
+	hGauss.resolverTriangSup();
+	hGauss.Imprimir();
+		
 
 	return 0;
 }
