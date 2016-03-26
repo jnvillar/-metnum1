@@ -26,3 +26,10 @@
 *.exe
 *.out
 *.app
+
+# Literal Names
+main
+a
+prueba
+parser
+pchol
