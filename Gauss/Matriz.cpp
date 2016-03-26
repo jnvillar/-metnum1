@@ -52,24 +52,30 @@ class Matriz{
 		}
 		
 
-		void Imprimir(){
+		void ImprimirMatriz(FILE* out){
 
-			cout << "Imprimiendo matriz" << endl;
+			fprintf(out, "Imprimiendo matriz\n");
 
 			for (int i = 0; i < filas; i++){				
 				for (int j = 0; j < columnas; j++){
-					if(j == 0){cout << "|";}
+					if(j == 0){fprintf(out, "|");}
 						if(m[i][j]<0){					
-							cout << m[i][j];
+							fprintf(out, "%f", m[i][j]);
 						}else{
-							cout << " " << m[i][j];
+							fprintf(out, " %f", m[i][j]);							
 						} 
-					if(j == columnas-1){cout << "| " << result[i] << endl;}
-					else{ cout << "  ";}									
+					if(j == columnas-1){fprintf(out, "| %f\n", result[i]);}
+					else{ fprintf(out, "  ");}									
 				}			
 			}
-			cout << endl;
-		}		
+			fprintf(out, "\n");
+		}
+
+		void ImprimirSolucion(FILE* out){
+			for (int i = 0; i < filas; i++){				
+				fprintf(out, "%f \n", result[i]);			
+			}
+		}
 
 
 		void Gauss0(){
@@ -138,8 +144,6 @@ class Matriz{
 				float sumaProd = 0;
 				for(int j = 0; j<i; j++){
 					sumaProd += result[j]*m[i][j];
-					cout << sumaProd << endl;
-
 				}
 				result[i] = (result[i] - sumaProd)/m[i][i];
 			}			

@@ -44,7 +44,7 @@ int main() {
     a.push_back(f5);
 
 
-  vector<float> res;
+    vector<float> res;
     res.push_back(3);
     res.push_back(2);
     res.push_back(1);
@@ -52,22 +52,22 @@ int main() {
     res.push_back(1);
 
 
-  Matriz hChole(a,res);
-  Matriz hGauss(a,res);
+    Matriz hChole(a,res);
+    Matriz hGauss(a,res);
 
-  
-  hChole.cholesky();
-  hChole.resolverTriangInf();
-  hChole.matrizTraspuesta();
-  hChole.resolverTriangSup();
-  hChole.Imprimir();
+
+    hChole.cholesky();
+    hChole.resolverTriangInf();
+    hChole.matrizTraspuesta();
+    hChole.resolverTriangSup();
+    hChole.Imprimir();
+
+
+
+    hGauss.Gauss0();
+    hGauss.resolverTriangSup();
+    hGauss.Imprimir();
     
 
-
-  hGauss.Gauss0();
-  hGauss.resolverTriangSup();
-  hGauss.Imprimir();
-    
-
-  return 0;
+    return 0;
 }

@@ -67,8 +67,7 @@ Matriz parser(char* file)
 	vector<float> vec;
 	ifstream in(file);
 	Matriz colley_matrix;
-	if (in.is_open())
-	{
+	if (in.is_open()){
 		// Parseo de la primer línea
 		string str;
 		getline(in, str);
@@ -90,8 +89,7 @@ Matriz parser(char* file)
 
 		// Parseo del resto del archivo
 		string st;
-		while (getline(in, st))
-		{
+		while (getline(in, st)){
 			istringstream iss;
 			iss.str(st);
 
@@ -109,12 +107,9 @@ Matriz parser(char* file)
 			int goles2;
 			iss>> goles2;
 
-			if (goles1 < goles2)
-			{
+			if (goles1 < goles2){
 				ganados[equipo2]++;
-			}
-			else
-			{
+			} else {
 				ganados[equipo1]++;	
 			}
 			jugados[equipo1]++;
@@ -123,24 +118,20 @@ Matriz parser(char* file)
 			rivales[equipo2].push_back(equipo1);
 
 		}
-
-		if (debug)
-			{
-				for(int i = 0; i < jugados.size(); i++)
-				{
-					cout << "Equipo: " << i << endl;
-					cout << "Jugados: " << jugados[i] << endl;
-					cout << "Ganados: " << ganados[i] << endl;
-					cout << "Rivales: ";
-					imprimirVector(rivales[i]);
-					cout << "--------------------------------------" << endl;
-				}
+		/*
+		if (debug){
+			for(int i = 0; i < jugados.size(); i++){
+				cout << "Equipo: " << i << endl;
+				cout << "Jugados: " << jugados[i] << endl;
+				cout << "Ganados: " << ganados[i] << endl;
+				cout << "Rivales: ";
+				imprimirVector(rivales[i]);
+				cout << "--------------------------------------" << endl;
 			}
-
+		}
+		*/
 		colley_matrix = armarColleyMatrix(jugados, ganados, rivales);
-	}
-	else
-	{
+	} else {
 		cout << "No se pudo abrir el archivo." << endl;
 	}
 	return colley_matrix;
