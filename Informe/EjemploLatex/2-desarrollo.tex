@@ -1,0 +1,354 @@
+\section{Desarrollo}
+
+    \subsection{Conceptos teóricos} \label{subsec:conceptos-teoricos}
+
+        La resolución de \emph{sistemas de ecuaciones lineales} es un problema recurrente en el análisis numérico, ya que estos son útiles a la hora de modelar matemáticamente el comportamiento de problemas provenientes de diversas disciplinas, como la física y la ingeniería, para ser tratados en forma computacional. Es por eso que resulta de interés desarrollar algoritmos que permitan, de manera tan eficiente como sea posible, encontrar soluciones a estos sistemas.
+
+        Un sistema de $m$ ecuaciones lineales con $n$ incógnitas tiene la forma
+        \[ \left\lbrace \begin{matrix}
+                a_{1,1} \, x_1 & + & a_{1,2} \, x_2 & + & \dots  & + & a_{1,n} \, x_n & = & b_1    \\
+                a_{2,1} \, x_1 & + & a_{2,2} \, x_2 & + & \dots  & + & a_{2,n} \, x_n & = & b_2    \\
+                \vdots         &   & \vdots         &   & \vdots &   & \vdots         &   & \vdots \\
+                a_{m,1} \, x_1 & + & a_{m,2} \, x_2 & + & \dots  & + & a_{m,n} \, x_n & = & b_m    \\
+        \end{matrix} \right. \]
+        donde $a_{j,k}$ y $b_k$ (para $j = 1, \dots, m$; $k = 1, \dots, n$) son constantes reales. Por \emph{resolver} el sistema se entiende hallar un conjunto de valores para las incógnitas $x_1, \dots, x_n$ de forma que todas las ecuaciones se satisfagan simultáneamente.
+
+        Una manera frecuente de representar un sistema de ecuaciones lineales, que será utilizada en este trabajo, es la matricial, que consiste en expresarlo en la forma
+        \[ \mat{A}x = b \]
+        donde
+        \[ \mat{A} = \left[ \begin{matrix} a_{1,1} & a_{1,2} & \dots  & a_{1,n} \\
+                                           a_{2,1} & a_{2,2} & \dots  & a_{2,n} \\
+                                           \vdots  & \vdots  & \ddots & \vdots  \\
+                                           a_{m,1} & a_{m,2} & \dots  & a_{m,n} \\ \end{matrix} \right] \in \mathbb{R}^{m \times n} \qquad
+        x = \left[ \begin{matrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{matrix} \right] \in \mathbb{R}^n \qquad
+        b = \left[ \begin{matrix} b_1 \\ b_2 \\ \vdots \\ b_m \end{matrix} \right] \in \mathbb{R}^m \]
+
+        Dado un sistema de ecuaciones lineales, existe un conjunto de operaciones que, aplicadas sobre las ecuaciones, generan sistemas \emph{equivalentes}, es decir, que tienen las mismas soluciones. Más específicamente, estas operaciones son:
+        \begin{enumerate}[label=(\alph*), nosep]
+            \item Multiplicar una ecuación por una constante $\lambda \in \mathbb{R}$ no nula.
+            \item Sumar a una ecuación el resultado de multiplicar otra por una constante $\lambda \in \mathbb{R}$.
+            \item Intercambiar el orden de dos ecuaciones.
+        \end{enumerate}
+
+        Lo mismo vale para sistemas en forma matricial, si se consideran las operaciones análogas entre las filas de la matriz.
+
+        Más aún, puede probarse que a partir de todo sistema puede obtenerse otro equivalente que se encuentra en forma \emph{triangular} o \emph{reducida} (ver \cite[p.~358]{burden}). Este resultado es importante porque, dado un sistema en forma triangular (superior o inferior), encontrar sus soluciones es sumamente sencillo, utilizando los algoritmos de \emph{sustitución hacia adelante} y el de \emph{sustitución hacia atrás}.
+
+        Cabe destacar que un sistema de ecuaciones lineales puede no tener soluciones, tener solución única, o tener infinitas soluciones. En adelante se considerarán únicamente sistemas cuadrados (con igual número de ecuaciones que de incógnitas) cuya solución sea única, quedando los demás casos fuera del alcance de este trabajo. Bajo esta hipótesis, un sistema $\mat{A}x=b$ cumple la importante propiedad de que la matriz $\mat{A}$ es \emph{inversible}. En el caso de que $\mat{A}$ se encuentre en forma triangular, esto equivale a decir que no hay elementos nulos en su diagonal.
+
+        El algoritmo de \emph{sustitución hacia adelante} considera un sistema de ecuaciones $\mat{L}x=b$, donde $\mat{L}$ es una matriz triangular inferior, y devuelve un vector $s$ solución del sistema. Lo hace aprovechando el hecho de, dado que la primer ecuación depende solamente de la primera incógnita, el valor de esta última puede ser despejado de forma inmediata; luego, sustituyendo este valor en la segunda ecuación, puede despejarse la segunda incógnita, y así sucesivamente hasta resolver el sistema completo. El algoritmo de \emph{sustitución hacia atrás} es análogo al anterior, pero considera un sistema de ecuaciones $\mat{U}x=b$, con $\mat{U}$ triangular superior, y realiza el proceso recorriendo las filas de la matriz en orden inverso, desde abajo hacia arriba. Ambos algoritmos tienen una complejidad cuadrática en la cantidad de incógnitas.
+
+        \vspace{.5em}
+        \begin{algorithm}[H]
+            \caption{Sustitución hacia adelante} \label{alg:forward-substitution}
+            \SetKwFunction{sustAdelante}{Sustitución hacia adelante}
+            \KwData{$\mat{A} \in \mathbb{R}^{n \times n}, b \in \mathbb{R}^n$}
+            \KwResult{$s \in \mathbb{R}^n$, solución del sistema $\mat{A}x=b$, considerando a $\mat{A}$ como una matriz triangular inferior, sin elementos nulos en la diagonal}
+            \For{$j \gets 1$ \KwTo $n$}{
+                $suma \gets 0$ \;
+                \For{$k \gets 1$ \KwTo $j$}{
+                    $suma \gets suma + s_k \cdot a_{j,k}$ \;
+                }
+                $s_j \gets \frac{b_j - suma}{a_{j,j}}$
+            }
+        \end{algorithm}
+        \vspace{.5em}
+
+        \vspace{.5em}
+        \begin{algorithm}[H]
+            \SetKwFunction{sustAtras}{Sustitución hacia atrás}
+            \caption{Sustitución hacia atrás} \label{alg:backward-substitution}
+            \KwData{$\mat{A} \in \mathbb{R}^{n \times n}, b \in \mathbb{R}^n$}
+            \KwResult{$s \in \mathbb{R}^n$, solución del sistema $\mat{A}x=b$, considerando a $\mat{A}$ como una matriz triangular superior, sin elementos nulos en la diagonal}
+            \For{$j \gets n$ \KwTo $1$}{
+                $suma \gets 0$ \;
+                \For{$k \gets j + 1$ \KwTo $n$}{
+                    $suma \gets suma + s_k \cdot a_{j,k}$ \;
+                }
+                $s_j \gets \frac{b_j - suma}{a_{j,j}}$
+            }
+        \end{algorithm}
+        \vspace{.5em}
+
+        La sencillez con la que pueden resolverse sistemas cuando se encuentran en forma triangular es el principio en que se cimientan los dos métodos que se utilizarán en este trabajo, \emph{Eliminación Gaussiana} y \emph{Factorización LU}. La idea central de ambos es llevar el sistema de ecuaciones que pretende resolverse a otro equivalente en forma triangular, para así poder aplicar los algoritmos recién expuestos y encontrar su solución.
+
+        \subsubsection{Eliminación Gaussiana}
+
+            El método de \emph{Eliminación Gaussiana} itera sobre las columnas de la matriz, colocando ceros en todas las posiciones que se encuentran por debajo de la diagonal. Para hacer esto, en la $k$-ésima iteración, se resta a todas las filas a partir de la $k + 1$ un múltiplo de la fila $k$-ésima, con un factor elegido convenientemente.
+
+            Más formalmente, supongamos que se pretende resolver el sistema $\mat{A}x = b$. Con la notación $\mat{A}^{(k)}$ se hará referencia a la matriz que se obtiene luego de aplicar $k$ iteraciones del algoritmo sobre $\mat{A}$, mientras que $\mat{A}_{k,*}$ denotará la $k$-ésima fila de la matriz $\mat{A}$.
+
+            Inicialmente, se tiene que $\mat{A}^{(0)} = \mat{A}$. Luego, tras cada iteración, se obtiene:
+            \[ \mat{A}^{(k)} = \left[ \begin{matrix}
+                \mat{A}^{(k-1)}_{1,*} \\
+                \vdots \\
+                \mat{A}^{(k-1)}_{k,*} \\
+                \mat{A}^{(k-1)}_{k+1,*} - m_{k+1,k} \mat{A}^{(k-1)}_{k,*} \\
+                \vdots \\
+                \mat{A}^{(k-1)}_{n,*} - m_{n,k} \mat{A}^{(k-1)}_{k,*} \\
+            \end{matrix} \right] \]
+            donde $m_{i,k} = \frac{a_{i,k}}{a_{k,k}}$. Esta elección de los multiplicadores tiene la particularidad de anular todos los elementos de la columna $k$ por debajo de la diagonal. Esto asegura que, al completar el algoritmo, luego de iterar sobre todas las columnas, la matriz obtenida será triangular superior.
+
+            En su forma más básica, el método falla si, al comienzo de alguna iteración, es nulo el elemento de la diagonal correspondiente a la columna sobre la que se debe trabajar, es decir, si para algún $k = 1, \dots, n$ se cumple $a^{(k-1)}_{k,k} = 0$. Para salvar esta dificultad, se utiliza una técnica conocida como \emph{pivoteo}, que consiste en alterar el orden de las filas o de las columnas de la matriz. No obstante, bajo determinadas hipótesis, puede garantizarse que el algoritmo es aplicable sin necesidad de pivoteo; este será el caso en el contexto particular de este trabajo, por lo que no se entrará en más detalles acerca de esta técnica.
+
+            \vspace{.5em}
+            \begin{algorithm}[H]
+                \caption{Eliminación Gaussiana} \label{alg:gaussian-elimination}
+                \KwData{$\mat{A} \in \mathbb{R}^{n \times n}, b \in \mathbb{R}^n$}
+                \KwResult{$s \in \mathbb{R}^n$, solución del sistema $\mat{A}x=b$}
+                \For{$k \gets 1$ \KwTo $n$}{
+                    \For{$j \gets k+1$ \KwTo $n$}{
+                        $m \gets \frac{a_{j,k}}{a_{k,k}}$ \;
+                        \For{$\ell \gets k$ \KwTo $n$}{
+                            $a_{j,\ell} \gets a_{j,\ell} - m \cdot a_{k,\ell}$ \;
+                        }
+                        $b_j \gets b_j - m \cdot b_k$ \;
+                    }
+                }
+                $s \gets$ \sustAtras{$\mat{A},b$} \;
+            \end{algorithm}
+        \vspace{.5em}
+
+        \subsubsection{Factorización LU}
+
+            El método de \emph{Factorización LU}, por su parte, aprovecha el hecho de que bajo ciertas condiciones, una matriz $\mat{A}$ puede factorizarse como el producto de otras dos, en la forma $\mat{A} = \mat{L}\mat{U}$, donde $\mat{L}$ es triangular inferior con unos en la diagonal, y $\mat{U}$ es triangular superior. De esta manera, el sistema $\mat{A}x=b$ puede reescribirse como $\mat{L}\mat{U}x=b$, y luego ser resuelto en dos etapas sencillas: si llamamos $y=\mat{U}x$, podemos resolver primero el sistema $\mat{L}y=b$ (aplicando sustitución hacia adelante, pues $\mat{L}$ es triangular inferior), y una vez conocido el valor de $y$, resolver $\mat{U}x=y$ (aplicando esta vez sustitución hacia atrás), obteniendo así la solución del sistema original.
+
+            El pseudocódigo que se presenta como Algoritmo \ref{alg:lu-decomposition} muestra el procedimiento a seguir para encontrar la factorización LU de una matriz, asumiendo que dicha factorización existe. El mismo genera como salida una única matriz $\mat{B}$ que contiene tanto los coeficientes no nulos de $\mat{L}$ como los de $\mat{U}$; esta es una optimización destinada a la implementación, con el objetivo de mejorar su eficiencia evitando el almacenamiento de información redundante.
+
+            \vspace{.5em}
+            \begin{algorithm}[H]
+                \caption{Factorización LU} \label{alg:lu-decomposition}
+                \KwData{$\mat{A} \in \mathbb{R}^{n \times n}$}
+                \KwResult{$\mat{B} \in \mathbb{R}^{n \times n}$, tal que los elementos ubicados en la diagonal y por encima de ella forman una matriz triangular superior $\mat{U}$, y los ubicados por debajo de la misma, completados con unos en la diagonal, forman una matriz triangular inferior $\mat{L}$, con $\mat{L}\mat{U}=\mat{A}$}
+                \For{$k \gets 1$ \KwTo $n$}{
+                    \For{$j \gets k+1$ \KwTo $n$}{
+                        $m \gets \frac{a_{j,k}}{a_{k,k}}$ \;
+                        $b_{j,k} \gets m$ \;
+                        \For{$\ell \gets k+1$ \KwTo $n$}{
+                            $b_{j,\ell} \gets a_{j,\ell} - m \cdot a_{k,\ell}$ \;
+                        }
+                    }
+                }
+            \end{algorithm}
+            \vspace{.5em}
+
+            En cuanto a las hipótesis que permiten asegurar la existencia de la factorización LU de una matriz, resultará de utilidad el siguiente resultado, cuya demostración puede encontrarse en \cite[p.~403]{burden}.
+
+            \begin{prop} \label{prop:EG sin pivoteo implica LU}
+                Si una matriz $\mat{A} \in \mathbb{R}^{n \times n}$ es tal que el sistema $\mat{A}x=b$ ($b \in \mathbb{R}^{n}$) puede ser resuelto aplicando Eliminación Gaussiana sin pivoteo, entonces $\mat{A}$ puede ser factorizada de la forma $\mat{A}=\mat{L}\mat{U}$, donde $\mat{U}$ es una matriz triangular superior y $\mat{L}$ es una matriz triangular inferior con unos en la diagonal.
+            \end{prop}
+
+    \subsection{Modelado del sistema}
+
+        Para resolver el problema presentado en la Introducción, se considerará una sección horizontal del horno, como puede verse en la Figura \ref{fig:seccion-horno}. Se denominará $r_e \in \mathbb{R}_{>0}$ al radio exterior y $r_i \in \mathbb{R}_{>0}$ al radio interior de la pared del horno. Para cada punto, se considerarán sus coordenadas polares $(r, \theta)$ con origen en el centro del horno, llamando $T(r, \theta)$ a la temperatura en dicho punto. Se considerará conocido el valor (constante) de la temperatura en el interior del horno, \[ T_i = T(r, \theta) \qquad (\forall \, r \in [0, r_i], \, \theta \in [0, 2 \pi)) \] como así también el correspondiente a los puntos de la pared externa, \[ T_e(\theta) = T(r_e, \theta) \]
+
+        \begin{figure}[h]
+          \centering
+
+          \includegraphics{imagenes/seccion-horno.pdf}
+
+          \caption{Sección horizontal del horno.}
+          \label{fig:seccion-horno}
+        \end{figure}
+
+        En el estado estacionario, la temperatura $T$ satisface la ecuación del calor:
+        \begin{equation} \label{eq:calor}
+            \frac{\partial^2 T(r, \theta)}{\partial r^2} + \frac{1}{r} \frac{\partial T(r, \theta)}{\partial r} + \frac{1}{r^2} \frac{\partial^2 T(r, \theta)}{\partial \theta^2} = 0
+        \end{equation}
+
+        No obstante, esta ecuación plantea un modelo continuo para estudiar el problema. Para poder tratar computacionalmente el mismo, se hace necesario discretizar su dominio, considerando una cantidad finita de puntos del mismo. Con este fin, se adoptará una partición del sector interno de la pared del horno, tal y como ilustra la Figura \ref{fig:discretizacion}, en $m + 1$ radios equidistantes
+        \[ r_i = r_0 < r_1 < \dots < r_m = r_e \text{, \qquad con } r_j - r_{j-1} = \Delta r \text{ para } j = 1, \dots, m+1 \]
+        y en $n$ ángulos iguales
+        \[ 0 = \theta_0 < \theta_1 < ... < \theta_n = 2\pi \text{, \qquad con } \theta_k - \theta_{k-1} = \Delta \theta \text{ para } k = 1, \dots, n \]
+
+        \begin{figure}[h]
+          \centering
+
+          \includegraphics{imagenes/discretizacion.pdf}
+
+          \caption{Discretización del dominio del problema.}
+          \label{fig:discretizacion}
+        \end{figure}
+
+        Nuestro objetivo es calcular el valor de la temperatura en todos los puntos de la discretización $t_{j,k} = T(r_j, \theta_k)$ para $j = 0, \dots, m$ y $k = 0, \dots, n-1$. Gracias a los datos disponibles sobre las condiciones de borde, conocemos el valor de la temperatura en los puntos de las paredes externa e interna: $t_{m,k} = T_e(\theta_k)$ y $t_{0,k} = T_i$, para todo $k = 0, \dots, n-1$.
+
+        Para discretizar el problema continuo planteado por la ecuación (\ref{eq:calor}), y así obtener el valor en los puntos internos de la pared, pueden utilizarse las siguientes fórmulas de diferencias finitas
+        \begin{align*}
+            \frac{\partial^2 T(r, \theta)}{\partial r^2}(r_j, \theta_k) &\cong \frac{t_{j-1,k} - 2 t_{jk} + t_{j+1,k}}{(\Delta r)^2} \\
+            \frac{\partial T(r, \theta)}{\partial r}(r_j, \theta_k) &\cong \frac{t_{j,k} - t_{j-1,k}}{\Delta r} \\
+            \frac{\partial^2 T(r, \theta)}{\partial \theta^2}(r_j, \theta_k) &\cong \frac{t_{j,k-1} - 2 t_{jk} + t_{j,k+1}}{(\Delta \theta)^2}
+        \end{align*}
+        que, reemplazadas en la ecuación (\ref{eq:calor}), permiten obtener una formulación de la temperatura en estos puntos en función de sus cuatro puntos vecinos más próximos. Más específicamente, para $1 \leq j < m,\ 0 \leq k < n$, se tiene que:
+        \begin{multline} \label{eq:calor-discreto}
+            \Phi(j,k) = \left( \frac{1}{(\Delta r)^2} - \frac{1}{r \Delta r} \right) t_{j-1,k} +
+                \left( \frac{1}{r^2(\Delta \theta)^2} \right) t_{j,k-1} + \\
+                \left( - \frac{2}{(\Delta r)^2} + \frac{1}{r \Delta r} - \frac{2}{r^2(\Delta \theta)^2} \right) t_{j,k} +
+                \left( \frac{1}{r^2(\Delta \theta)^2} \right) t_{j,k+1} +
+                \left( \frac{1}{(\Delta r)^2} \right) t_{j+1,k} = 0
+        \end{multline}
+
+        De esta manera, podemos reunir la información de la que disponemos sobre el problema discreto en un sistema de $(m+1)n$ ecuaciones con $(m+1)n$ incógnitas, cada una de ellas el valor de la temperatura en un punto de la discretización, es decir, $t_{j,k}$ para algún $j = 0, \dots, m$, $k = 0, \dots, n-1$. En otras palabras, el problema de calcular la temperatura en todos los puntos de la discretización se traduce en la resolución del siguiente sistema de ecuaciones lineales:
+
+        \begin{equation} \label{eq:sistema}
+            \begin{cases}
+                t_{0,k} = T_i
+                    & \text{para } 0 \leq k < n \\
+                0 = \Phi(j,k)
+                    & \text{para } 1 \leq j < m,\ 0 \leq k < n \\
+                t_{m,k} = T_e(\theta_k)
+                    & \text{para } 0 \leq k < n
+            \end{cases}
+        \end{equation}
+
+        Como puede verse, cada ecuación del sistema está asociada directamente al cálculo de la temperatura en uno de los puntos de la discretización, es decir, a una de las incógnitas.
+
+        A partir de ahora, se considerará la representación matricial del sistema, $\mat{A}x=b$, con $\mat{A} \in \mathbb{R}^{(m+1)n \times (m+1)n}$ y $b \in \mathbb{R}^{(m+1)n}$. Para construir la matriz $\mat{A}$, se ordenan tanto las incógnitas $t_{j,k}$ como las ecuaciones asociadas a ellas, primero de acuerdo al radio ($j$) y luego de acuerdo al ángulo ($k$). Esto significa que los coeficientes correspondientes a la incógnita $t_{j,k}$ se encontrarán en la columna $(m+1)j + k + 1$, y a la ecuación asociada al cálculo de esta incógnita le corresponderá la fila con el mismo índice.
+
+        Puede notarse que las primeras $n$ filas y las últimas $n$ filas de la matriz, correspondientes a los puntos de la pared interna y externa del horno, respectivamente, contendrán un $1$ en la diagonal y $0$ en todas las demás posiciones, dado que allí la temperatura ya es conocida y no depende de ningún otro punto. En las demás filas, correspondientes a los puntos internos de la pared del horno, la temperatura depende solamente del valor de la misma en los cuatro vecinos más próximos; esto provoca que los coeficientes no nulos se encuentren confinados a un entorno relativamente reducido de la diagonal de la matriz. Más precisamente, todos los coeficientes que se encuentran fuera de una banda de ancho $n$ hacia ambos lados de la diagonal son nulos, i.e. $a_{p,q} = 0$ siempre que $\vert p - q \vert > n$. En otras palabras, la matriz construida es \emph{banda} $n, n$; este hecho puede observarse claramente en la Figura \ref{fig:matriz-banda}.
+
+        \begin{figure}[h]
+          \centering
+
+          \includegraphics{imagenes/matriz-banda.pdf}
+
+          \caption{Matriz asociada al sistema con $m = 4$ y $n = 10$. Aparecen resaltados los coeficientes no nulos.}
+          \label{fig:matriz-banda}
+        \end{figure}
+
+    \subsection{Aplicabilidad de los métodos elegidos}
+
+        Los métodos numéricos ya presentados no son aplicables a la hora de resolver cualquier sistema de ecuaciones lineales, sino que requieren que este satisfaga determinadas hipótesis. Por este motivo, es necesario demostrar que estas se cumplen en el caso particular del sistema que modela el problema a resolver en este trabajo.
+
+        El objetivo es demostrar que tanto el método de Eliminación Gaussiana (sin pivoteo) como el de Factorización LU pueden aplicarse para resolver el sistema planteado en la sección anterior. Sin embargo, de lo enunciado en la Proposición \ref{prop:EG sin pivoteo implica LU} (sección \ref{subsec:conceptos-teoricos}) se desprende que basta con probar la aplicabilidad del primero de ellos. A continuación se procederá a introducir una definición y demostrar un lema, que luego se utilizarán durante la demostración.
+
+        \begin{defi}
+            Sea $\mat{A} \in \mathbb{R}^{n \times n}$. $\mat{A}$ se dice \emph{diagonal dominante} (por filas, de manera no estricta) si cada uno de los elementos de su diagonal es mayor o igual, en módulo, que la suma de los módulos de todos los demás coeficientes presentes en la misma fila. Es decir, si
+            \[ \vert a_{j,j} \vert \geq \sum_{\substack{k=1 \\ k \neq j}}^n \vert a_{j,k} \vert \qquad \text{para todo $j = 1, \dots, n$} \]
+        \end{defi}
+
+        \begin{lema}
+            \label{lema:EG conserva diagonal dominante}
+            Sea $\mat{A}^{(0)} = \mat{A} \in \mathbb{R}^{n \times n}$ una matriz diagonal dominante, con $\mat{A}_{1,1} \neq 0$, y $\mat{A}^{(1)}$ el resultado de aplicar un paso de Eliminación Gaussiana (sin pivoteo) sobre $\mat{A}$. Entonces $\mat{A}^{(1)}$ es diagonal dominante.
+        \end{lema}
+        \begin{proof}
+            Se considerará la fila $j$-ésima de $\mat{A}^{(1)}$, para ver que $\left \vert a^{(1)}_{j,j} \right \vert \geq \sum_{\substack{k = 1 \\ k \neq j}}^n \left \vert a^{(1)}_{j,k} \right \vert$. Se tiene que
+            \[ \left \vert a^{(1)}_{j,j} \right \vert = \left \vert a_{j,j} - \frac{a_{j,1}}{a_{1,1}} a_{1,j} \right \vert
+                \qquad \text{y} \qquad
+            \sum_{\substack{k = 1 \\ k \neq j}}^n \left \vert a^{(1)}_{j,k} \right \vert
+                = \sum_{\substack{k = 2 \\ k \neq j}}^n \left \vert a_{j,k} - \frac{a_{j,1}}{a_{1,1}} a_{1,k} \right \vert \]
+
+            Luego,
+
+            \[ \begin{split}
+                \sum_{\substack{k = 1 \\ k \neq j}}^n \left \vert a^{(1)}_{j,k} \right \vert
+                &= \sum_{\substack{k = 2 \\ k \neq j}}^n \left \vert a_{j,k} - \frac{a_{j,1}}{a_{1,1}} a_{1,k} \right \vert \\
+                &\leq \sum_{\substack{k = 2 \\ k \neq j}}^n \vert a_{j,k} \vert + \left \vert \frac{a_{j,1}}{a_{1,1}} \right \vert \sum_{\substack{k = 2 \\ k \neq j}}^n \vert a_{1,j} \vert \\
+                &\leq \left( \vert a_{j,j} \vert - \vert a_{j,1} \vert \right) + \left \vert \frac{a_{j,1}}{a_{1,1}} \right \vert \left( \vert a_{1,1} \vert - \vert a_{1,j} \vert \right) \\
+                &= \vert a_{j,j} \vert - \left \vert \frac{a_{j,1}}{a_{1,1}} \right \vert \vert a_{1,j} \vert \\
+                &\leq \left \vert a_{j,j} -  \frac{a_{j,1}}{a_{1,1}} a_{1,j} \right \vert = \left \vert a^{(1)}_{j,j} \right \vert \qedhere
+            \end{split} \]
+        \end{proof}
+
+        Contando con estos resultados, se probará que el sistema construido en la sección anterior, tal y como fue expuesto en (\ref{eq:sistema}), puede ser resuelto aplicando Eliminación Gaussiana sin pivoteo. La demostración tendrá dos etapas:
+        \begin{enumerate}
+            \item Demostrar que la matriz $\mat{A} \in \mathbb{R}^{(m+1)n \times (m+1)n}$ asociada al sistema es diagonal dominante.
+            \item Demostrar, a partir de este hecho y en forma inductiva, que todas las iteraciones del algoritmo de Eliminación Gaussiana están bien definidas, sin utilizar pivoteo.
+        \end{enumerate}
+
+        Para ver que la matriz $\mat{A}$ es diagonal dominante, se verificará separadamente que la definición se cumple para las filas correspondientes a los bordes de la pared del horno (primeras $n$ filas y últimas $n$ filas) y para las correspondientes a los puntos internos.
+
+        \begin{enumerate}[label=(\roman*)]
+            \item Para $p = 1, \dots, n$ y para $p = mn + 1, \dots, (m+1)n$, la fila $p$-ésima corresponde a un punto del borde de la pared del horno. Como ya se señaló anteriormente, en estas filas hay un $1$ en los lugares correspondientes a la diagonal, mientras que los demás coeficientes son nulos. Por lo tanto, se sigue trivialmente que, para $p = 1, \dots, n, mn + 1, (m+1)n$:
+            \[ \vert a_{p,p} \vert = 1 \geq 0 = \sum_{\substack{q=1 \\ q \neq p}}^{(m+1)n} \vert a_{p,q} \vert \]
+
+            \item Para $p = n + 1, \dots, mn$, la fila $p$-ésima corresponde a un punto interno de la pared. Es decir, representa a una ecuación del tipo $\Phi(j,k) = 0$, con $j = 1, \dots, m - 1$ y $k = 0, \dots, n - 1$. Luego, esta fila contiene solo 5 coeficientes no nulos.
+
+            El coeficiente que aparece en la diagonal es el correspondiente a la variable $t_{j,k}$. Entonces:
+            \[ \begin{split}
+                \vert a_{p,p} \vert &= \left \vert - \frac{2}{(\Delta r)^2} + \frac{1}{r \Delta r} - \frac{2}{r^2 (\Delta \theta)^2} \right \vert \\
+                &= \left \vert - \frac{1}{(\Delta r)^2} + \frac{1}{r \Delta r} - \frac{2}{r^2 (\Delta \theta)^2} - \frac{1}{(\Delta r)^2} \right \vert \\
+                &= \left \vert - \frac{r - \Delta r}{r (\Delta r)^2} - \frac{2}{r^2 (\Delta \theta)^2} - \frac{1}{(\Delta r)^2} \right \vert \\
+                &= \left \vert \frac{r - \Delta r}{r (\Delta r)^2} + \frac{2}{r^2 (\Delta \theta)^2} + \frac{1}{(\Delta r)^2} \right \vert
+            \end{split} \]
+
+            Dado que $r_i, \Delta r > 0$ y $j \geq 1$, se cumple que
+            \[ r - \Delta r = (r_i + j \Delta r) - \Delta r = r_i + (j - 1) \Delta r > 0\]
+            de donde se desprende que todos los términos que aparecen dentro del módulo son positivos, y por lo tanto
+            \[ \vert a_{p,p} \vert = \frac{r - \Delta r}{r (\Delta r)^2} + \frac{2}{r^2 (\Delta \theta)^2} + \frac{1}{(\Delta r)^2} \]
+
+            Por otro lado, si se suman los módulos de los demás coeficientes de la fila, se obtiene:
+                \[ \begin{split}
+                    \sum_{\substack{q=1 \\ q \neq p}}^{(m+1)n} \vert a_{p,q} \vert &= \left \vert \frac{1}{(\Delta r)^2} - \frac{1}{r \Delta r} \right \vert + 2 \left \vert \frac{1}{r^2 (\Delta \theta)^2} \right \vert + \left \vert \frac{1}{(\Delta r)^2} \right \vert \\
+                    &= \left \vert \frac{r - \Delta r}{r (\Delta r)^2} \right \vert + \frac{2}{r^2 (\Delta \theta)^2} + \frac{1}{(\Delta r)^2} \\
+                    &= \frac{r - \Delta r}{r (\Delta r)^2} + \frac{2}{r^2 (\Delta \theta)^2} + \frac{1}{(\Delta r)^2} = \vert a_{p,p} \vert
+                \end{split} \]
+        \end{enumerate}
+
+        De todo lo anterior, se sigue que $\mat{A}$ es diagonal dominante de forma no estricta, como se quería demostrar.
+
+        \begin{obs} \label{obs:Diagonal de A sin ceros}
+        De la demostración anterior se desprende que para todo $p = 1, \dots, (m+1)n$, $\vert a_{p,p} \vert > 0$; es decir, la diagonal de $\mat{A}$ no contiene ceros.
+        \end{obs}
+
+        Por último, se debe probar que las $(m+1)n$ iteraciones del algoritmo de Eliminación Gaussiana necesarias para resolver el sistema pueden aplicarse, y que no es necesario utilizar pivoteo. La idea será demostrar que, para todo $u \leq (m+1)n$, pueden aplicarse $u$ pasos de Eliminación Gaussiana sobre $\mat{A}$ sin pivoteo, y que además, la matriz $\mat{A}^{(u)}$ que resulta de este proceso es diagonal dominante, y su fila $u + 1$ es no nula. La demostración será por inducción en $u$.
+
+        \begin{enumerate}[label=(\roman*)]
+            \item \strong{Caso base.} Como $a_{1,1} = 1$ no es nulo, se puede aplicar la primera iteración de Eliminación Gaussiana sin realizar pivoteo. Dado que $\mat{A}$ es diagonal dominante, por el Lema \ref{lema:EG conserva diagonal dominante}, la matriz $\mat{A}^{(1)}$ obtenida también será diagonal dominante. Además, se sabe que $a_{1,2} = 0$, por lo que la primera iteración del algoritmo no afectará al coeficiente $a_{2,2}$, que era necesariamente no nulo (ver Observación \ref{obs:Diagonal de A sin ceros}). Luego, la segunda fila de $\mat{A}^{(1)}$ será no nula.
+
+            \item \strong{Paso inductivo.} Por hipótesis inductiva, la matriz $\mat{A}^{(u-1)}$, obtenida tras aplicar $u-1$ pasos de Eliminación Gaussiana sobre $\mat{A}$, es diagonal dominante y su $u$-ésima fila es no nula. Esto implica que $a^{(u-1)}_{u,u} \neq 0$.
+
+            Nótese que es posible escribir a $\mat{A}^{(u-1)}$ por bloques de la siguiente manera:
+            \[ \mat{A}^{(u-1)} = \left( \begin{matrix} \mat{U}_{u-1} & \mat{B} \\ \mat{0} & \widetilde{\mat{A}}_{u-1} \end{matrix} \right) \]
+            donde las matrices $\mat{U}_{u-1} \in \mathbb{R}^{(u-1)\times(u-1)}$ y $\widetilde{\mat{A}}_{u-1} \in \mathbb{R}^{((m+1)n-u+1)\times((m+1)n-u+1)}$ son trivialmente diagonal dominantes.
+
+            Se puede ver que realizar el paso $u$-ésimo del algoritmo de Eliminación Gaussiana sobre $\mat{A}$ equivale a realizar el primer paso de este algoritmo sobre $\widetilde{\mat{A}}_{u-1}$, manteniendo intacto el resto de la matriz. Dado que $a^{(u-1)}_{u,u} \neq 0$, esto puede realizarse sin pivoteo, y del Lema \ref{lema:EG conserva diagonal dominante} se sigue que el resultado de este proceso será diagonal dominante, lo cual implica directamente que también lo será $\mat{A}^{(u)}$.
+
+            Solo resta probar que la fila $u+1$ de la matriz $\mat{A}^{(u)}$ es no nula.
+            \begin{enumerate}[label=(\alph*)]
+                \item Si la fila $u + 1$ corresponde a uno de los puntos externos de la pared del horno, es decir, si $1 \leq u+1 \leq n$ o $mn < u + 1 \leq (m+1)n$, entonces tendrá un $1$ en la diagonal y $0$ en las demás posiciones, por lo que no se verá afectada por el algoritmo de Eliminación Gaussiana.
+                \item En caso contrario, la fila corresponde a una de los puntos internos de la pared, representando a una de las ecuaciones del tipo $\Phi(j,k) = 0$, para ciertos $j = 1, \dots, m - 1$ y $k = 0, \dots, n - 1$. Puntualmente, por la forma en la que se construye la matriz del sistema, el elemento $a_{u+1,u+1+n}$ es el coeficiente de la variable $t_{j,k+1}$ en dicha ecuación, que es necesariamente no nulo. Por otra parte, como la matriz $\mat{A}$ es \emph{banda} $n, n$, todos los elementos de la columna $u+1$ que se encuentran por encima de $a_{u+1,u+1+n}$ deben ser nulos. Esto quiere decir que ninguna de las iteraciones ya ejecutadas de Eliminación Gaussiana modificaron este coeficiente, y por lo tanto, sigue siendo no nulo.
+            \end{enumerate}
+        \end{enumerate}
+
+    \subsection{Interpretación de los resultados}
+
+        \subsubsection{Estimación de la posición de la isoterma crítica}
+
+            Además de contar con métodos para la resolución del sistema, la elaboración del trabajo requirió la elaboración de criterios para interpretar los resultados obtenidos. Uno de los aspectos a tener en cuenta fue la necesidad de aproximar el conjunto de puntos en el interior del horno que se encontraban a una temperatura dada, es decir, la posición de la isoterma correspondiente.
+
+            Como criterio general, se decidió evaluar independientemente los valores encontrados para cada uno de los ángulos de la discretización, procurando estimar, para cada uno de estos radios, el radio del punto cuya temperatura fuera la buscada. Más formalmente, dada una temperatura $c$, se buscó calcular un vector $\iota = (\iota_0, \dots, \iota_{n-1})$, donde cada $\iota_k$ es tal que $T(i_k, \theta_k) = c$.
+
+            Un análisis sencillo de las funciones involucradas permitió arribar a la conclusión de que, a lo largo de cada ángulo, la temperatura se comporta de forma monótona, por lo que en general el valor $\iota_k$ está bien definido; más aún teniendo en cuenta que, dado el contexto de aplicación, cabe esperar temperaturas muy superiores en el interior que en el exterior del horno. En el caso de que la temperatura se mantuviera constante a lo largo del ángulo, obteniendo más de un punto válido para la posición de la isoterma, se decidió que se elegiría el más externo de ellos, para no afectar así las estimaciones posteriores acerca del riesgo de la estructura, que dependen de la cercanía de la isoterma a la pared.
+
+            Se evaluaron tres técnicas diferentes para la estimación de los valores $\iota_k$, que se enumeran a continuación:
+
+            \begin{enumerate}
+                \item Para cada ángulo $\theta_k$, elegir entre los radios de la discretización aquel cuya temperatura sea más próxima a la temperatura crítica $c$.
+
+                Este criterio es sumamente sencillo, pero se ve limitado al tomar en cuenta únicamente puntos de la discretización; esto podría causar que se viera seriamente afectado si la misma tuviera una baja granularidad en cuanto a cantidad de radios considerados. Peor aún, la isoterma real podría estar más cerca de la pared externa del horno que la estimada con este método, evitando, especialmente en conjunción con el problema recién mencionado, que se detecten situaciones de riesgo.
+
+                \item Para cada ángulo $\theta_k$, determinar el más externo de los radios de la discretización cuya temperatura sea mayor o igual que la temperatura crítica $c$, y elegir luego como $\iota_k$ el radio de la discretización inmediatamente exterior. Esto equivale a seleccionar el más interno de los radios de la discretización tal que su temperatura y las de todos los radios más externos sea menor a $c$, es decir
+                \[ \iota_k = \min \left\lbrace r_j \; \vert \; 0 \leq j \leq m \; \land \; t_{j',k} < c \, (\forall \, j' = j, \dots, m) \right\rbrace \]
+
+                Al igual que el anterior, este método adolece del problema de solo tener en cuenta puntos de la discretización. La diferencia es que, si se asume la hipótesis ya discutida de que la temperatura será decreciente hacia el exterior del horno, esta técnica puede asegurar que la isoterma nunca se encontrará más cerca de la pared externa que el resultado arrojado, garantizando que se detectarán todas las posibles situaciones de riesgo. No obstante, si la granularidad es baja y el método resulta ser sensible a la misma, podrían generarse falsos positivos, dando lugar a concluir erróneamente que la estructura corre peligro.
+
+                \item Para cada ángulo $\theta_k$, considerar $r_j$, el más externo de los radios de la discretización con temperatura mayor o igual a $c$. Luego, sabiendo que la isoterma buscada se encontrará entre este radio y el inmediatamente exterior, aproximar la variación de la temperatura en los puntos intermedios mediante una función lineal y utilizar esta aproximación para estimar la posición de la isoterma, tomando
+                \[ \iota_k = r_j + \Delta r \left(\frac{c - t_{j,k}}{t_{j+1,k} - t_{j,k}} \right) \]
+
+                Esta opción tiene en cuenta el hecho de que la temperatura es una función continua, y que en un estado estacionario tiende a estabilizarse y no a presentar saltos bruscos, por lo que se puede esperar que una función lineal resulte una aproximación aceptable de su comportamiento. A diferencia de las otras dos técnicas planteadas, esta contempla la posibilidad de que la isoterma se encuentre a mitad de camino entre dos radios de la discretización, y se considera esperable que arroje resultados razonables incluso con menores granularidades. Esto le permite detectar situaciones de riesgo que con el primer método pasarían desapercibidas, pero evitando la generación de falsos positivos que podría provocar el segundo método. Por estas razones, esta fue la técnica elegida para realizar las estimaciones, por considerarla superior a las otras dos propuestas.
+            \end{enumerate}
+
+        \subsubsection{Cálculo del índice de peligrosidad}
+
+            A la hora de utilizar el resultado del cálculo de la posición de la isoterma para determinar el riesgo de colapso de la estructura, se decidió adoptar como parámetro la mínima distancia entre la isoterma y la pared externa del horno. Se favoreció este criterio, por encima de otras opciones, como el cálculo de una distancia promedio, por considerar la posibilidad de que un pico de temperatura en un sector puntual de la pared sea suficiente para generar una situación de peligro, que podría pasar desapercibida en el caso de utilizar un índice más ponderado.
+
+            El índice de peligrosidad que se calcula es un valor normalizado con respecto al radio externo del horno, que se obtiene mediante la fórmula
+            \[ \operatorname{IP} = \frac{\hat{\iota}}{r_e} \qquad \text{donde } \hat{\iota} = \max_{k = 1, \dots, n-1} \left\lbrace \iota_k \right\rbrace \]
+
+    \subsection{Implementación}
+
+        Los dos métodos utilizados fueron implementados en lenguaje C++. Para la representación interna de las matrices se utiliza el tipo \texttt{vector}, proporcionado por la biblioteca estándar de C++. Se utilizó el mecanismo de clases del lenguaje para mejorar la organización del código, proporcionando métodos que implementan los diversos algoritmos ya presentados: sustitución hacia adelante y hacia atrás, Eliminación Gaussiana y Factorización LU.
+
+        Adicionalmente, se incorporaron a la implementación funciones para estimar, en función de la salida del algoritmo, la posición de la isoterma según las tres técnicas ideadas, como así también para calcular el índice de peligrosidad.
+
+        Un aspecto que se presentó durante la etapa de implementación fue la posibilidad de optimizar su rendimiento aprovechando la información disponible sobre el sistema a resolver. Puntualmente, el hecho de que la matriz con la que se trabaja es \emph{banda} permite mejorar tanto la complejidad temporal como espacial del programa, evitando almacenar y procesar una gran cantidad de coeficientes de la matriz cuando ya se sabe que estos son nulos. No obstante, se decidió omitir esta posible optimización, ya que se contaba con un tiempo limitado y se consideró preferible priorizar la realización de pruebas experimentales.
