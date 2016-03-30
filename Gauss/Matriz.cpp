@@ -18,7 +18,7 @@ class Matriz{
 
 	public:	
 
-    Matriz() {}
+   		Matriz() {}
 
 		Matriz(int n, vector <float> res){
 			m.clear();
@@ -51,11 +51,12 @@ class Matriz{
 			return columnas;
 		}
 		
+		void cambiarRes(vector <float> res){
+			result = res;
+		}
 
 		void ImprimirMatriz(FILE* out){
-
 			fprintf(out, "Imprimiendo matriz\n");
-
 			for (int i = 0; i < filas; i++){				
 				for (int j = 0; j < columnas; j++){
 					if(j == 0){fprintf(out, "|");}
@@ -155,6 +156,18 @@ class Matriz{
 				float sumaProd = 0;
 				for(int j = filas-1; j>i; j--){
 					sumaProd += result[j]*m[i][j];
+				}
+				result[i] = (result[i] - sumaProd)/m[i][i];
+			}			
+		}
+
+
+		void resolverTriangSupTraspuesta(){
+			// assert(es triangular inferior y la diagonal no tiene 0)
+			for (int i = filas-1; i>=0; i--){
+				float sumaProd = 0;
+				for(int j = filas-1; j>i; j--){
+					sumaProd += result[j]*m[j][i];
 				}
 				result[i] = (result[i] - sumaProd)/m[i][i];
 			}			
