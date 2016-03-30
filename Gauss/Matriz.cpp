@@ -173,14 +173,4 @@ class Matriz{
 			}			
 		}
 
-		void matrizTraspuesta(){
-			for (int i = 0; i < filas; i++){
-				for (int j = 0; j<i; j++){	
-					float swap = m[i][j];				
-					m[i][j] = m[j][i];
-					m[j][i] = swap;
-				}
-				
-			}
-		}
 };
