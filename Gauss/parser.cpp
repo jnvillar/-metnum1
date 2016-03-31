@@ -1,6 +1,7 @@
 #include <sstream>
 #include <fstream>
 #include "Matriz.cpp"
+#include "genRand.cpp"
 
 void imprimirVector(vector<int> v)
 {
