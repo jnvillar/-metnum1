@@ -18,7 +18,7 @@ class Matriz{
 
 	public:	
 
-    Matriz() {}
+   		Matriz() {}
 
 		Matriz(int n, vector <float> res){
 			m.clear();
@@ -51,11 +51,12 @@ class Matriz{
 			return columnas;
 		}
 		
+		void cambiarRes(vector <float> res){
+			result = res;
+		}
 
 		void ImprimirMatriz(FILE* out){
-
 			fprintf(out, "Imprimiendo matriz\n");
-
 			for (int i = 0; i < filas; i++){				
 				for (int j = 0; j < columnas; j++){
 					if(j == 0){fprintf(out, "|");}
@@ -108,34 +109,24 @@ class Matriz{
 
 		void cholesky(){
 			// assert(es def positiva y simetrica)
-			vector< vector <float> > l;
-			for (int i = 0; i < filas; i++){
-				vector< float> fila;
-				for (int j = 0; j < filas; j++){					
-					fila.push_back(0);
-				}
-				l.push_back(fila);
-			}
-
 			for(int i = 0; i<filas; i++){
 				for(int j = 0; j<=i; j++){
 					if (i == j){
 						float sumCuad = 0;
 						for(int h = 0; h<i; h++){
-							sumCuad += l[i][h]*l[i][h]; 
+							sumCuad += m[i][h]*m[i][h]; 
 						}
-						l[i][i] = sqrt(m[i][i]-sumCuad);
+						m[i][i] = sqrt(m[i][i]-sumCuad);
 						
 					} else{
 						float suma = 0;
-						for(int h = 0; h<i-1; h++){
-							suma += l[i][h]*l[j][h]; 
+						for(int h = 0; h<j; h++){
+							suma += m[i][h]*m[j][h]; 
 						}
-						l[i][j] = (m[i][j]-suma)/l[j][j];
+						m[i][j] = (m[i][j]-suma)/m[j][j];
 					}	
 				}
 			}
-			m = l;
 		}
 		
 		void resolverTriangInf(){
@@ -160,14 +151,16 @@ class Matriz{
 			}			
 		}
 
-		void matrizTraspuesta(){
-			for (int i = 0; i < filas; i++){
-				for (int j = 0; j<i; j++){	
-					float swap = m[i][j];				
-					m[i][j] = m[j][i];
-					m[j][i] = swap;
+
+		void resolverTriangSupTraspuesta(){
+			// assert(es triangular inferior y la diagonal no tiene 0)
+			for (int i = filas-1; i>=0; i--){
+				float sumaProd = 0;
+				for(int j = filas-1; j>i; j--){
+					sumaProd += result[j]*m[j][i];
 				}
-				
-			}
+				result[i] = (result[i] - sumaProd)/m[i][i];
+			}			
 		}
+
 };
