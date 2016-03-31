@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
 	
 	if ((argc != 3 && argc != 4 ) || (argv[1][1] != 'g' && argv[1][1] != 'c') ){
 		printf("%s [METHOD] [INPUT FILE] [OUTPUT FILE]\n", argv[0]);
-		printf("WHERE METHOD CAN BE -g for Gauss or -c for Cholesky\n");
+		printf("Mete -g para Gauss o -c pa Cholesky amiwo\n");
 	} else{
 		Matriz m = parser(argv[2]);
 		if (argv[1][1] == 'g'){
