@@ -58,6 +58,8 @@ Matriz armarColleyMatrix(vector<int> jugados, vector<int> ganados, vector< vecto
 		m.push_back(fila_i);
 	}
 	Matriz colley_matrix(m, termIndep);
+	//FILE* aux = fopen("mat.txt", "w");
+	//colley_matrix.ImprimirMatriz(aux);
 	return colley_matrix;  
 }
 

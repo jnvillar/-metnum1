@@ -55,6 +55,10 @@ class Matriz{
 			result = res;
 		}
 
+		vector <float> devolverRes(){
+			return result;
+		}
+
 		void ImprimirMatriz(FILE* out){
 			fprintf(out, "Imprimiendo matriz\n");
 			for (int i = 0; i < filas; i++){				
