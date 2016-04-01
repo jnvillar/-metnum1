@@ -6,6 +6,10 @@ from sets import Set
 input_path = sys.argv[1]
 output_path = sys.argv[2]
 
+cantFechas = -1
+if (len(sys.argv) == 4):
+	cantFechas = int(sys.argv[3])
+
 with open(input_path,'rb') as csvfile,open(output_path,'w') as outfile:
 	score_reader = csv.reader(csvfile,delimiter=',',skipinitialspace=True)
 	# Skip the header
@@ -47,6 +51,8 @@ with open(input_path,'rb') as csvfile,open(output_path,'w') as outfile:
 			if jugadosEstaFecha == cantPartidosPorFecha:
 				jugadosEstaFecha = 1
 				fecha = fecha+1
+				if fecha == cantFechas+1:
+					break
 			else:
 				jugadosEstaFecha = jugadosEstaFecha + 1
 

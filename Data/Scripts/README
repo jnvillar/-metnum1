@@ -1,1 +1,1 @@
-USO: python Futbol.py [INPUT FILE] [OUTPUT FILE]
+USO: python Futbol.py [INPUT FILE] [OUTPUT FILE] [CANTIDAD DE FECHAS (opcional)]
