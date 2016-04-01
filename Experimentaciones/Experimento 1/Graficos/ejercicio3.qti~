@@ -128,8 +128,8 @@ Alignement	0	0
 <AlignPolicy>0</AlignPolicy>
 <CommonAxes>0</CommonAxes>
 <graph>
-ggeometry	4	5	1081	700
-<PageGeometry>0.00365965	0.0069735	0.989021	0.97629</PageGeometry>
+ggeometry	3	-1	1081	700
+<PageGeometry>0.00274474	-0.0013947	0.989021	0.97629</PageGeometry>
 PlotTitle	Experimento 1	#000000	4228
 <Antialiasing>0</Antialiasing>
 <Autoscaling>1</Autoscaling>
@@ -159,10 +159,29 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	0
-curve	Tabla1_Equipos	Tabla1_Cholesky	0	1	#000000	0	2	7	0	#000000	#000000	0	#000000	14	1	2	0	0	100	1
-curve	Tabla1_Equipos	Tabla1_Gauss	0	1	#ff0000	0	2	7	0	#ff0000	#ff0000	0	#000000	14	1	2	0	0	100	1
-scale	0	0	10	0	6	5	0	0
-scale	1	0	10	0	6	5	0	0
+curve	Tabla1_Equipos	Tabla1_Cholesky	2	1	#0000ff	0	2	7	0	#000000	#000000	0	#000000	14	1	2	0	0	100	1
+curve	Tabla1_Equipos	Tabla1_Gauss	0	1	#ff8000	0	2	7	0	#ff0000	#ff0000	0	#000000	14	1	2	0	0	100	1
+<Function>
+<Type>0</Type>
+<Title>F1</Title>
+<Expression>(x^3)/100000000</Expression>
+<Variable>x</Variable>
+<Range>0	1000</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#008000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0	12	0	7	5	0	0
+scale	1	0	12	0	7	5	0	0
 scale	2	0	1010	0	7	5	0	0
 scale	3	0	1010	0	7	5	0	0
 LabelsFormat	0	6	0	6	0	6	0	6
@@ -185,14 +204,15 @@ EnabledTickLabels	1	1	1	1
 <LineStyle>0</LineStyle>
 <x>28.011204481793</x>
 <y>965.75342465753</y>
-<right>305.322128851541</right>
-<bottom>866.438356164384</bottom>
+<right>108.769230769231</right>
+<bottom>11.3253833049404</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>0</visible>
 <Text>
 \l(1)%(1)
 \l(2)%(2)
+\l(3)%(3)
 </Text>
 <Font>Ubuntu	19	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
@@ -207,18 +227,19 @@ EnabledTickLabels	1	1	1	1
 <Color>#000000</Color>
 <FrameWidth>1</FrameWidth>
 <LineStyle>0</LineStyle>
-<x>73.794983642312</x>
-<y>8.5639229422067</y>
-<right>346.946564885496</right>
-<bottom>6.51488616462347</bottom>
+<x>77.697841726619</x>
+<y>11.432574430823</y>
+<right>108.769230769231</right>
+<bottom>11.3253833049404</bottom>
 <attachTo>1</attachTo>
 <onTop>1</onTop>
 <visible>1</visible>
 <Text>
 \l(1)%(1)
 \l(2)%(2)
+\l(3)x^3
 </Text>
-<Font>Ubuntu	21	50	0	0	0</Font>
+<Font>Ubuntu	24	50	0	0	0</Font>
 <TextColor>#000000</TextColor>
 <Background>#ffffff</Background>
 <Alpha>0</Alpha>
