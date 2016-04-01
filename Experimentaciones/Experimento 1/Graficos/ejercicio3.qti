@@ -1,0 +1,340 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	3
+<table>
+Tabla1	101	3	01/04/16 16:03
+geometry	0	0	445	220	
+header	Equipos[X]	Cholesky[Y]	Gauss[Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+0	10	5.2e-05	0.000134
+1	20	0.000138	0.000445
+2	30	0.000304	0.001034
+3	40	0.000565	0.002009
+4	50	0.000675	0.002495
+5	60	0.000888	0.003332
+6	70	0.001095	0.004683
+7	80	0.001569	0.006097
+8	90	0.002132	0.008509
+9	100	0.00278	0.010993
+10	110	0.003592	0.014471
+11	120	0.004491	0.018112
+12	130	0.005512	0.022972
+13	140	0.006804	0.027651
+14	150	0.008164	0.033642
+15	160	0.009892	0.039909
+16	170	0.011676	0.047173
+17	180	0.013777	0.055553
+18	190	0.016167	0.065531
+19	200	0.018538	0.074855
+20	210	0.021307	0.086219
+21	220	0.024581	0.099433
+22	230	0.027987	0.114127
+23	240	0.030911	0.126645
+24	250	0.034634	0.141002
+25	260	0.038768	0.158207
+26	270	0.043162	0.17609
+27	280	0.049846	0.203059
+28	290	0.052885	0.217518
+29	300	0.058283	0.239418
+30	310	0.063964	0.263924
+31	320	0.070084	0.28908
+32	330	0.07665	0.315821
+33	340	0.08387	0.344948
+34	350	0.090411	0.377548
+35	360	0.098817	0.40655
+36	370	0.107054	0.440886
+37	380	0.114437	0.475012
+38	390	0.124177	0.51279
+39	400	0.134255	0.553475
+40	410	0.144039	0.594781
+41	420	0.15326	0.634342
+42	430	0.163845	0.677987
+43	440	0.175489	0.726267
+44	450	0.18811	0.778259
+45	460	0.20029	0.831634
+46	470	0.212676	0.883082
+47	480	0.228032	0.949523
+48	490	0.242514	0.999847
+49	500	0.256014	1.064982
+50	510	0.270243	1.122019
+51	520	0.285048	1.18664
+52	530	0.302944	1.259538
+53	540	0.318889	1.327187
+54	550	0.336228	1.399118
+55	560	0.354898	1.475933
+56	570	0.372688	1.553166
+57	580	0.392419	1.631821
+58	590	0.412666	1.721926
+59	600	0.446142	1.835727
+60	610	0.460129	1.906813
+61	620	0.480104	2.004234
+62	630	0.504582	2.103702
+63	640	0.527891	2.202955
+64	650	0.552409	2.305291
+65	660	0.57873	2.412134
+66	670	0.603982	2.520809
+67	680	0.630305	2.633931
+68	690	0.657023	2.749943
+69	700	0.687923	2.86893
+70	710	0.716866	2.991916
+71	720	0.748889	3.13359
+72	730	0.776696	3.247906
+73	740	0.810484	3.379531
+74	750	0.842703	3.518163
+75	760	0.875488	3.65803
+76	770	0.911208	3.803548
+77	780	0.945848	3.953068
+78	790	0.981705	4.105296
+79	800	1.019132	4.259517
+80	810	1.05559	4.41837
+81	820	1.094674	4.579978
+82	830	1.136216	4.752982
+83	840	1.176896	4.915376
+84	850	1.219145	5.09852
+85	860	1.26226	5.27852
+86	870	1.305741	5.463169
+87	880	1.352059	5.651644
+88	890	1.387451	5.807934
+89	900	1.43336	5.999168
+90	910	1.489695	6.236297
+91	920	1.536504	6.437146
+92	930	1.579799	6.614507
+93	940	1.655906	6.909134
+94	950	1.712269	7.098932
+95	960	1.748655	7.317768
+96	970	1.759035	7.389945
+97	980	1.818329	7.613545
+98	990	1.872256	7.848232
+99	1000	1.929628	8.086338
+100	1010		
+</data>
+</table>
+<multiLayer>
+Gráfica1	1	1	01/04/16 16:45
+geometry	445	0	1101	765	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	3	-1	1081	700
+<PageGeometry>0.00274474	-0.0013947	0.989021	0.97629</PageGeometry>
+PlotTitle	Experimento 1	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Cantidad de Equipos	Tiempo en Segundos		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	22	75	0	0	0
+ScaleFont0	Ubuntu	19	75	0	0	0
+ScaleFont1	Ubuntu	19	75	0	0	0
+ScaleFont2	Ubuntu	19	75	0	0	0
+ScaleFont3	Ubuntu	19	75	0	0	0
+AxisFont0	Ubuntu	19	50	0	0	0
+AxisFont1	Ubuntu	19	50	0	0	0
+AxisFont2	Ubuntu	19	50	0	0	0
+AxisFont3	Ubuntu	19	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Tabla1_Equipos	Tabla1_Cholesky	2	1	#0000ff	0	2	7	0	#000000	#000000	0	#000000	14	1	2	0	0	100	1
+curve	Tabla1_Equipos	Tabla1_Gauss	0	1	#ff8000	0	2	7	0	#ff0000	#ff0000	0	#000000	14	1	2	0	0	100	1
+<Function>
+<Type>0</Type>
+<Title>F1</Title>
+<Expression>(x^3)/100000000</Expression>
+<Variable>x</Variable>
+<Range>0	1000</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#008000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0	12	0	7	5	0	0
+scale	1	0	12	0	7	5	0	0
+scale	2	0	1010	0	7	5	0	0
+scale	3	0	1010	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>28.011204481793</x>
+<y>965.75342465753</y>
+<right>108.769230769231</right>
+<bottom>9.43781942078365</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>0</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+\l(3)%(3)
+</Text>
+<Font>Ubuntu	19	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>77.697841726619</x>
+<y>11.432574430823</y>
+<right>318.191161356629</right>
+<bottom>8.86865148861646</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+\l(3)x^3
+</Text>
+<Font>Ubuntu	24	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Gráfica2	1	1	01/04/16 17:14
+geometry	0	550	560	470	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	542	407
+<PageGeometry>0.00905797	0.0118483	0.981884	0.964455</PageGeometry>
+PlotTitle	Título	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	13	75	0	0	0
+ScaleFont0	Ubuntu	11	75	0	0	0
+ScaleFont1	Ubuntu	11	75	0	0	0
+ScaleFont2	Ubuntu	11	75	0	0	0
+ScaleFont3	Ubuntu	11	75	0	0	0
+AxisFont0	Ubuntu	11	50	0	0	0
+AxisFont1	Ubuntu	11	50	0	0	0
+AxisFont2	Ubuntu	11	50	0	0	0
+AxisFont3	Ubuntu	11	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+scale	0	0	1000	0	6	5	0	0
+scale	1	0	1000	0	6	5	0	0
+scale	2	0	1000	0	6	5	0	0
+scale	3	0	1000	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>28.011204481793</x>
+<y>965.75342465753</y>
+<right>305.322128851541</right>
+<bottom>866.438356164384</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+
+</Text>
+<Font>Ubuntu	11	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
