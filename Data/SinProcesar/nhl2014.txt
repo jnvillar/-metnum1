@@ -1,0 +1,1319 @@
+2014-10-08  Montreal                  4 @Toronto                   3           
+2014-10-08 @Boston                    2  Philadelphia              1           
+2014-10-08  San Jose                  4 @Los Angeles               0           
+2014-10-08  Vancouver                 4 @Calgary                   2           
+2014-10-09  Montreal                  2 @Washington                1 O2        
+2014-10-09  New Jersey                6 @Philadelphia              4           
+2014-10-09 @Pittsburgh                6  Anaheim                   4           
+2014-10-09  Columbus                  3 @Buffalo                   1           
+2014-10-09 @Detroit                   2  Boston                    1           
+2014-10-09 @Tampa Bay                 3  Florida                   2 O1        
+2014-10-09 @Nashville                 3  Ottawa                    2           
+2014-10-09  NY Rangers                3 @St Louis                  2           
+2014-10-09  Chicago                   3 @Dallas                    2 O2        
+2014-10-09 @Minnesota                 5  Colorado                  0           
+2014-10-09  Calgary                   5 @Edmonton                  2           
+2014-10-09  Winnipeg                  6 @Arizona                   2           
+2014-10-10  NY Islanders              5 @Carolina                  3           
+2014-10-11 @St Louis                  4  Calgary                   1           
+2014-10-11  New Jersey                5 @Florida                   1           
+2014-10-11  Pittsburgh                5 @Toronto                   2           
+2014-10-11  Ottawa                    3 @Tampa Bay                 2 O2        
+2014-10-11  Anaheim                   3 @Detroit                   2           
+2014-10-11 @NY Islanders              4  Carolina                  3           
+2014-10-11  Montreal                  4 @Philadelphia              3 O2        
+2014-10-11 @Columbus                  5  NY Rangers                2           
+2014-10-11  Washington                4 @Boston                    0           
+2014-10-11 @Nashville                 4  Dallas                    1           
+2014-10-11 @Chicago                   6  Buffalo                   2           
+2014-10-11 @Arizona                   3  Los Angeles               2 O1        
+2014-10-11  Minnesota                 3 @Colorado                  0           
+2014-10-11 @Vancouver                 5  Edmonton                  4 O2        
+2014-10-11 @San Jose                  3  Winnipeg                  0           
+2014-10-12  Toronto                   6 @NY Rangers                3           
+2014-10-12 @Los Angeles               4  Winnipeg                  1           
+2014-10-13  Colorado                  2 @Boston                    1           
+2014-10-13  Anaheim                   5 @Buffalo                   1           
+2014-10-13  Ottawa                    1 @Florida                   0           
+2014-10-13 @Tampa Bay                 7  Montreal                  1           
+2014-10-14  Dallas                    4 @Columbus                  2           
+2014-10-14  Anaheim                   4 @Philadelphia              3 O2        
+2014-10-14  NY Islanders              6 @NY Rangers                3           
+2014-10-14  San Jose                  6 @Washington                5 O2        
+2014-10-14  Buffalo                   4 @Carolina                  3 O2        
+2014-10-14 @Toronto                   3  Colorado                  2 O1        
+2014-10-14  New Jersey                2 @Tampa Bay                 1           
+2014-10-14  Calgary                   3 @Nashville                 2 O2        
+2014-10-14 @Los Angeles               6  Edmonton                  1           
+2014-10-15  Calgary                   2 @Chicago                   1 O1        
+2014-10-15  Boston                    3 @Detroit                   2 O2        
+2014-10-15 @Arizona                   7  Edmonton                  4           
+2014-10-16 @Washington                6  New Jersey                2           
+2014-10-16  Dallas                    3 @Pittsburgh                2           
+2014-10-16 @NY Rangers                2  Carolina                  1 O2        
+2014-10-16 @NY Islanders              4  San Jose                  3 O2        
+2014-10-16 @Ottawa                    5  Colorado                  3           
+2014-10-16 @Montreal                  6  Boston                    4           
+2014-10-16 @Los Angeles               1  St Louis                  0 O2        
+2014-10-17  Florida                   1 @Buffalo                   0           
+2014-10-17 @Columbus                  3  Calgary                   2           
+2014-10-17  Detroit                   4 @Toronto                   1           
+2014-10-17  Nashville                 2 @Winnipeg                  0           
+2014-10-17  Vancouver                 2 @Edmonton                  0           
+2014-10-17 @Anaheim                   2  Minnesota                 1           
+2014-10-18 @Washington                2  Florida                   1 O2        
+2014-10-18 @Ottawa                    3  Columbus                  2           
+2014-10-18  Boston                    4 @Buffalo                   0           
+2014-10-18  San Jose                  4 @New Jersey                2           
+2014-10-18 @Montreal                  3  Colorado                  2           
+2014-10-18 @Detroit                   1  Toronto                   0 O1        
+2014-10-18 @Pittsburgh                3  NY Islanders              1           
+2014-10-18  Philadelphia              6 @Dallas                    5 O1        
+2014-10-18 @Chicago                   2  Nashville                 1 O1        
+2014-10-18  St Louis                  6 @Arizona                   1           
+2014-10-18  Tampa Bay                 4 @Vancouver                 2           
+2014-10-19 @Los Angeles               2  Minnesota                 1           
+2014-10-19 @NY Rangers                4  San Jose                  0           
+2014-10-19  Calgary                   4 @Winnipeg                  1           
+2014-10-19 @Anaheim                   3  St Louis                  0           
+2014-10-20 @Edmonton                  3  Tampa Bay                 2           
+2014-10-21  NY Rangers                4 @New Jersey                3 O1        
+2014-10-21 @Boston                    5  San Jose                  3           
+2014-10-21  Toronto                   5 @NY Islanders              2           
+2014-10-21 @Montreal                  2  Detroit                   1 O1        
+2014-10-21 @Winnipeg                  3  Carolina                  1           
+2014-10-21 @Nashville                 4  Arizona                   3 O2        
+2014-10-21 @Chicago                   4  Philadelphia              0           
+2014-10-21 @Dallas                    6  Vancouver                 3           
+2014-10-21  Tampa Bay                 2 @Calgary                   1 O1        
+2014-10-21  Florida                   4 @Colorado                  3 O1        
+2014-10-22  Philadelphia              5 @Pittsburgh                3           
+2014-10-22 @Edmonton                  3  Washington                2           
+2014-10-22 @Anaheim                   4  Buffalo                   1           
+2014-10-23  NY Islanders              3 @Boston                    2           
+2014-10-23 @Detroit                   4  Pittsburgh                3 O1        
+2014-10-23 @Nashville                 3  Chicago                   2           
+2014-10-23  Vancouver                 4 @St Louis                  1           
+2014-10-23 @Minnesota                 2  Arizona                   0           
+2014-10-23 @Calgary                   5  Carolina                  0           
+2014-10-23  Columbus                  5 @San Jose                  4           
+2014-10-23 @Los Angeles               2  Buffalo                   0           
+2014-10-24  Dallas                    3 @New Jersey                2 O2        
+2014-10-24  Tampa Bay                 4 @Winnipeg                  2           
+2014-10-24 @Colorado                  7  Vancouver                 3           
+2014-10-24 @Edmonton                  6  Carolina                  3           
+2014-10-24 @Anaheim                   4  Columbus                  1           
+2014-10-25  Buffalo                   2 @San Jose                  1           
+2014-10-25  Boston                    4 @Toronto                   1           
+2014-10-25 @NY Islanders              7  Dallas                    5           
+2014-10-25 @Montreal                  3  NY Rangers                1           
+2014-10-25 @Philadelphia              4  Detroit                   2           
+2014-10-25  New Jersey                3 @Ottawa                    2 O1        
+2014-10-25 @St Louis                  3  Chicago                   2           
+2014-10-25  Pittsburgh                3 @Nashville                 0           
+2014-10-25 @Minnesota                 7  Tampa Bay                 2           
+2014-10-25 @Arizona                   2  Florida                   1 O1        
+2014-10-25  Washington                3 @Calgary                   1           
+2014-10-26 @Winnipeg                  2  Colorado                  1 O1        
+2014-10-26 @Los Angeles               5  Columbus                  2           
+2014-10-26 @Chicago                   2  Ottawa                    1           
+2014-10-26  San Jose                  4 @Anaheim                   1           
+2014-10-26 @Vancouver                 4  Washington                2           
+2014-10-27 @NY Rangers                5  Minnesota                 4           
+2014-10-27 @Edmonton                  3  Montreal                  0           
+2014-10-28  Minnesota                 4 @Boston                    3           
+2014-10-28 @Philadelphia              3  Los Angeles               2 O1        
+2014-10-28 @Pittsburgh                8  New Jersey                3           
+2014-10-28  Ottawa                    5 @Columbus                  2           
+2014-10-28  Winnipeg                  4 @NY Islanders              3           
+2014-10-28 @Toronto                   4  Buffalo                   0           
+2014-10-28 @Tampa Bay                 7  Arizona                   3           
+2014-10-28  St Louis                  4 @Dallas                    3 O1        
+2014-10-28  Anaheim                   1 @Chicago                   0           
+2014-10-28  Montreal                  2 @Calgary                   1 O2        
+2014-10-28  San Jose                  3 @Colorado                  2 O2        
+2014-10-28 @Vancouver                 4  Carolina                  1           
+2014-10-29  Detroit                   4 @Washington                2           
+2014-10-29  Nashville                 4 @Edmonton                  1           
+2014-10-30 @Pittsburgh                3  Los Angeles               0           
+2014-10-30 @New Jersey                2  Winnipeg                  1 O2        
+2014-10-30  Boston                    3 @Buffalo                   2 O1        
+2014-10-30 @Tampa Bay                 4  Philadelphia              3           
+2014-10-30 @Florida                   2  Arizona                   1           
+2014-10-30  Chicago                   5 @Ottawa                    4 O2        
+2014-10-30 @St Louis                  2  Anaheim                   0           
+2014-10-30 @Minnesota                 4  San Jose                  3 O2        
+2014-10-30 @Colorado                  5  NY Islanders              0           
+2014-10-30 @Vancouver                 3  Montreal                  2 O1        
+2014-10-31  Toronto                   4 @Columbus                  1           
+2014-10-31 @Detroit                   5  Los Angeles               2           
+2014-10-31  Anaheim                   2 @Dallas                    1 O1        
+2014-10-31 @Calgary                   4  Nashville                 3           
+2014-11-01 @New Jersey                3  Columbus                  2           
+2014-11-01 @Carolina                  3  Arizona                   0           
+2014-11-01 @Florida                   2  Philadelphia              1           
+2014-11-01 @Boston                    4  Ottawa                    2           
+2014-11-01  Winnipeg                  1 @NY Rangers                0 O2        
+2014-11-01 @Pittsburgh                5  Buffalo                   0           
+2014-11-01 @Tampa Bay                 4  Washington                3           
+2014-11-01 @Toronto                   3  Chicago                   2           
+2014-11-01 @Minnesota                 4  Dallas                    1           
+2014-11-01 @St Louis                  3  Colorado                  2 O2        
+2014-11-01  Vancouver                 3 @Edmonton                  2           
+2014-11-01 @San Jose                  3  NY Islanders              1           
+2014-11-02 @Buffalo                   3  Detroit                   2 O2        
+2014-11-02 @Carolina                  3  Los Angeles               2           
+2014-11-02  Arizona                   6 @Washington                5           
+2014-11-02  Calgary                   6 @Montreal                  2           
+2014-11-02  Anaheim                   3 @Colorado                  2           
+2014-11-02  Winnipeg                  1 @Chicago                   0           
+2014-11-02  Nashville                 3 @Vancouver                 1           
+2014-11-03  St Louis                  4 @NY Rangers                3 O2        
+2014-11-04 @Philadelphia              4  Edmonton                  1           
+2014-11-04  Carolina                  4 @Columbus                  2           
+2014-11-04 @Boston                    2  Florida                   1 O1        
+2014-11-04  Calgary                   4 @Washington                3 O1        
+2014-11-04 @Ottawa                    3  Detroit                   1           
+2014-11-04  Chicago                   5 @Montreal                  0           
+2014-11-04  St Louis                  1 @New Jersey                0           
+2014-11-04 @Winnipeg                  3  Nashville                 1           
+2014-11-04  Pittsburgh                4 @Minnesota                 1           
+2014-11-04  Los Angeles               3 @Dallas                    1           
+2014-11-04  Vancouver                 5 @Colorado                  2           
+2014-11-04 @Arizona                   3  Toronto                   2           
+2014-11-05  Montreal                  2 @Buffalo                   1 O2        
+2014-11-05 @NY Rangers                4  Detroit                   3 O1        
+2014-11-05  NY Islanders              3 @Anaheim                   2 O1        
+2014-11-06 @Philadelphia              4  Florida                   1           
+2014-11-06 @Boston                    5  Edmonton                  2           
+2014-11-06 @Tampa Bay                 5  Calgary                   2           
+2014-11-06 @Ottawa                    3  Minnesota                 0           
+2014-11-06 @St Louis                  4  New Jersey                3           
+2014-11-06  Pittsburgh                4 @Winnipeg                  3 O2        
+2014-11-06  Nashville                 3 @Dallas                    2           
+2014-11-06 @Colorado                  4  Toronto                   3 O2        
+2014-11-06  NY Islanders              2 @Los Angeles               1 O2        
+2014-11-06  Vancouver                 3 @San Jose                  2           
+2014-11-07  Edmonton                  3 @Buffalo                   2           
+2014-11-07 @Carolina                  3  Columbus                  2 O1        
+2014-11-07 @Detroit                   4  New Jersey                2           
+2014-11-07  Washington                3 @Chicago                   2           
+2014-11-07  Arizona                   3 @Anaheim                   2 O2        
+2014-11-08  Calgary                   6 @Florida                   4           
+2014-11-08 @Toronto                   5  NY Rangers                4           
+2014-11-08 @Montreal                  4  Minnesota                 1           
+2014-11-08  Winnipeg                  2 @Ottawa                    1 O2        
+2014-11-08 @Philadelphia              4  Colorado                  3           
+2014-11-08  Tampa Bay                 7 @Columbus                  4           
+2014-11-08  Pittsburgh                6 @Buffalo                   1           
+2014-11-08  San Jose                  5 @Dallas                    3           
+2014-11-08  Nashville                 2 @St Louis                  1           
+2014-11-08 @Washington                4  Carolina                  3 O1        
+2014-11-08  NY Islanders              1 @Arizona                   0           
+2014-11-08 @Los Angeles               5  Vancouver                 1           
+2014-11-09  Edmonton                  3 @NY Rangers                1           
+2014-11-09  Tampa Bay                 4 @Detroit                   3 O2        
+2014-11-09 @Chicago                   5  San Jose                  2           
+2014-11-09  Vancouver                 2 @Anaheim                   1 O2        
+2014-11-09  Toronto                   5 @Ottawa                    3           
+2014-11-10 @Boston                    4  New Jersey                2           
+2014-11-10 @Carolina                  4  Calgary                   1           
+2014-11-11 @Washington                4  Columbus                  2           
+2014-11-11 @NY Rangers                5  Pittsburgh                0           
+2014-11-11 @New Jersey                3  Minnesota                 1           
+2014-11-11 @NY Islanders              6  Colorado                  0           
+2014-11-11 @Montreal                  3  Winnipeg                  0           
+2014-11-11 @Florida                   4  San Jose                  1           
+2014-11-11 @St Louis                  6  Buffalo                   1           
+2014-11-11 @Nashville                 3  Edmonton                  2           
+2014-11-11 @Chicago                   3  Tampa Bay                 2 O2        
+2014-11-11  Dallas                    4 @Arizona                   3           
+2014-11-11 @Vancouver                 4  Ottawa                    3 O1        
+2014-11-12 @Toronto                   6  Boston                    1           
+2014-11-12 @Anaheim                   6  Los Angeles               5 O2        
+2014-11-13  Colorado                  4 @NY Rangers                3 O2        
+2014-11-13  Winnipeg                  3 @Carolina                  1           
+2014-11-13  San Jose                  2 @Tampa Bay                 1           
+2014-11-13 @Montreal                  5  Boston                    1           
+2014-11-13 @St Louis                  4  Nashville                 3           
+2014-11-13 @Minnesota                 6  Buffalo                   3           
+2014-11-13 @Calgary                   5  Arizona                   3           
+2014-11-13  Ottawa                    4 @Edmonton                  3 O1        
+2014-11-13  Dallas                    2 @Los Angeles               0           
+2014-11-14  New Jersey                1 @Washington                0           
+2014-11-14  Columbus                  4 @Philadelphia              3           
+2014-11-14  Pittsburgh                2 @Toronto                   1           
+2014-11-14  NY Islanders              4 @Florida                   3 O2        
+2014-11-14 @Detroit                   4  Chicago                   1           
+2014-11-14  Arizona                   5 @Vancouver                 0           
+2014-11-15 @Boston                    2  Carolina                  1           
+2014-11-15  Minnesota                 2 @Dallas                    1           
+2014-11-15 @Los Angeles               3  Anaheim                   2 O1        
+2014-11-15 @Pittsburgh                3  NY Rangers                2 O2        
+2014-11-15 @Columbus                  2  San Jose                  1           
+2014-11-15 @Nashville                 2  Winnipeg                  1           
+2014-11-15 @Buffalo                   6  Toronto                   2           
+2014-11-15 @Tampa Bay                 5  NY Islanders              2           
+2014-11-15  Colorado                  3 @New Jersey                2           
+2014-11-15 @Montreal                  6  Philadelphia              3           
+2014-11-15 @St Louis                  4  Washington                1           
+2014-11-15 @Calgary                   4  Ottawa                    2           
+2014-11-16  San Jose                  2 @Carolina                  0           
+2014-11-16 @Minnesota                 4  Winnipeg                  3 O1        
+2014-11-16 @Chicago                   6  Dallas                    2           
+2014-11-16  Montreal                  4 @Detroit                   1           
+2014-11-16  Florida                   6 @Anaheim                   2           
+2014-11-16  Arizona                   2 @Edmonton                  1           
+2014-11-17  Tampa Bay                 5 @NY Rangers                1           
+2014-11-18  Detroit                   5 @Columbus                  0           
+2014-11-18 @Boston                    2  St Louis                  0           
+2014-11-18 @NY Islanders              5  Tampa Bay                 2           
+2014-11-18 @Buffalo                   4  San Jose                  1           
+2014-11-18  Nashville                 9 @Toronto                   2           
+2014-11-18  Pittsburgh                4 @Montreal                  0           
+2014-11-18 @Winnipeg                  3  New Jersey                1           
+2014-11-18  Carolina                  6 @Dallas                    4           
+2014-11-18  Washington                2 @Arizona                   1 O1        
+2014-11-18 @Calgary                   4  Anaheim                   3 O2        
+2014-11-18 @Los Angeles               5  Florida                   2           
+2014-11-19  Vancouver                 5 @Edmonton                  4           
+2014-11-19 @NY Rangers                2  Philadelphia              0           
+2014-11-20  Minnesota                 3 @Philadelphia              2           
+2014-11-20 @Ottawa                    3  Nashville                 2           
+2014-11-20 @Montreal                  4  St Louis                  1           
+2014-11-20 @Toronto                   5  Tampa Bay                 2           
+2014-11-20  Detroit                   4 @Winnipeg                  3           
+2014-11-20 @Dallas                    3  Arizona                   1           
+2014-11-20  Chicago                   4 @Calgary                   3           
+2014-11-20  Washington                3 @Colorado                  2           
+2014-11-20  Anaheim                   4 @Vancouver                 3 O2        
+2014-11-20  Florida                   3 @San Jose                  2 O2        
+2014-11-20 @Los Angeles               3  Carolina                  2           
+2014-11-21  Boston                    4 @Columbus                  3 O2        
+2014-11-21  NY Islanders              5 @Pittsburgh                4 O2        
+2014-11-21  New Jersey                2 @Edmonton                  0           
+2014-11-22  St Louis                  3 @Ottawa                    2           
+2014-11-22  Buffalo                   2 @Washington                1           
+2014-11-22  Montreal                  2 @Boston                    0           
+2014-11-22 @Toronto                   4  Detroit                   1           
+2014-11-22 @NY Islanders              4  Pittsburgh                1           
+2014-11-22 @Philadelphia              4  Columbus                  2           
+2014-11-22 @Tampa Bay                 2  Minnesota                 1           
+2014-11-22 @Dallas                    5  Los Angeles               4           
+2014-11-22 @Nashville                 3  Florida                   2 O2        
+2014-11-22 @Colorado                  4  Carolina                  3           
+2014-11-22 @Calgary                   5  New Jersey                4 O2        
+2014-11-22  Chicago                   7 @Edmonton                  1           
+2014-11-22  Arizona                   4 @San Jose                  3 O2        
+2014-11-23  St Louis                  4 @Winnipeg                  2           
+2014-11-23 @NY Rangers                5  Montreal                  0           
+2014-11-23 @Anaheim                   2  Arizona                   1           
+2014-11-23 @Vancouver                 4  Chicago                   1           
+2014-11-24  Pittsburgh                3 @Boston                    2 O1        
+2014-11-24 @NY Islanders              1  Philadelphia              0 O2        
+2014-11-24  Minnesota                 4 @Florida                   1           
+2014-11-24 @Detroit                   4  Ottawa                    3           
+2014-11-25  Winnipeg                  4 @Columbus                  2           
+2014-11-25 @Nashville                 4  Los Angeles               3 O2        
+2014-11-25  Ottawa                    3 @St Louis                  2 O2        
+2014-11-25 @Dallas                    3  Edmonton                  2           
+2014-11-25  Colorado                  4 @Arizona                   3 O1        
+2014-11-25 @Vancouver                 2  New Jersey                0           
+2014-11-25 @Anaheim                   3  Calgary                   2           
+2014-11-26  Winnipeg                  2 @Buffalo                   1           
+2014-11-26 @NY Islanders              3  Washington                2 O1        
+2014-11-26 @Tampa Bay                 4  NY Rangers                3           
+2014-11-26 @Pittsburgh                4  Toronto                   3 O1        
+2014-11-26 @Detroit                   5  Philadelphia              2           
+2014-11-26 @Florida                   1  Carolina                  0           
+2014-11-26  Los Angeles               4 @Minnesota                 0           
+2014-11-26  Chicago                   3 @Colorado                  2           
+2014-11-26  Calgary                   2 @San Jose                  0           
+2014-11-27 @Nashville                 1  Edmonton                  0 O1        
+2014-11-28  NY Rangers                3 @Philadelphia              0           
+2014-11-28  Chicago                   4 @Anaheim                   1           
+2014-11-28 @Washington                5  NY Islanders              2           
+2014-11-28 @Boston                    2  Winnipeg                  1 O1        
+2014-11-28 @Buffalo                   2  Montreal                  1           
+2014-11-28  Vancouver                 5 @Columbus                  0           
+2014-11-28  Carolina                  4 @Pittsburgh                2           
+2014-11-28  Detroit                   5 @New Jersey                4 O2        
+2014-11-28 @Florida                   3  Ottawa                    2           
+2014-11-28 @St Louis                  4  Edmonton                  3 O1        
+2014-11-28  Minnesota                 5 @Dallas                    4 O1        
+2014-11-29 @Toronto                   6  Washington                2           
+2014-11-29 @NY Rangers                5  Philadelphia              2           
+2014-11-29 @NY Islanders              3  New Jersey                1           
+2014-11-29  Pittsburgh                3 @Carolina                  2           
+2014-11-29  Buffalo                   4 @Montreal                  3 O2        
+2014-11-29 @Tampa Bay                 4  Ottawa                    1           
+2014-11-29 @Nashville                 2  Columbus                  1           
+2014-11-29  St Louis                  3 @Minnesota                 2 O2        
+2014-11-29 @Colorado                  5  Dallas                    2           
+2014-11-29  Calgary                   3 @Arizona                   0           
+2014-11-29  Chicago                   4 @Los Angeles               1           
+2014-11-29 @San Jose                  6  Anaheim                   4           
+2014-11-30 @Detroit                   5  Vancouver                 3           
+2014-12-01 @Columbus                  2  Florida                   1           
+2014-12-01  Tampa Bay                 6 @NY Rangers                3           
+2014-12-01  Montreal                  4 @Colorado                  3           
+2014-12-01  Arizona                   5 @Edmonton                  2           
+2014-12-01 @Anaheim                   3  Boston                    2           
+2014-12-02 @NY Islanders              3  Ottawa                    2 O1        
+2014-12-02 @Pittsburgh                1  New Jersey                0           
+2014-12-02  Vancouver                 4 @Washington                3           
+2014-12-02 @Carolina                  2  Nashville                 1           
+2014-12-02  Florida                   4 @Detroit                   3           
+2014-12-02 @Buffalo                   2  Tampa Bay                 1 O2        
+2014-12-02 @Toronto                   5  Dallas                    3           
+2014-12-02 @Calgary                   5  Arizona                   2           
+2014-12-02 @San Jose                  2  Philadelphia              1           
+2014-12-02 @Los Angeles               2  Boston                    0           
+2014-12-03 @Minnesota                 2  Montreal                  1           
+2014-12-03 @Chicago                   4  St Louis                  1           
+2014-12-03 @Winnipeg                  3  Edmonton                  2 O1        
+2014-12-03 @Anaheim                   5  Philadelphia              4 O2        
+2014-12-04  Vancouver                 3 @Pittsburgh                0           
+2014-12-04  Washington                2 @Carolina                  1           
+2014-12-04 @Tampa Bay                 5  Buffalo                   0           
+2014-12-04 @Detroit                   5  Dallas                    2           
+2014-12-04  New Jersey                5 @Toronto                   3           
+2014-12-04  Columbus                  4 @Florida                   3 O2        
+2014-12-04  NY Islanders              2 @Ottawa                    1           
+2014-12-04 @Nashville                 4  St Louis                  3           
+2014-12-04 @Calgary                   4  Colorado                  3 O1        
+2014-12-04  Los Angeles               4 @Arizona                   0           
+2014-12-04 @San Jose                  7  Boston                    4           
+2014-12-05 @Winnipeg                  6  Colorado                  2           
+2014-12-05  Anaheim                   5 @Minnesota                 4           
+2014-12-05 @Chicago                   4  Montreal                  3           
+2014-12-06 @Pittsburgh                3  Ottawa                    2           
+2014-12-06  St Louis                  6 @NY Islanders              4           
+2014-12-06  Philadelphia              2 @Los Angeles               1           
+2014-12-06 @Florida                   3  Buffalo                   2           
+2014-12-06 @Detroit                   3  NY Rangers                2           
+2014-12-06  Columbus                  3 @Tampa Bay                 1           
+2014-12-06  Chicago                   3 @Nashville                 1           
+2014-12-06 @Toronto                   5  Vancouver                 2           
+2014-12-06 @Dallas                    4  Montreal                  1           
+2014-12-06  Washington                4 @New Jersey                1           
+2014-12-06  Boston                    5 @Arizona                   2           
+2014-12-06  San Jose                  3 @Calgary                   2           
+2014-12-07  Anaheim                   4 @Winnipeg                  3 O1        
+2014-12-07  Detroit                   3 @Carolina                  1           
+2014-12-07 @Ottawa                    4  Vancouver                 3 O1        
+2014-12-07 @Edmonton                  2  San Jose                  1           
+2014-12-08  New Jersey                2 @Carolina                  1           
+2014-12-08 @NY Rangers                4  Pittsburgh                3 O1        
+2014-12-08 @St Louis                  4  Florida                   2           
+2014-12-09 @Columbus                  3  Philadelphia              2 O1        
+2014-12-09  Chicago                   3 @New Jersey                2 O2        
+2014-12-09 @Toronto                   4  Calgary                   1           
+2014-12-09  Washington                5 @Tampa Bay                 3           
+2014-12-09 @Buffalo                   1  Los Angeles               0           
+2014-12-09 @Montreal                  3  Vancouver                 1           
+2014-12-09 @Minnesota                 5  NY Islanders              4           
+2014-12-09  Winnipeg                  5 @Dallas                    2           
+2014-12-09  Nashville                 3 @Colorado                  0           
+2014-12-09 @San Jose                  5  Edmonton                  2           
+2014-12-10  Toronto                   2 @Detroit                   1 O2        
+2014-12-10 @Anaheim                   2  Edmonton                  1           
+2014-12-11  Columbus                  3 @Washington                2 O1        
+2014-12-11  Chicago                   3 @Boston                    2           
+2014-12-11 @Buffalo                   4  Calgary                   3           
+2014-12-11 @Philadelphia              4  New Jersey                1           
+2014-12-11  Los Angeles               5 @Ottawa                    3           
+2014-12-11 @Tampa Bay                 2  Carolina                  1           
+2014-12-11 @St Louis                  6  NY Islanders              3           
+2014-12-11  Nashville                 5 @Arizona                   1           
+2014-12-11 @Colorado                  4  Winnipeg                  3 O2        
+2014-12-11 @San Jose                  2  Minnesota                 1           
+2014-12-12 @Pittsburgh                3  Calgary                   1           
+2014-12-12  Florida                   3 @Detroit                   2 O2        
+2014-12-12 @Montreal                  6  Los Angeles               2           
+2014-12-12  Anaheim                   4 @Edmonton                  2           
+2014-12-13  Ottawa                    3 @Boston                    2 O2        
+2014-12-13 @Philadelphia              5  Carolina                  1           
+2014-12-13 @Columbus                  4  Pittsburgh                3 O2        
+2014-12-13 @Toronto                   4  Detroit                   1           
+2014-12-13 @Washington                4  Tampa Bay                 2           
+2014-12-13 @Buffalo                   4  Florida                   3 O1        
+2014-12-13  Anaheim                   4 @Winnipeg                  1           
+2014-12-13 @NY Islanders              3  Chicago                   2           
+2014-12-13  Minnesota                 4 @Arizona                   3 O2        
+2014-12-13 @Dallas                    4  New Jersey                3           
+2014-12-13  NY Rangers                5 @Vancouver                 1           
+2014-12-13  St Louis                  3 @Colorado                  2 O1        
+2014-12-13 @San Jose                  2  Nashville                 0           
+2014-12-14 @Toronto                   4  Los Angeles               3 O2        
+2014-12-14 @Chicago                   2  Calgary                   1           
+2014-12-14  NY Rangers                2 @Edmonton                  0           
+2014-12-15 @NY Islanders              3  New Jersey                2 O2        
+2014-12-15 @Pittsburgh                4  Tampa Bay                 2           
+2014-12-15 @Buffalo                   5  Ottawa                    4 O2        
+2014-12-16  Tampa Bay                 3 @Philadelphia              1           
+2014-12-16 @Toronto                   6  Anaheim                   2           
+2014-12-16 @Florida                   2  Washington                1 O2        
+2014-12-16 @Montreal                  4  Carolina                  1           
+2014-12-16  Columbus                  1 @Detroit                   0 O2        
+2014-12-16 @Nashville                 3  Boston                    2 O2        
+2014-12-16 @St Louis                  5  Los Angeles               2           
+2014-12-16 @Winnipeg                  5  Buffalo                   1           
+2014-12-16 @Chicago                   5  Minnesota                 3           
+2014-12-16 @Arizona                   2  Edmonton                  1 O1        
+2014-12-16  NY Rangers                5 @Calgary                   2           
+2014-12-17  Ottawa                    2 @New Jersey                0           
+2014-12-17  Boston                    3 @Minnesota                 2 O1        
+2014-12-17  Dallas                    2 @Vancouver                 0           
+2014-12-18  Washington                5 @Columbus                  4 O1        
+2014-12-18 @Carolina                  4  Toronto                   1           
+2014-12-18 @Pittsburgh                1  Colorado                  0 O1        
+2014-12-18  Florida                   2 @Philadelphia              1 O2        
+2014-12-18  Anaheim                   2 @Montreal                  1           
+2014-12-18 @Los Angeles               6  St Louis                  4           
+2014-12-18 @San Jose                  4  Edmonton                  3           
+2014-12-19 @New Jersey                3  Tampa Bay                 2 O2        
+2014-12-19 @Ottawa                    6  Anaheim                   2           
+2014-12-19  NY Islanders              2 @Detroit                   1           
+2014-12-19 @Winnipeg                  2  Boston                    1           
+2014-12-19  Dallas                    2 @Calgary                   1           
+2014-12-20 @Los Angeles               4  Arizona                   2           
+2014-12-20 @Columbus                  3  Chicago                   2 O2        
+2014-12-20  Colorado                  5 @Buffalo                   1           
+2014-12-20  Washington                4 @New Jersey                0           
+2014-12-20 @Montreal                  4  Ottawa                    1           
+2014-12-20  Philadelphia              7 @Toronto                   4           
+2014-12-20 @NY Islanders              3  Tampa Bay                 1           
+2014-12-20  NY Rangers                3 @Carolina                  2 O2        
+2014-12-20 @Pittsburgh                3  Florida                   1           
+2014-12-20  Nashville                 6 @Minnesota                 5 O1        
+2014-12-20 @Vancouver                 3  Calgary                   2 O1        
+2014-12-20 @San Jose                  3  St Louis                  2 O1        
+2014-12-21  Dallas                    6 @Edmonton                  5 O2        
+2014-12-21  Colorado                  2 @Detroit                   1 O2        
+2014-12-21 @NY Rangers                1  Carolina                  0           
+2014-12-21 @Chicago                   4  Toronto                   0           
+2014-12-21 @Boston                    4  Buffalo                   3 O1        
+2014-12-21  Philadelphia              4 @Winnipeg                  3 O1        
+2014-12-22 @Washington                2  Ottawa                    1           
+2014-12-22  Nashville                 5 @Columbus                  1           
+2014-12-22 @Florida                   4  Pittsburgh                3 O2        
+2014-12-22 @Vancouver                 7  Arizona                   1           
+2014-12-22 @Anaheim                   3  San Jose                  2 O1        
+2014-12-22  Calgary                   4 @Los Angeles               3 O1        
+2014-12-23 @NY Rangers                4  Washington                2           
+2014-12-23  Philadelphia              5 @Minnesota                 2           
+2014-12-23  Carolina                  2 @New Jersey                1 O2        
+2014-12-23  Montreal                  3 @NY Islanders              1           
+2014-12-23  Toronto                   4 @Dallas                    0           
+2014-12-23 @Boston                    5  Nashville                 3           
+2014-12-23 @Tampa Bay                 4  Pittsburgh                3           
+2014-12-23 @Detroit                   6  Buffalo                   3           
+2014-12-23  Arizona                   5 @Edmonton                  1           
+2014-12-23 @Colorado                  5  St Louis                  0           
+2014-12-23  Winnipeg                  5 @Chicago                   1           
+2014-12-27 @Columbus                  6  Boston                    2           
+2014-12-27  Winnipeg                  4 @Minnesota                 3 O1        
+2014-12-27 @Tampa Bay                 2  Carolina                  1           
+2014-12-27 @Buffalo                   4  NY Islanders              3 O2        
+2014-12-27  Detroit                   3 @Ottawa                    2 O1        
+2014-12-27 @Arizona                   2  Anaheim                   1 O2        
+2014-12-27 @NY Rangers                3  New Jersey                1           
+2014-12-27  Washington                3 @Pittsburgh                0           
+2014-12-27  Dallas                    4 @St Louis                  3           
+2014-12-27 @Nashville                 4  Philadelphia              1           
+2014-12-27  Chicago                   5 @Colorado                  2           
+2014-12-27 @Los Angeles               3  San Jose                  1           
+2014-12-27 @Calgary                   4  Edmonton                  1           
+2014-12-28 @Florida                   6  Toronto                   4           
+2014-12-28 @Anaheim                   2  Vancouver                 1 O1        
+2014-12-29  Montreal                  3 @Carolina                  1           
+2014-12-29 @NY Islanders              4  Washington                3 O1        
+2014-12-29 @Boston                    5  Detroit                   2           
+2014-12-29 @New Jersey                3  Pittsburgh                1           
+2014-12-29 @Ottawa                    5  Buffalo                   2           
+2014-12-29 @Tampa Bay                 3  Toronto                   2           
+2014-12-29  Minnesota                 3 @Winnipeg                  2           
+2014-12-29 @St Louis                  3  Colorado                  0           
+2014-12-29 @Chicago                   5  Nashville                 4 O2        
+2014-12-29 @Dallas                    3  NY Rangers                2           
+2014-12-29 @Calgary                   2  Los Angeles               1           
+2014-12-29 @Arizona                   4  Philadelphia              2           
+2014-12-30  Montreal                  2 @Florida                   1 O2        
+2014-12-30 @Nashville                 3  St Louis                  2           
+2014-12-30 @Edmonton                  3  Los Angeles               2 O2        
+2014-12-30  Vancouver                 3 @San Jose                  1           
+2014-12-31  NY Islanders              5 @Winnipeg                  2           
+2014-12-31  NY Rangers                5 @Florida                   2           
+2014-12-31  Tampa Bay                 5 @Buffalo                   1           
+2014-12-31 @Pittsburgh                2  Carolina                  1           
+2014-12-31  Toronto                   4 @Boston                    3 O2        
+2014-12-31 @Columbus                  3  Minnesota                 1           
+2014-12-31 @Detroit                   3  New Jersey                1           
+2014-12-31  San Jose                  3 @Anaheim                   0           
+2014-12-31 @Dallas                    6  Arizona                   0           
+2014-12-31 @Colorado                  4  Philadelphia              3 O1        
+2014-12-31 @Calgary                   4  Edmonton                  3 O1        
+2015-01-01 @Washington                3  Chicago                   2           
+2015-01-01  Los Angeles               3 @Vancouver                 2           
+2015-01-02 @Pittsburgh                6  Tampa Bay                 3           
+2015-01-02  Florida                   2 @Buffalo                   0           
+2015-01-02 @Carolina                  2  Philadelphia              1           
+2015-01-02  Montreal                  4 @New Jersey                2           
+2015-01-02 @Minnesota                 3  Toronto                   1           
+2015-01-02 @Colorado                  2  Edmonton                  1 O2        
+2015-01-02  NY Islanders              2 @Calgary                   1           
+2015-01-02 @Anaheim                   4  St Louis                  3           
+2015-01-03  Ottawa                    3 @Boston                    2 O1        
+2015-01-03  Nashville                 7 @Los Angeles               6 O1        
+2015-01-03 @NY Rangers                6  Buffalo                   1           
+2015-01-03 @Winnipeg                  5  Toronto                   1           
+2015-01-03  Montreal                  4 @Pittsburgh                1           
+2015-01-03 @New Jersey                5  Philadelphia              2           
+2015-01-03 @Arizona                   6  Columbus                  3           
+2015-01-03 @Dallas                    7  Minnesota                 1           
+2015-01-03 @Vancouver                 4  Detroit                   1           
+2015-01-03  St Louis                  7 @San Jose                  2           
+2015-01-04 @Carolina                  2  Boston                    1 O2        
+2015-01-04 @Washington                4  Florida                   3           
+2015-01-04  Tampa Bay                 4 @Ottawa                    2           
+2015-01-04 @Anaheim                   4  Nashville                 3 O2        
+2015-01-04 @Chicago                   5  Dallas                    4 O1        
+2015-01-04  Columbus                  4 @Colorado                  3           
+2015-01-04 @Edmonton                  5  NY Islanders              2           
+2015-01-05  San Jose                  3 @Winnipeg                  2           
+2015-01-06 @New Jersey                4  Buffalo                   1           
+2015-01-06 @Philadelphia              2  Ottawa                    1 O2        
+2015-01-06  Tampa Bay                 4 @Montreal                  2           
+2015-01-06 @Nashville                 3  Carolina                  2           
+2015-01-06  San Jose                  4 @Minnesota                 3 O1        
+2015-01-06  Colorado                  2 @Chicago                   0           
+2015-01-06  Columbus                  4 @Dallas                    2           
+2015-01-06  St Louis                  6 @Arizona                   0           
+2015-01-06  Detroit                   4 @Edmonton                  2           
+2015-01-06 @Vancouver                 3  NY Islanders              2           
+2015-01-07  Washington                6 @Toronto                   2           
+2015-01-07  Boston                    3 @Pittsburgh                2 O1        
+2015-01-07  Detroit                   3 @Calgary                   2           
+2015-01-07  NY Rangers                4 @Anaheim                   1           
+2015-01-08 @Philadelphia              3  Washington                2 O1        
+2015-01-08 @Boston                    3  New Jersey                0           
+2015-01-08 @Carolina                  5  Buffalo                   2           
+2015-01-08 @St Louis                  7  San Jose                  2           
+2015-01-08 @Nashville                 3  Dallas                    2 O1        
+2015-01-08  Chicago                   4 @Minnesota                 2           
+2015-01-08 @Arizona                   4  Winnipeg                  1           
+2015-01-08 @Colorado                  5  Ottawa                    2           
+2015-01-08  Florida                   3 @Vancouver                 1           
+2015-01-08  NY Rangers                4 @Los Angeles               3           
+2015-01-09  NY Islanders              3 @New Jersey                2 O1        
+2015-01-09 @Tampa Bay                 2  Buffalo                   1           
+2015-01-09 @Toronto                   5  Columbus                  2           
+2015-01-09  Florida                   6 @Calgary                   5           
+2015-01-09 @Edmonton                  5  Chicago                   2           
+2015-01-10  Boston                    3 @Philadelphia              1           
+2015-01-10  Nashville                 3 @Minnesota                 1           
+2015-01-10 @Colorado                  4  Dallas                    3           
+2015-01-10  Pittsburgh                2 @Montreal                  1 O1        
+2015-01-10  Ottawa                    5 @Arizona                   1           
+2015-01-10  NY Islanders              5 @Columbus                  2           
+2015-01-10 @Washington                3  Detroit                   1           
+2015-01-10 @St Louis                  5  Carolina                  4 O2        
+2015-01-10  NY Rangers                3 @San Jose                  1           
+2015-01-10  Winnipeg                  5 @Los Angeles               4 O2        
+2015-01-10  Calgary                   1 @Vancouver                 0           
+2015-01-11  Florida                   4 @Edmonton                  2           
+2015-01-11 @Chicago                   4  Minnesota                 1           
+2015-01-11 @Anaheim                   5  Winnipeg                  4 O2        
+2015-01-12 @Philadelphia              7  Tampa Bay                 3           
+2015-01-12 @Washington                2  Colorado                  1           
+2015-01-12 @Los Angeles               2  Toronto                   0           
+2015-01-13  NY Islanders              3 @NY Rangers                0           
+2015-01-13  Detroit                   3 @Buffalo                   1           
+2015-01-13 @Boston                    4  Tampa Bay                 3           
+2015-01-13 @Pittsburgh                7  Minnesota                 2           
+2015-01-13 @Carolina                  3  Colorado                  2 O2        
+2015-01-13 @Winnipeg                  8  Florida                   2           
+2015-01-13 @Nashville                 5  Vancouver                 1           
+2015-01-13 @St Louis                  4  Edmonton                  2           
+2015-01-13 @Dallas                    5  Ottawa                    4           
+2015-01-13  San Jose                  3 @Arizona                   2           
+2015-01-14  Montreal                  3 @Columbus                  2           
+2015-01-14 @Washington                1  Philadelphia              0           
+2015-01-14 @Anaheim                   4  Toronto                   0           
+2015-01-14  New Jersey                5 @Los Angeles               3           
+2015-01-15  Vancouver                 4 @Philadelphia              0           
+2015-01-15 @Boston                    3  NY Rangers                0           
+2015-01-15  Minnesota                 7 @Buffalo                   0           
+2015-01-15 @Ottawa                    4  Montreal                  1           
+2015-01-15 @Tampa Bay                 3  Edmonton                  2           
+2015-01-15  Colorado                  4 @Florida                   2           
+2015-01-15  Detroit                   3 @St Louis                  2 O1        
+2015-01-15  Winnipeg                  2 @Dallas                    1           
+2015-01-15  Calgary                   4 @Arizona                   1           
+2015-01-15 @San Jose                  3  Toronto                   1           
+2015-01-16 @NY Islanders              6  Pittsburgh                3           
+2015-01-16  NY Rangers                2 @Columbus                  1           
+2015-01-16  Vancouver                 3 @Carolina                  0           
+2015-01-16 @Nashville                 4  Washington                3           
+2015-01-16  Winnipeg                  4 @Chicago                   2           
+2015-01-16 @Anaheim                   5  New Jersey                1           
+2015-01-17 @Montreal                  6  NY Islanders              4           
+2015-01-17  Columbus                  3 @Boston                    1           
+2015-01-17 @Tampa Bay                 3  Colorado                  2 O2        
+2015-01-17 @St Louis                  3  Toronto                   0           
+2015-01-17 @Detroit                   5  Nashville                 2           
+2015-01-17  Edmonton                  3 @Florida                   2 O2        
+2015-01-17  Philadelphia              4 @Buffalo                   3           
+2015-01-17  Carolina                  3 @Ottawa                    2           
+2015-01-17 @Dallas                    5  Washington                4           
+2015-01-17 @Minnesota                 3  Arizona                   1           
+2015-01-17  Anaheim                   3 @Los Angeles               2 O2        
+2015-01-17  Calgary                   4 @San Jose                  3 O1        
+2015-01-18  NY Rangers                5 @Pittsburgh                2           
+2015-01-18  Dallas                    6 @Chicago                   3           
+2015-01-18 @Winnipeg                  4  Arizona                   3 O2        
+2015-01-18 @Detroit                   6  Buffalo                   4           
+2015-01-19 @NY Islanders              7  Philadelphia              4           
+2015-01-19  Carolina                  4 @Toronto                   1           
+2015-01-19  Vancouver                 2 @Florida                   1           
+2015-01-19  Columbus                  3 @Minnesota                 1           
+2015-01-19 @St Louis                  3  Colorado                  1           
+2015-01-19  New Jersey                5 @San Jose                  2           
+2015-01-19  Calgary                   2 @Los Angeles               1 O1        
+2015-01-20  Edmonton                  5 @Washington                4 O2        
+2015-01-20 @NY Rangers                3  Ottawa                    2 O1        
+2015-01-20 @Tampa Bay                 4  Vancouver                 1           
+2015-01-20 @Philadelphia              3  Pittsburgh                2 O1        
+2015-01-20 @Detroit                   5  Minnesota                 4 O2        
+2015-01-20 @Montreal                  2  Nashville                 1 O1        
+2015-01-20 @Chicago                   6  Arizona                   1           
+2015-01-20  Boston                    3 @Dallas                    1           
+2015-01-21 @Ottawa                    4  Toronto                   3           
+2015-01-21  Chicago                   3 @Pittsburgh                2 O2        
+2015-01-21 @Winnipeg                  4  Columbus                  0           
+2015-01-21 @Anaheim                   6  Calgary                   3           
+2015-01-21 @Colorado                  3  Boston                    2 O2        
+2015-01-21 @San Jose                  4  Los Angeles               2           
+2015-01-27 @NY Islanders              4  NY Rangers                1           
+2015-01-27 @Pittsburgh                5  Winnipeg                  3           
+2015-01-27 @Philadelphia              4  Arizona                   3 O2        
+2015-01-27 @Columbus                  4  Washington                3           
+2015-01-27 @Carolina                  4  Tampa Bay                 2           
+2015-01-27  Detroit                   5 @Florida                   4           
+2015-01-27 @Montreal                  3  Dallas                    2           
+2015-01-27 @Nashville                 4  Colorado                  3 O1        
+2015-01-27 @Calgary                   4  Buffalo                   1           
+2015-01-27  Minnesota                 2 @Edmonton                  1           
+2015-01-27  Anaheim                   4 @Vancouver                 0           
+2015-01-28 @New Jersey                2  Toronto                   1 O2        
+2015-01-28 @Washington                4  Pittsburgh                0           
+2015-01-28 @Los Angeles               4  Chicago                   3           
+2015-01-29  Montreal                  1 @NY Rangers                0           
+2015-01-29 @Philadelphia              5  Winnipeg                  2           
+2015-01-29  Boston                    5 @NY Islanders              2           
+2015-01-29  Arizona                   3 @Toronto                   1           
+2015-01-29  Dallas                    6 @Ottawa                    3           
+2015-01-29 @Florida                   3  Columbus                  2           
+2015-01-29 @Tampa Bay                 5  Detroit                   1           
+2015-01-29 @St Louis                  5  Nashville                 4 O2        
+2015-01-29  Minnesota                 1 @Calgary                   0           
+2015-01-29 @Edmonton                  3  Buffalo                   2           
+2015-01-29 @San Jose                  6  Anaheim                   3           
+2015-01-30  Pittsburgh                2 @New Jersey                1 O1        
+2015-01-30  St Louis                  3 @Carolina                  2 O2        
+2015-01-30 @Colorado                  3  Nashville                 0           
+2015-01-30 @Vancouver                 5  Buffalo                   2           
+2015-01-30  Chicago                   4 @Anaheim                   1           
+2015-01-31 @Montreal                  1  Washington                0 O1        
+2015-01-31 @Detroit                   4  NY Islanders              1           
+2015-01-31 @Ottawa                    7  Arizona                   2           
+2015-01-31 @Boston                    3  Los Angeles               1           
+2015-01-31 @NY Rangers                4  Carolina                  1           
+2015-01-31  Dallas                    5 @Winnipeg                  2           
+2015-01-31 @Philadelphia              1  Toronto                   0           
+2015-01-31 @New Jersey                3  Florida                   1           
+2015-01-31 @Tampa Bay                 3  Columbus                  1           
+2015-01-31 @Calgary                   4  Edmonton                  2           
+2015-01-31 @San Jose                  2  Chicago                   0           
+2015-02-01  Arizona                   3 @Montreal                  2           
+2015-02-01  St Louis                  4 @Washington                3           
+2015-02-01  Nashville                 4 @Pittsburgh                0           
+2015-02-01  Minnesota                 4 @Vancouver                 2           
+2015-02-02 @NY Rangers                6  Florida                   3           
+2015-02-02 @Calgary                   5  Winnipeg                  2           
+2015-02-02  Edmonton                  5 @San Jose                  4 O2        
+2015-02-03 @New Jersey                2  Ottawa                    1           
+2015-02-03  Florida                   4 @NY Islanders              2           
+2015-02-03 @Washington                4  Los Angeles               0           
+2015-02-03  Arizona                   4 @Columbus                  1           
+2015-02-03  Buffalo                   3 @Montreal                  2           
+2015-02-03 @Minnesota                 3  Chicago                   0           
+2015-02-03 @St Louis                  2  Tampa Bay                 1 O1        
+2015-02-03 @Nashville                 4  Toronto                   3           
+2015-02-03  Colorado                  3 @Dallas                    2 O2        
+2015-02-03 @Anaheim                   5  Carolina                  4 O1        
+2015-02-03 @Vancouver                 3  Winnipeg                  2 O1        
+2015-02-04 @NY Rangers                3  Boston                    2           
+2015-02-04  Pittsburgh                2 @Edmonton                  0           
+2015-02-04 @Calgary                   3  San Jose                  1           
+2015-02-05  NY Islanders              3 @Philadelphia              2 O2        
+2015-02-05  St Louis                  3 @Buffalo                   0           
+2015-02-05 @Florida                   3  Los Angeles               2           
+2015-02-05  Washington                2 @Ottawa                    1           
+2015-02-05  Anaheim                   5 @Nashville                 2           
+2015-02-05  Tampa Bay                 5 @Dallas                    3           
+2015-02-05  Carolina                  2 @Arizona                   1 O2        
+2015-02-05  Detroit                   3 @Colorado                  0           
+2015-02-05  San Jose                  5 @Vancouver                 1           
+2015-02-06 @New Jersey                4  Toronto                   1           
+2015-02-06 @Washington                3  Anaheim                   2 O2        
+2015-02-06 @Columbus                  7  St Louis                  1           
+2015-02-06  Chicago                   2 @Winnipeg                  1 O1        
+2015-02-06  Pittsburgh                4 @Calgary                   0           
+2015-02-07 @Nashville                 3  NY Rangers                2           
+2015-02-07  Los Angeles               4 @Tampa Bay                 2           
+2015-02-07 @Boston                    2  NY Islanders              1           
+2015-02-07  Columbus                  4 @Ottawa                    1           
+2015-02-07 @Montreal                  6  New Jersey                2           
+2015-02-07 @Buffalo                   3  Dallas                    2           
+2015-02-07 @Toronto                   5  Edmonton                  1           
+2015-02-07  Detroit                   3 @Arizona                   1           
+2015-02-07 @Minnesota                 1  Colorado                  0           
+2015-02-07 @Vancouver                 5  Pittsburgh                0           
+2015-02-07  Carolina                  5 @San Jose                  4           
+2015-02-08  Chicago                   4 @St Louis                  2           
+2015-02-08  Nashville                 3 @Florida                   2 O2        
+2015-02-08  Philadelphia              3 @Washington                1           
+2015-02-08  Dallas                    3 @NY Rangers                2 O1        
+2015-02-08 @Tampa Bay                 5  Anaheim                   3           
+2015-02-08  NY Islanders              3 @Buffalo                   2           
+2015-02-08 @Winnipeg                  5  Colorado                  3           
+2015-02-08  Montreal                  3 @Boston                    1           
+2015-02-09  Los Angeles               4 @Columbus                  3           
+2015-02-09  Edmonton                  2 @New Jersey                1           
+2015-02-09 @Minnesota                 5  Vancouver                 3           
+2015-02-09  Arizona                   3 @Chicago                   2 O2        
+2015-02-09  Calgary                   4 @San Jose                  1           
+2015-02-10  Ottawa                    2 @Buffalo                   1           
+2015-02-10 @NY Islanders              3  Edmonton                  2           
+2015-02-10  Dallas                    5 @Boston                    3           
+2015-02-10 @Montreal                  2  Philadelphia              1 O1        
+2015-02-10 @Florida                   6  Anaheim                   2           
+2015-02-10  NY Rangers                5 @Toronto                   4           
+2015-02-10 @Nashville                 3  Tampa Bay                 2 O1        
+2015-02-10 @St Louis                  2  Arizona                   1           
+2015-02-10 @Winnipeg                  2  Minnesota                 1 O1        
+2015-02-11 @Pittsburgh                4  Detroit                   1           
+2015-02-11  Vancouver                 5 @Chicago                   4 O1        
+2015-02-11  Washington                5 @San Jose                  4 O1        
+2015-02-12 @NY Islanders              3  Toronto                   2           
+2015-02-12  Anaheim                   2 @Carolina                  1           
+2015-02-12  Edmonton                  4 @Montreal                  3 O1        
+2015-02-12  Pittsburgh                5 @Ottawa                    4 O2        
+2015-02-12  St Louis                  6 @Tampa Bay                 3           
+2015-02-12 @Minnesota                 2  Florida                   1           
+2015-02-12 @Nashville                 3  Winnipeg                  1           
+2015-02-12  NY Rangers                6 @Colorado                  3           
+2015-02-12 @Los Angeles               5  Calgary                   3           
+2015-02-13 @Columbus                  4  Philadelphia              3 O1        
+2015-02-13 @Chicago                   3  New Jersey                1           
+2015-02-13 @Dallas                    2  Florida                   0           
+2015-02-13  San Jose                  4 @Arizona                   2           
+2015-02-13 @Vancouver                 5  Boston                    2           
+2015-02-14 @Ottawa                    7  Edmonton                  2           
+2015-02-14 @NY Islanders              6  Columbus                  3           
+2015-02-14  Winnipeg                  5 @Detroit                   4 O2        
+2015-02-14 @Montreal                  2  Toronto                   1 O2        
+2015-02-14 @Nashville                 3  New Jersey                1           
+2015-02-14  NY Rangers                5 @Arizona                   1           
+2015-02-14 @Minnesota                 6  Carolina                  3           
+2015-02-14 @Colorado                  4  Dallas                    1           
+2015-02-14 @Los Angeles               3  Washington                1           
+2015-02-14 @Calgary                   3  Vancouver                 2           
+2015-02-15 @Chicago                   2  Pittsburgh                1 O2        
+2015-02-15  St Louis                  2 @Florida                   1 O2        
+2015-02-15  Philadelphia              2 @Buffalo                   1           
+2015-02-15  Washington                5 @Anaheim                   3           
+2015-02-15  Tampa Bay                 5 @San Jose                  2           
+2015-02-16  NY Rangers                6 @NY Islanders              5           
+2015-02-16  Montreal                  2 @Detroit                   0           
+2015-02-16  Carolina                  6 @Ottawa                    3           
+2015-02-16 @Winnipeg                  5  Edmonton                  4 O2        
+2015-02-16 @Colorado                  5  Arizona                   2           
+2015-02-16 @Calgary                   4  Boston                    3 O1        
+2015-02-16 @Vancouver                 3  Minnesota                 2           
+2015-02-16 @Los Angeles               3  Tampa Bay                 2           
+2015-02-17  Columbus                  5 @Philadelphia              2           
+2015-02-17  NY Islanders              4 @Carolina                  1           
+2015-02-17  Washington                3 @Pittsburgh                1           
+2015-02-17 @New Jersey                2  Buffalo                   1 O2        
+2015-02-17  Florida                   3 @Toronto                   2           
+2015-02-17 @Nashville                 5  San Jose                  1           
+2015-02-17  Dallas                    4 @St Louis                  1           
+2015-02-18 @Ottawa                    4  Montreal                  2           
+2015-02-18  Detroit                   3 @Chicago                   2 O2        
+2015-02-18  Minnesota                 3 @Calgary                   2 O1        
+2015-02-18  Tampa Bay                 4 @Anaheim                   1           
+2015-02-18  Los Angeles               4 @Colorado                  1           
+2015-02-18 @Edmonton                  4  Boston                    3 O2        
+2015-02-19  Buffalo                   3 @Philadelphia              2 O2        
+2015-02-19  Columbus                  2 @Pittsburgh                1           
+2015-02-19 @NY Islanders              5  Nashville                 2           
+2015-02-19  Vancouver                 5 @NY Rangers                4 O2        
+2015-02-19 @Washington                5  Winnipeg                  1           
+2015-02-19  Florida                   3 @Montreal                  2 O2        
+2015-02-19  San Jose                  5 @Dallas                    2           
+2015-02-20 @New Jersey                4  Vancouver                 2           
+2015-02-20 @Carolina                  2  Toronto                   1           
+2015-02-20 @St Louis                  5  Boston                    1           
+2015-02-20  Colorado                  4 @Chicago                   1           
+2015-02-20  Minnesota                 4 @Edmonton                  0           
+2015-02-20  Anaheim                   6 @Calgary                   3           
+2015-02-20  NY Rangers                3 @Buffalo                   1           
+2015-02-21 @Washington                3  NY Islanders              2 O2        
+2015-02-21 @Philadelphia              3  Nashville                 2 O2        
+2015-02-21 @New Jersey                3  Carolina                  1           
+2015-02-21  Anaheim                   2 @Edmonton                  1           
+2015-02-21 @Ottawa                    4  Florida                   1           
+2015-02-21 @Toronto                   4  Winnipeg                  3 O1        
+2015-02-21 @Montreal                  3  Columbus                  1           
+2015-02-21  Pittsburgh                4 @St Louis                  2           
+2015-02-21  Detroit                   7 @Dallas                    6 O1        
+2015-02-21  Tampa Bay                 4 @Arizona                   2           
+2015-02-21  Los Angeles               2  San Jose                  1           Santa Clara, CA
+2015-02-22 @Philadelphia              3  Washington                2           
+2015-02-22  Boston                    6 @Chicago                   2           
+2015-02-22  Vancouver                 4 @NY Islanders              0           
+2015-02-22 @Pittsburgh                5  Florida                   1           
+2015-02-22  Nashville                 2 @Buffalo                   1 O2        
+2015-02-22 @Colorado                  5  Tampa Bay                 4           
+2015-02-22 @NY Rangers                4  Columbus                  3 O2        
+2015-02-22 @Minnesota                 6  Dallas                    2           
+2015-02-23 @New Jersey                3  Arizona                   0           
+2015-02-23 @Anaheim                   4  Detroit                   3 O2        
+2015-02-24 @NY Islanders              5  Arizona                   1           
+2015-02-24 @NY Rangers                1  Calgary                   0           
+2015-02-24  Vancouver                 2 @Boston                    1           
+2015-02-24 @Carolina                  4  Philadelphia              1           
+2015-02-24  Buffalo                   4 @Columbus                  2           
+2015-02-24  Edmonton                  2 @Minnesota                 1           
+2015-02-24  Montreal                  5 @St Louis                  2           
+2015-02-24 @Nashville                 5  Colorado                  2           
+2015-02-24 @Winnipeg                  4  Dallas                    2           
+2015-02-24 @Chicago                   3  Florida                   2 O2        
+2015-02-24 @Los Angeles               1  Detroit                   0           
+2015-02-25  Calgary                   3 @New Jersey                1           
+2015-02-25  Pittsburgh                4 @Washington                3           
+2015-02-25  Ottawa                    3 @Anaheim                   0           
+2015-02-26 @NY Rangers                4  Arizona                   3           
+2015-02-26 @Buffalo                   6  Vancouver                 3           
+2015-02-26  Montreal                  5 @Columbus                  2           
+2015-02-26  Chicago                   3 @Florida                   0           
+2015-02-26 @Toronto                   3  Philadelphia              2           
+2015-02-26  St Louis                  2 @Winnipeg                  1 O2        
+2015-02-26  Minnesota                 4 @Nashville                 2           
+2015-02-26  Detroit                   3 @San Jose                  2           
+2015-02-26  Ottawa                    1 @Los Angeles               0           
+2015-02-27  Boston                    3 @New Jersey                2 O1        
+2015-02-27 @NY Islanders              2  Calgary                   1           
+2015-02-27 @Carolina                  3  Washington                0           
+2015-02-27 @Tampa Bay                 4  Chicago                   0           
+2015-02-27  Colorado                  5 @Dallas                    4 O2        
+2015-02-27 @Anaheim                   4  Los Angeles               2           
+2015-02-28  Detroit                   4 @Nashville                 3           
+2015-02-28 @Florida                   5  Buffalo                   3           
+2015-02-28  Carolina                  5 @NY Islanders              3           
+2015-02-28  New Jersey                2 @Columbus                  0           
+2015-02-28 @Boston                    4  Arizona                   1           
+2015-02-28 @Montreal                  4  Toronto                   0           
+2015-02-28 @Philadelphia              4  NY Rangers                2           
+2015-02-28  Minnesota                 3 @Colorado                  1           
+2015-02-28  St Louis                  2 @Edmonton                  1           
+2015-02-28  Ottawa                    4 @San Jose                  2           
+2015-03-01 @Winnipeg                  5  Los Angeles               2           
+2015-03-01 @Florida                   4  Tampa Bay                 3           
+2015-03-01 @Pittsburgh                5  Columbus                  3           
+2015-03-01 @Washington                4  Toronto                   0           
+2015-03-01  Anaheim                   3 @Dallas                    1           
+2015-03-01 @Vancouver                 6  St Louis                  5 O2        
+2015-03-02 @NY Rangers                4  Nashville                 1           
+2015-03-02 @Chicago                   5  Carolina                  2           
+2015-03-02 @San Jose                  4  Montreal                  0           
+2015-03-03 @New Jersey                3  Nashville                 1           
+2015-03-03  Calgary                   3 @Philadelphia              2 O1        
+2015-03-03  Washington                5 @Columbus                  3           
+2015-03-03 @Tampa Bay                 3  Buffalo                   0           
+2015-03-03  Toronto                   3 @Florida                   2           
+2015-03-03 @Minnesota                 3  Ottawa                    2 O2        
+2015-03-03 @Dallas                    3  NY Islanders              2 O1        
+2015-03-03  Anaheim                   4 @Arizona                   1           
+2015-03-03  Los Angeles               5 @Edmonton                  2           
+2015-03-03  San Jose                  6 @Vancouver                 2           
+2015-03-04  Ottawa                    3 @Winnipeg                  1           
+2015-03-04 @Detroit                   2  NY Rangers                1 O1        
+2015-03-04 @Anaheim                   3  Montreal                  1           
+2015-03-04 @Colorado                  3  Pittsburgh                1           
+2015-03-05  Minnesota                 2 @Washington                1           
+2015-03-05  Calgary                   4 @Boston                    3 O2        
+2015-03-05 @Philadelphia              3  St Louis                  1           
+2015-03-05  Dallas                    4 @Florida                   3 O2        
+2015-03-05 @Tampa Bay                 4  Toronto                   2           
+2015-03-05  NY Islanders              4 @Nashville                 3           
+2015-03-05 @Arizona                   3  Vancouver                 2 O2        
+2015-03-05 @Los Angeles               4  Montreal                  3 O2        
+2015-03-06  Columbus                  3 @New Jersey                2           
+2015-03-06  Minnesota                 3 @Carolina                  1           
+2015-03-06 @Ottawa                    3  Buffalo                   2           
+2015-03-06  Calgary                   5 @Detroit                   2           
+2015-03-06 @Chicago                   2  Edmonton                  1 O2        
+2015-03-06  Pittsburgh                5 @Anaheim                   2           
+2015-03-07 @Boston                    3  Philadelphia              2 O1        
+2015-03-07 @Washington                6  Buffalo                   1           
+2015-03-07  Winnipeg                  3 @Nashville                 1           
+2015-03-07  Montreal                  2 @Arizona                   0           
+2015-03-07  St Louis                  6 @Toronto                   1           
+2015-03-07  Colorado                  4 @Columbus                  0           
+2015-03-07 @Tampa Bay                 5  Dallas                    4           
+2015-03-07 @Florida                   4  NY Islanders              3 O2        
+2015-03-07  Vancouver                 3 @San Jose                  2           
+2015-03-07  Pittsburgh                1 @Los Angeles               0 O1        
+2015-03-08 @Boston                    5  Detroit                   3           
+2015-03-08 @Carolina                  7  Edmonton                  4           
+2015-03-08 @New Jersey                5  Philadelphia              2           
+2015-03-08  Colorado                  3 @Minnesota                 2           
+2015-03-08 @Ottawa                    5  Calgary                   4 O2        
+2015-03-08  NY Rangers                1 @Chicago                   0 O1        
+2015-03-09 @Detroit                   5  Edmonton                  2           
+2015-03-09  NY Islanders              4 @Toronto                   3 O1        
+2015-03-09  Nashville                 2 @Arizona                   1 O1        
+2015-03-09 @Vancouver                 2  Anaheim                   1           
+2015-03-09 @San Jose                  2  Pittsburgh                1 O2        
+2015-03-10  Columbus                  4 @Carolina                  3 O2        
+2015-03-10  Dallas                    2 @Philadelphia              1           
+2015-03-10  NY Rangers                2 @NY Islanders              1           
+2015-03-10  Tampa Bay                 1 @Montreal                  0 O1        
+2015-03-10  Boston                    3 @Ottawa                    1           
+2015-03-10 @St Louis                  5  Winnipeg                  4           
+2015-03-10 @Minnesota                 6  New Jersey                2           
+2015-03-10  Los Angeles               5 @Colorado                  2           
+2015-03-11 @Toronto                   4  Buffalo                   3 O2        
+2015-03-11  NY Rangers                3 @Washington                1           
+2015-03-11 @Calgary                   6  Anaheim                   3           
+2015-03-12 @Pittsburgh                6  Edmonton                  4           
+2015-03-12  Dallas                    5 @Carolina                  3           
+2015-03-12 @Boston                    3  Tampa Bay                 2 O2        
+2015-03-12 @Florida                   4  Winnipeg                  2           
+2015-03-12  Columbus                  3 @Detroit                   1           
+2015-03-12  Ottawa                    5 @Montreal                  2           
+2015-03-12 @St Louis                  1  Philadelphia              0 O2        
+2015-03-12 @Colorado                  2  New Jersey                1 O2        
+2015-03-12  Chicago                   2 @Arizona                   1           
+2015-03-12  Los Angeles               4 @Vancouver                 0           
+2015-03-12 @San Jose                  2  Nashville                 0           
+2015-03-13  Dallas                    4 @Washington                2           
+2015-03-13  Ottawa                    2 @NY Islanders              1           
+2015-03-13 @Columbus                  5  Edmonton                  4 O2        
+2015-03-13  Anaheim                   2 @Minnesota                 1           
+2015-03-13 @Calgary                   6  Toronto                   3           
+2015-03-14 @Philadelphia              7  Detroit                   2           
+2015-03-14  Boston                    2 @Pittsburgh                0           
+2015-03-14  Chicago                   6 @San Jose                  2           
+2015-03-14  NY Rangers                2 @Buffalo                   0           
+2015-03-14  Winnipeg                  2 @Tampa Bay                 1           
+2015-03-14  Florida                   2 @Carolina                  0           
+2015-03-14 @Vancouver                 4  Toronto                   1           
+2015-03-14  Montreal                  3 @NY Islanders              1           
+2015-03-14  Minnesota                 3 @St Louis                  1           
+2015-03-14  New Jersey                4 @Arizona                   1           
+2015-03-14 @Colorado                  3  Calgary                   2           
+2015-03-14  Nashville                 2 @Los Angeles               1           
+2015-03-15  Detroit                   5 @Pittsburgh                1           
+2015-03-15 @NY Rangers                2  Florida                   1           
+2015-03-15  Carolina                  3 @Columbus                  2           
+2015-03-15  St Louis                  3 @Dallas                    0           
+2015-03-15 @Ottawa                    2  Philadelphia              1 O2        
+2015-03-15 @Washington                2  Boston                    0           
+2015-03-15 @Anaheim                   4  Nashville                 2           
+2015-03-16  Washington                4 @Buffalo                   3 O2        
+2015-03-16 @Tampa Bay                 4  Montreal                  2           
+2015-03-16 @Edmonton                  4  Toronto                   1           
+2015-03-16 @Los Angeles               1  Arizona                   0           
+2015-03-17  Ottawa                    2 @Carolina                  1 O1        
+2015-03-17 @New Jersey                2  Pittsburgh                0           
+2015-03-17  Buffalo                   2 @Boston                    1 O2        
+2015-03-17  Montreal                  3 @Florida                   2           
+2015-03-17 @Winnipeg                  5  San Jose                  2           
+2015-03-17  Minnesota                 3 @Nashville                 2 O1        
+2015-03-17 @Chicago                   4  NY Islanders              1           
+2015-03-17  St Louis                  4 @Calgary                   0           
+2015-03-17 @Vancouver                 4  Philadelphia              1           
+2015-03-18  Chicago                   1 @NY Rangers                0           
+2015-03-18  Columbus                  4 @Edmonton                  3 O2        
+2015-03-18 @Anaheim                   3  Los Angeles               2 O1        
+2015-03-19  San Jose                  4 @Toronto                   1           
+2015-03-19 @Florida                   3  Detroit                   1           
+2015-03-19 @Montreal                  4  Carolina                  0           
+2015-03-19 @Ottawa                    6  Boston                    4           
+2015-03-19 @Winnipeg                  2  St Louis                  1 O2        
+2015-03-19  Washington                3 @Minnesota                 2           
+2015-03-19 @Dallas                    2  Pittsburgh                1           
+2015-03-19 @Calgary                   4  Philadelphia              1           
+2015-03-19  Colorado                  5 @Arizona                   2           
+2015-03-19  Columbus                  6 @Vancouver                 2           
+2015-03-20  New Jersey                3 @Buffalo                   1           
+2015-03-20 @Tampa Bay                 3  Detroit                   1           
+2015-03-20 @Anaheim                   3  Colorado                  2 O1        
+2015-03-21 @Minnesota                 6  St Louis                  3           
+2015-03-21  Vancouver                 4 @Los Angeles               1           
+2015-03-21  Columbus                  3 @Calgary                   2 O1        
+2015-03-21 @Winnipeg                  3  Washington                0           
+2015-03-21  NY Islanders              3 @New Jersey                0           
+2015-03-21 @Montreal                  2  San Jose                  0           
+2015-03-21 @Florida                   2  Boston                    1 O2        
+2015-03-21 @Ottawa                    5  Toronto                   3           
+2015-03-21  NY Rangers                3 @Carolina                  2 O2        
+2015-03-21 @Nashville                 3  Buffalo                   0           
+2015-03-21 @Dallas                    4  Chicago                   0           
+2015-03-21  Pittsburgh                3 @Arizona                   1           
+2015-03-21 @Edmonton                  5  Philadelphia              4 O1        
+2015-03-22 @Detroit                   2  St Louis                  1 O1        
+2015-03-22 @Tampa Bay                 5  Boston                    3           
+2015-03-22 @NY Rangers                7  Anaheim                   2           
+2015-03-22  Vancouver                 3 @Arizona                   1           
+2015-03-23  Los Angeles               3 @New Jersey                1           
+2015-03-23  Chicago                   3 @Carolina                  1           
+2015-03-23 @Ottawa                    5  San Jose                  2           
+2015-03-23  Minnesota                 2 @Toronto                   1           
+2015-03-23 @Dallas                    4  Buffalo                   3           
+2015-03-23 @Calgary                   3  Colorado                  2           
+2015-03-23  Winnipeg                  4 @Edmonton                  1           
+2015-03-24  St Louis                  3 @Pittsburgh                2 O1        
+2015-03-24  Minnesota                 2 @NY Islanders              1 O2        
+2015-03-24  Los Angeles               4 @NY Rangers                2           
+2015-03-24 @Columbus                  5  Anaheim                   3           
+2015-03-24 @Tampa Bay                 4  Florida                   3           
+2015-03-24  Arizona                   5 @Detroit                   4 O1        
+2015-03-24 @Nashville                 3  Montreal                  2 O1        
+2015-03-24 @Vancouver                 5  Winnipeg                  2           
+2015-03-25 @Edmonton                  4  Colorado                  3           
+2015-03-25 @Philadelphia              4  Chicago                   1           
+2015-03-25  Dallas                    4 @Calgary                   3 O2        
+2015-03-26  Anaheim                   3 @Boston                    2 O1        
+2015-03-26  Los Angeles               3 @NY Islanders              2           
+2015-03-26 @Washington                3  New Jersey                2 O1        
+2015-03-26  Arizona                   4 @Buffalo                   3 O1        
+2015-03-26 @Carolina                  5  Pittsburgh                2           
+2015-03-26  Florida                   4 @Toronto                   1           
+2015-03-26  Nashville                 3 @Tampa Bay                 2           
+2015-03-26  NY Rangers                5 @Ottawa                    1           
+2015-03-26  San Jose                  6 @Detroit                   4           
+2015-03-26 @Winnipeg                  5  Montreal                  2           
+2015-03-26  Colorado                  4 @Vancouver                 1           
+2015-03-27 @Minnesota                 4  Calgary                   2           
+2015-03-27  Columbus                  5 @Chicago                   2           
+2015-03-27 @Edmonton                  4  Dallas                    0           
+2015-03-28  Nashville                 4 @Washington                3           
+2015-03-28 @Pittsburgh                3  Arizona                   2           
+2015-03-28 @Boston                    4  NY Rangers                2           
+2015-03-28  San Jose                  3 @Philadelphia              2 O2        
+2015-03-28  Anaheim                   3 @NY Islanders              2           
+2015-03-28 @Detroit                   4  Tampa Bay                 0           
+2015-03-28 @Carolina                  3  New Jersey                1           
+2015-03-28 @Toronto                   4  Ottawa                    3 O1        
+2015-03-28 @Montreal                  3  Florida                   2 O1        
+2015-03-28 @Minnesota                 4  Los Angeles               1           
+2015-03-28  Columbus                  4 @St Louis                  2           
+2015-03-28 @Colorado                  5  Buffalo                   3           
+2015-03-28  Dallas                    4 @Vancouver                 3 O1        
+2015-03-29  Washington                5 @NY Rangers                2           
+2015-03-29 @NY Islanders              5  Detroit                   4           
+2015-03-29  Florida                   4 @Ottawa                    2           
+2015-03-29  Boston                    2 @Carolina                  1 O1        
+2015-03-29  Calgary                   5 @Nashville                 2           
+2015-03-29  Anaheim                   2 @New Jersey                1           
+2015-03-29  Chicago                   4 @Winnipeg                  3           
+2015-03-29 @Pittsburgh                3  San Jose                  2 O2        
+2015-03-30  Tampa Bay                 5 @Montreal                  3           
+2015-03-30  Vancouver                 4 @St Louis                  1           
+2015-03-30 @Chicago                   4  Los Angeles               1           
+2015-03-30  Calgary                   5 @Dallas                    3           
+2015-03-30  Edmonton                  4 @Colorado                  1           
+2015-03-30  Buffalo                   4 @Arizona                   1           
+2015-03-31 @Boston                    3  Florida                   2           
+2015-03-31 @Washington                4  Carolina                  2           
+2015-03-31 @Columbus                  3  New Jersey                2 O1        
+2015-03-31 @Toronto                   3  Tampa Bay                 1           
+2015-03-31  Ottawa                    2 @Detroit                   1 O2        
+2015-03-31  NY Rangers                3 @Winnipeg                  2           
+2015-03-31  Vancouver                 5 @Nashville                 4 O2        
+2015-04-01 @Buffalo                   4  Toronto                   3           
+2015-04-01  Philadelphia              4 @Pittsburgh                1           
+2015-04-01 @Anaheim                   5  Edmonton                  1           
+2015-04-01 @San Jose                  5  Colorado                  1           
+2015-04-02 @Columbus                  4  NY Islanders              3 O2        
+2015-04-02  Boston                    3 @Detroit                   2           
+2015-04-02  Washington                5 @Montreal                  4 O2        
+2015-04-02 @Florida                   6  Carolina                  1           
+2015-04-02 @Ottawa                    2  Tampa Bay                 1 O1        
+2015-04-02  NY Rangers                3 @Minnesota                 2           
+2015-04-02 @St Louis                  4  Calgary                   1           
+2015-04-02 @Chicago                   3  Vancouver                 1           
+2015-04-02 @Los Angeles               8  Edmonton                  2           
+2015-04-03 @New Jersey                3  Montreal                  2 O2        
+2015-04-03  Chicago                   4 @Buffalo                   3           
+2015-04-03  St Louis                  7 @Dallas                    5           
+2015-04-03 @San Jose                  3  Arizona                   1           
+2015-04-03  Colorado                  4 @Anaheim                   2           
+2015-04-04 @Carolina                  3  Philadelphia              2 O2        
+2015-04-04 @Columbus                  5  Pittsburgh                3           
+2015-04-04 @Winnipeg                  5  Vancouver                 4           
+2015-04-04  Detroit                   3 @Minnesota                 2 O2        
+2015-04-04  Tampa Bay                 4 @Florida                   0           
+2015-04-04 @Ottawa                    4  Washington                3 O1        
+2015-04-04 @NY Islanders              3  Buffalo                   0           
+2015-04-04 @NY Rangers                6  New Jersey                1           
+2015-04-04 @Boston                    2  Toronto                   1 O2        
+2015-04-04  Dallas                    4 @Nashville                 3 O1        
+2015-04-04 @Arizona                   5  San Jose                  3           
+2015-04-04 @Los Angeles               3  Colorado                  1           
+2015-04-04  Calgary                   4 @Edmonton                  0           
+2015-04-05 @Philadelphia              4  Pittsburgh                1           
+2015-04-05  Montreal                  4 @Florida                   1           
+2015-04-05  Washington                2 @Detroit                   1           
+2015-04-05  St Louis                  2 @Chicago                   1           
+2015-04-05 @Toronto                   3  Ottawa                    2 O2        
+2015-04-06 @Buffalo                   4  Carolina                  3           
+2015-04-06 @NY Rangers                4  Columbus                  3 O1        
+2015-04-06  Winnipeg                  2 @Minnesota                 0           
+2015-04-06 @Vancouver                 2  Los Angeles               1 O2        
+2015-04-06  Dallas                    5 @San Jose                  1           
+2015-04-07  NY Rangers                4 @New Jersey                2           
+2015-04-07 @Philadelphia              5  NY Islanders              4           
+2015-04-07 @Detroit                   3  Carolina                  2           
+2015-04-07 @Ottawa                    4  Pittsburgh                3 O1        
+2015-04-07  Winnipeg                  1 @St Louis                  0           
+2015-04-07  Minnesota                 2 @Chicago                   1           
+2015-04-07 @Calgary                   3  Arizona                   2           
+2015-04-07 @Colorado                  3  Nashville                 2           
+2015-04-07 @Edmonton                  4  Los Angeles               2           
+2015-04-08 @Columbus                  5  Toronto                   0           
+2015-04-08 @Washington                3  Boston                    0           
+2015-04-08  Dallas                    4 @Anaheim                   0           
+2015-04-09  Ottawa                    3 @NY Rangers                0           
+2015-04-09  Carolina                  3 @Philadelphia              1           
+2015-04-09 @Tampa Bay                 4  New Jersey                3 O1        
+2015-04-09 @Montreal                  4  Detroit                   3 O1        
+2015-04-09 @Florida                   4  Boston                    2           
+2015-04-09 @St Louis                  2  Chicago                   1           
+2015-04-09  Minnesota                 4 @Nashville                 2           
+2015-04-09 @Calgary                   3  Los Angeles               1           
+2015-04-09 @Colorado                  1  Winnipeg                  0 O2        
+2015-04-09  San Jose                  3 @Edmonton                  1           
+2015-04-09 @Vancouver                 5  Arizona                   0           
+2015-04-10  NY Islanders              3 @Pittsburgh                1           
+2015-04-10 @Columbus                  4  Buffalo                   2           
+2015-04-11  Ottawa                    3 @Philadelphia              1           
+2015-04-11  NY Rangers                4 @Washington                2           
+2015-04-11 @St Louis                  4  Minnesota                 2           
+2015-04-11 @Winnipeg                  5  Calgary                   1           
+2015-04-11 @Los Angeles               4  San Jose                  1           
+2015-04-11  Detroit                   2 @Carolina                  0           
+2015-04-11  Montreal                  4 @Toronto                   3 O2        
+2015-04-11  Columbus                  5 @NY Islanders              4 O2        
+2015-04-11 @Florida                   3  New Jersey                2           
+2015-04-11  Pittsburgh                2 @Buffalo                   0           
+2015-04-11 @Tampa Bay                 3  Boston                    2 O2        
+2015-04-11 @Dallas                    4  Nashville                 1           
+2015-04-11  Anaheim                   2 @Arizona                   1           
+2015-04-11 @Colorado                  3  Chicago                   2           
+2015-04-11 @Vancouver                 6  Edmonton                  5 O1        
+2015-04-15 @Montreal                  4  Ottawa                    3 P         
+2015-04-15  NY Islanders              4 @Washington                1 P         
+2015-04-15  Chicago                   4 @Nashville                 3 PO2       
+2015-04-15  Calgary                   2 @Vancouver                 1 P         
+2015-04-16 @NY Rangers                2  Pittsburgh                1 P         
+2015-04-16  Detroit                   3 @Tampa Bay                 2 P         
+2015-04-16  Minnesota                 4 @St Louis                  2 P         
+2015-04-16 @Anaheim                   4  Winnipeg                  2 P         
+2015-04-17 @Montreal                  3  Ottawa                    2 PO1       
+2015-04-17 @Washington                4  NY Islanders              3 P         
+2015-04-17 @Nashville                 6  Chicago                   2 P         
+2015-04-17 @Vancouver                 4  Calgary                   1 P         
+2015-04-18 @Tampa Bay                 5  Detroit                   1 P         
+2015-04-18 @St Louis                  4  Minnesota                 1 P         
+2015-04-18  Pittsburgh                4 @NY Rangers                3 P         
+2015-04-18 @Anaheim                   2  Winnipeg                  1 P         
+2015-04-19 @NY Islanders              2  Washington                1 PO1       
+2015-04-19 @Chicago                   4  Nashville                 2 P         
+2015-04-19  Montreal                  2 @Ottawa                    1 PO1       
+2015-04-19 @Calgary                   4  Vancouver                 2 P         
+2015-04-20  NY Rangers                2 @Pittsburgh                1 P         
+2015-04-20 @Minnesota                 3  St Louis                  0 P         
+2015-04-20  Anaheim                   5 @Winnipeg                  4 PO1       
+2015-04-21 @Detroit                   3  Tampa Bay                 0 P         
+2015-04-21  Washington                2 @NY Islanders              1 PO1       
+2015-04-21 @Chicago                   3  Nashville                 2 PO3       
+2015-04-21 @Calgary                   3  Vancouver                 1 P         
+2015-04-22 @Ottawa                    1  Montreal                  0 P         
+2015-04-22  NY Rangers                2 @Pittsburgh                1 PO1       
+2015-04-22  St Louis                  6 @Minnesota                 1 P         
+2015-04-22  Anaheim                   5 @Winnipeg                  2 P         
+2015-04-23  Tampa Bay                 3 @Detroit                   2 PO1       
+2015-04-23 @Washington                5  NY Islanders              1 P         
+2015-04-23 @Nashville                 5  Chicago                   2 P         
+2015-04-23 @Vancouver                 2  Calgary                   1 P         
+2015-04-24  Ottawa                    5 @Montreal                  1 P         
+2015-04-24 @NY Rangers                2  Pittsburgh                1 PO1       
+2015-04-24  Minnesota                 4 @St Louis                  1 P         
+2015-04-25 @NY Islanders              3  Washington                1 P         
+2015-04-25  Detroit                   4 @Tampa Bay                 0 P         
+2015-04-25 @Chicago                   4  Nashville                 3 P         
+2015-04-25 @Calgary                   7  Vancouver                 4 P         
+2015-04-26 @Minnesota                 4  St Louis                  1 P         
+2015-04-26  Montreal                  2 @Ottawa                    0 P         
+2015-04-27  Tampa Bay                 5 @Detroit                   2 P         
+2015-04-27 @Washington                2  NY Islanders              1 P         
+2015-04-29 @Tampa Bay                 2  Detroit                   0 P         
+2015-04-30  Washington                2 @NY Rangers                1 P         
+2015-04-30 @Anaheim                   6  Calgary                   1 P         
+2015-05-01  Tampa Bay                 2 @Montreal                  1 PO2       
+2015-05-01 @Chicago                   4  Minnesota                 3 P         
+2015-05-02 @NY Rangers                3  Washington                2 P         
+2015-05-03  Tampa Bay                 6 @Montreal                  2 P         
+2015-05-03 @Chicago                   4  Minnesota                 1 P         
+2015-05-03 @Anaheim                   3  Calgary                   0 P         
+2015-05-04 @Washington                1  NY Rangers                0 P         
+2015-05-05  Chicago                   1 @Minnesota                 0 P         
+2015-05-05 @Calgary                   4  Anaheim                   3 PO1       
+2015-05-06 @Tampa Bay                 2  Montreal                  1 P         
+2015-05-06 @Washington                2  NY Rangers                1 P         
+2015-05-07  Montreal                  6 @Tampa Bay                 2 P         
+2015-05-07  Chicago                   4 @Minnesota                 3 P         
+2015-05-08  Anaheim                   4 @Calgary                   2 P         
+2015-05-08 @NY Rangers                2  Washington                1 PO1       
+2015-05-09 @Montreal                  2  Tampa Bay                 1 P         
+2015-05-10  NY Rangers                4 @Washington                3 P         
+2015-05-10 @Anaheim                   3  Calgary                   2 PO1       
+2015-05-12 @Tampa Bay                 4  Montreal                  1 P         
+2015-05-13 @NY Rangers                2  Washington                1 PO1       
+2015-05-16 @NY Rangers                2  Tampa Bay                 1 P         
+2015-05-17 @Anaheim                   4  Chicago                   1 P         
+2015-05-18  Tampa Bay                 6 @NY Rangers                2 P         
+2015-05-19  Chicago                   3 @Anaheim                   2 PO3       
+2015-05-20 @Tampa Bay                 6  NY Rangers                5 PO1       
+2015-05-21  Anaheim                   2 @Chicago                   1 P         
+2015-05-22  NY Rangers                5 @Tampa Bay                 1 P         
+2015-05-23 @Chicago                   5  Anaheim                   4 PO2       
+2015-05-24  Tampa Bay                 2 @NY Rangers                0 P         
+2015-05-25 @Anaheim                   5  Chicago                   4 PO1       
+2015-05-26  NY Rangers                7 @Tampa Bay                 3 P         
+2015-05-27 @Chicago                   5  Anaheim                   2 P         
+2015-05-29  Tampa Bay                 2 @NY Rangers                0 P         
+2015-05-30  Chicago                   5 @Anaheim                   3 P         
+2015-06-03  Chicago                   2 @Tampa Bay                 1 P        Stanley Cup 
+2015-06-06 @Tampa Bay                 4  Chicago                   3 P        Stanley Cup 
+2015-06-08  Tampa Bay                 3 @Chicago                   2 P        Stanley Cup 
+2015-06-10 @Chicago                   2  Tampa Bay                 1 P        Stanley Cup 
+2015-06-13  Chicago                   2 @Tampa Bay                 1 P        Stanley Cup 
+2015-06-15 @Chicago                   2  Tampa Bay                 0 P        Stanley Cup 

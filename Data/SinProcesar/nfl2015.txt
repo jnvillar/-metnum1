@@ -1,0 +1,267 @@
+2015-09-10 @New England              28  Pittsburgh               21           
+2015-09-13 @Buffalo                  27  Indianapolis             14           
+2015-09-13  Green Bay                31 @Chicago                  23           
+2015-09-13  Kansas City              27 @Houston                  20           
+2015-09-13  Carolina                 20 @Jacksonville              9           
+2015-09-13 @NY Jets                  31  Cleveland                10           
+2015-09-13 @St Louis                 34  Seattle                  31 O1        
+2015-09-13  Miami                    17 @Washington               10           
+2015-09-13 @Arizona                  31  New Orleans              19           
+2015-09-13 @San Diego                33  Detroit                  28           
+2015-09-13 @Denver                   19  Baltimore                13           
+2015-09-13  Cincinnati               33 @Oakland                  13           
+2015-09-13  Tennessee                42 @Tampa Bay                14           
+2015-09-13 @Dallas                   27  NY Giants                26           
+2015-09-14 @Atlanta                  26  Philadelphia             24           
+2015-09-14 @San Francisco            20  Minnesota                 3           
+2015-09-17  Denver                   31 @Kansas City              24           
+2015-09-20  New England              40 @Buffalo                  32           
+2015-09-20 @Carolina                 24  Houston                  17           
+2015-09-20  Arizona                  48 @Chicago                  23           
+2015-09-20 @Cincinnati               24  San Diego                19           
+2015-09-20 @Cleveland                28  Tennessee                14           
+2015-09-20 @Minnesota                26  Detroit                  16           
+2015-09-20  Tampa Bay                26 @New Orleans              19           
+2015-09-20  Atlanta                  24 @NY Giants                20           
+2015-09-20 @Pittsburgh               43  San Francisco            18           
+2015-09-20 @Washington               24  St Louis                 10           
+2015-09-20 @Jacksonville             23  Miami                    20           
+2015-09-20 @Oakland                  37  Baltimore                33           
+2015-09-20  Dallas                   20 @Philadelphia             10           
+2015-09-20 @Green Bay                27  Seattle                  17           
+2015-09-21  NY Jets                  20 @Indianapolis              7           
+2015-09-24 @NY Giants                32  Washington               21           
+2015-09-27  Cincinnati               28 @Baltimore                24           
+2015-09-27 @Carolina                 27  New Orleans              22           
+2015-09-27  Oakland                  27 @Cleveland                20           
+2015-09-27  Atlanta                  39 @Dallas                   28           
+2015-09-27 @Houston                  19  Tampa Bay                 9           
+2015-09-27 @Minnesota                31  San Diego                14           
+2015-09-27 @New England              51  Jacksonville             17           
+2015-09-27  Philadelphia             24 @NY Jets                  17           
+2015-09-27  Pittsburgh               12 @St Louis                  6           
+2015-09-27  Indianapolis             35 @Tennessee                33           
+2015-09-27 @Arizona                  47  San Francisco             7           
+2015-09-27  Buffalo                  41 @Miami                    14           
+2015-09-27 @Seattle                  26  Chicago                   0           
+2015-09-27  Denver                   24 @Detroit                  12           
+2015-09-28 @Green Bay                38  Kansas City              28           
+2015-10-01  Baltimore                23 @Pittsburgh               20 O1        
+2015-10-04  NY Jets                  27  Miami                    14           London
+2015-10-04 @Atlanta                  48  Houston                  21           
+2015-10-04  NY Giants                24 @Buffalo                  10           
+2015-10-04 @Chicago                  22  Oakland                  20           
+2015-10-04 @Cincinnati               36  Kansas City              21           
+2015-10-04 @Indianapolis             16  Jacksonville             13 O1        
+2015-10-04  Carolina                 37 @Tampa Bay                23           
+2015-10-04 @Washington               23  Philadelphia             20           
+2015-10-04 @San Diego                30  Cleveland                27           
+2015-10-04  St Louis                 24 @Arizona                  22           
+2015-10-04 @Denver                   23  Minnesota                20           
+2015-10-04  Green Bay                17 @San Francisco             3           
+2015-10-04 @New Orleans              26  Dallas                   20 O1        
+2015-10-05 @Seattle                  13  Detroit                  10           
+2015-10-08  Indianapolis             27 @Houston                  20           
+2015-10-11 @Atlanta                  25  Washington               19 O1        
+2015-10-11  Cleveland                33 @Baltimore                30 O1        
+2015-10-11 @Cincinnati               27  Seattle                  24 O1        
+2015-10-11 @Green Bay                24  St Louis                 10           
+2015-10-11  Chicago                  18 @Kansas City              17           
+2015-10-11 @Philadelphia             39  New Orleans              17           
+2015-10-11 @Tampa Bay                38  Jacksonville             31           
+2015-10-11  Buffalo                  14 @Tennessee                13           
+2015-10-11  Arizona                  42 @Detroit                  17           
+2015-10-11  New England              30 @Dallas                    6           
+2015-10-11  Denver                   16 @Oakland                  10           
+2015-10-11 @NY Giants                30  San Francisco            27           
+2015-10-12  Pittsburgh               24 @San Diego                20           
+2015-10-15 @New Orleans              31  Atlanta                  21           
+2015-10-18  Cincinnati               34 @Buffalo                  21           
+2015-10-18  Denver                   26 @Cleveland                23 O1        
+2015-10-18 @Detroit                  37  Chicago                  34 O1        
+2015-10-18  Houston                  31 @Jacksonville             20           
+2015-10-18 @Minnesota                16  Kansas City              10           
+2015-10-18 @NY Jets                  34  Washington               20           
+2015-10-18 @Pittsburgh               25  Arizona                  13           
+2015-10-18  Miami                    38 @Tennessee                10           
+2015-10-18  Carolina                 27 @Seattle                  23           
+2015-10-18 @Green Bay                27  San Diego                20           
+2015-10-18 @San Francisco            25  Baltimore                20           
+2015-10-18  New England              34 @Indianapolis             27           
+2015-10-19 @Philadelphia             27  NY Giants                 7           
+2015-10-22  Seattle                  20 @San Francisco             3           
+2015-10-25  Jacksonville             34  Buffalo                  31           London
+2015-10-25  Minnesota                28 @Detroit                  19           
+2015-10-25  New Orleans              27 @Indianapolis             21           
+2015-10-25 @Kansas City              23  Pittsburgh               13           
+2015-10-25 @Miami                    44  Houston                  26           
+2015-10-25 @New England              30  NY Jets                  23           
+2015-10-25 @St Louis                 24  Cleveland                 6           
+2015-10-25  Atlanta                  10 @Tennessee                 7           
+2015-10-25 @Washington               31  Tampa Bay                30           
+2015-10-25  Oakland                  37 @San Diego                29           
+2015-10-25 @NY Giants                27  Dallas                   20           
+2015-10-25 @Carolina                 27  Philadelphia             16           
+2015-10-26 @Arizona                  26  Baltimore                18           
+2015-10-29 @New England              36  Miami                     7           
+2015-11-01  Kansas City              45  Detroit                  10           London
+2015-11-01  Tampa Bay                23 @Atlanta                  20 O1        
+2015-11-01 @Baltimore                29  San Diego                26           
+2015-11-01  Minnesota                23 @Chicago                  20           
+2015-11-01  Arizona                  34 @Cleveland                20           
+2015-11-01 @Houston                  20  Tennessee                 6           
+2015-11-01 @New Orleans              52  NY Giants                49           
+2015-11-01  Cincinnati               16 @Pittsburgh               10           
+2015-11-01 @St Louis                 27  San Francisco             6           
+2015-11-01 @Oakland                  34  NY Jets                  20           
+2015-11-01  Seattle                  13 @Dallas                   12           
+2015-11-01 @Denver                   29  Green Bay                10           
+2015-11-02 @Carolina                 29  Indianapolis             26 O1        
+2015-11-05 @Cincinnati               31  Cleveland                10           
+2015-11-08 @Buffalo                  33  Miami                    17           
+2015-11-08 @Carolina                 37  Green Bay                29           
+2015-11-08 @Minnesota                21  St Louis                 18 O1        
+2015-11-08 @New England              27  Washington               10           
+2015-11-08  Tennessee                34 @New Orleans              28 O1        
+2015-11-08 @NY Jets                  28  Jacksonville             23           
+2015-11-08 @Pittsburgh               38  Oakland                  35           
+2015-11-08 @San Francisco            17  Atlanta                  16           
+2015-11-08  NY Giants                32 @Tampa Bay                18           
+2015-11-08 @Indianapolis             27  Denver                   24           
+2015-11-08  Philadelphia             33 @Dallas                   27 O1        
+2015-11-09  Chicago                  22 @San Diego                19           
+2015-11-12  Buffalo                  22 @NY Jets                  17           
+2015-11-15  Jacksonville             22 @Baltimore                20           
+2015-11-15  Detroit                  18 @Green Bay                16           
+2015-11-15  Miami                    20 @Philadelphia             19           
+2015-11-15 @Pittsburgh               30  Cleveland                 9           
+2015-11-15  Chicago                  37 @St Louis                 13           
+2015-11-15 @Tampa Bay                10  Dallas                    6           
+2015-11-15  Carolina                 27 @Tennessee                10           
+2015-11-15 @Washington               47  New Orleans              14           
+2015-11-15  Minnesota                30 @Oakland                  14           
+2015-11-15  Kansas City              29 @Denver                   13           
+2015-11-15  New England              27 @NY Giants                26           
+2015-11-15  Arizona                  39 @Seattle                  32           
+2015-11-16  Houston                  10 @Cincinnati                6           
+2015-11-19 @Jacksonville             19  Tennessee                13           
+2015-11-22  Indianapolis             24 @Atlanta                  21           
+2015-11-22 @Baltimore                16  St Louis                 13           
+2015-11-22 @Carolina                 44  Washington               16           
+2015-11-22  Denver                   17 @Chicago                  15           
+2015-11-22 @Detroit                  18  Oakland                  13           
+2015-11-22 @Houston                  24  NY Jets                  17           
+2015-11-22  Dallas                   24 @Miami                    14           
+2015-11-22  Green Bay                30 @Minnesota                13           
+2015-11-22  Tampa Bay                45 @Philadelphia             17           
+2015-11-22 @Arizona                  34  Cincinnati               31           
+2015-11-22 @Seattle                  29  San Francisco            13           
+2015-11-22  Kansas City              33 @San Diego                 3           
+2015-11-23 @New England              20  Buffalo                  13           
+2015-11-26 @Detroit                  45  Philadelphia             14           
+2015-11-26  Carolina                 33 @Dallas                   14           
+2015-11-26  Chicago                  17 @Green Bay                13           
+2015-11-29  Minnesota                20 @Atlanta                  10           
+2015-11-29 @Cincinnati               31  St Louis                  7           
+2015-11-29 @Houston                  24  New Orleans               6           
+2015-11-29 @Indianapolis             25  Tampa Bay                12           
+2015-11-29  San Diego                31 @Jacksonville             25           
+2015-11-29 @Kansas City              30  Buffalo                  22           
+2015-11-29 @NY Jets                  38  Miami                    20           
+2015-11-29  Oakland                  24 @Tennessee                21           
+2015-11-29 @Washington               20  NY Giants                14           
+2015-11-29  Arizona                  19 @San Francisco            13           
+2015-11-29 @Seattle                  39  Pittsburgh               30           
+2015-11-29 @Denver                   30  New England              24 O1        
+2015-11-30  Baltimore                33 @Cleveland                27           
+2015-12-03  Green Bay                27 @Detroit                  23           
+2015-12-06 @Buffalo                  30  Houston                  21           
+2015-12-06  San Francisco            26 @Chicago                  20 O1        
+2015-12-06  Cincinnati               37 @Cleveland                 3           
+2015-12-06 @Miami                    15  Baltimore                13           
+2015-12-06  Seattle                  38 @Minnesota                 7           
+2015-12-06  Carolina                 41 @New Orleans              38           
+2015-12-06  NY Jets                  23 @NY Giants                20 O1        
+2015-12-06  Arizona                  27 @St Louis                  3           
+2015-12-06 @Tampa Bay                23  Atlanta                  19           
+2015-12-06 @Tennessee                42  Jacksonville             39           
+2015-12-06  Kansas City              34 @Oakland                  20           
+2015-12-06  Denver                   17 @San Diego                 3           
+2015-12-06  Philadelphia             35 @New England              28           
+2015-12-06 @Pittsburgh               45  Indianapolis             10           
+2015-12-07  Dallas                   19 @Washington               16           
+2015-12-10 @Arizona                  23  Minnesota                20           
+2015-12-13 @Carolina                 38  Atlanta                   0           
+2015-12-13  Washington               24 @Chicago                  21           
+2015-12-13  Pittsburgh               33 @Cincinnati               20           
+2015-12-13 @Cleveland                24  San Francisco            10           
+2015-12-13  New England              27 @Houston                   6           
+2015-12-13 @Jacksonville             51  Indianapolis             16           
+2015-12-13 @Kansas City              10  San Diego                 3           
+2015-12-13 @NY Jets                  30  Tennessee                 8           
+2015-12-13 @Philadelphia             23  Buffalo                  20           
+2015-12-13 @St Louis                 21  Detroit                  14           
+2015-12-13  New Orleans              24 @Tampa Bay                17           
+2015-12-13  Oakland                  15 @Denver                   12           
+2015-12-13 @Green Bay                28  Dallas                    7           
+2015-12-13  Seattle                  35 @Baltimore                 6           
+2015-12-14  NY Giants                31 @Miami                    24           
+2015-12-17 @St Louis                 31  Tampa Bay                23           
+2015-12-19  NY Jets                  19 @Dallas                   16           
+2015-12-20  Kansas City              34 @Baltimore                14           
+2015-12-20  Houston                  16 @Indianapolis             10           
+2015-12-20  Atlanta                  23 @Jacksonville             17           
+2015-12-20 @Minnesota                38  Chicago                  17           
+2015-12-20 @New England              33  Tennessee                16           
+2015-12-20  Carolina                 38 @NY Giants                35           
+2015-12-20  Arizona                  40 @Philadelphia             17           
+2015-12-20 @Washington               35  Buffalo                  25           
+2015-12-20  Green Bay                30 @Oakland                  20           
+2015-12-20 @Seattle                  30  Cleveland                13           
+2015-12-20 @Pittsburgh               34  Denver                   27           
+2015-12-20 @San Diego                30  Miami                    14           
+2015-12-20  Cincinnati               24 @San Francisco            14           
+2015-12-21  Detroit                  35 @New Orleans              27           
+2015-12-24 @Oakland                  23  San Diego                20 O1        
+2015-12-26  Washington               38 @Philadelphia             24           
+2015-12-27 @Atlanta                  20  Carolina                 13           
+2015-12-27 @Buffalo                  16  Dallas                    6           
+2015-12-27 @Detroit                  32  San Francisco            17           
+2015-12-27 @Kansas City              17  Cleveland                13           
+2015-12-27  Indianapolis             18 @Miami                    12           
+2015-12-27 @Minnesota                49  NY Giants                17           
+2015-12-27 @New Orleans              38  Jacksonville             27           
+2015-12-27 @NY Jets                  26  New England              20 O1        
+2015-12-27  Chicago                  26 @Tampa Bay                21           
+2015-12-27  Houston                  34 @Tennessee                 6           
+2015-12-27 @Arizona                  38  Green Bay                 8           
+2015-12-27  St Louis                 23 @Seattle                  17           
+2015-12-27 @Baltimore                20  Pittsburgh               17           
+2015-12-28 @Denver                   20  Cincinnati               17 O1        
+2016-01-03  New Orleans              20 @Atlanta                  17           
+2016-01-03 @Buffalo                  22  NY Jets                  17           
+2016-01-03 @Carolina                 38  Tampa Bay                10           
+2016-01-03  Detroit                  24 @Chicago                  20           
+2016-01-03 @Cincinnati               24  Baltimore                16           
+2016-01-03  Pittsburgh               28 @Cleveland                12           
+2016-01-03  Washington               34 @Dallas                   23           
+2016-01-03  Minnesota                20 @Green Bay                13           
+2016-01-03 @Houston                  30  Jacksonville              6           
+2016-01-03 @Indianapolis             30  Tennessee                24           
+2016-01-03 @Kansas City              23  Oakland                  17           
+2016-01-03 @Miami                    20  New England              10           
+2016-01-03  Philadelphia             35 @NY Giants                30           
+2016-01-03  Seattle                  36 @Arizona                   6           
+2016-01-03 @Denver                   27  San Diego                20           
+2016-01-03 @San Francisco            19  St Louis                 16 O1        
+2016-01-09  Kansas City              30 @Houston                   0 P         
+2016-01-09  Pittsburgh               18 @Cincinnati               16 P         
+2016-01-10  Seattle                  10 @Minnesota                 9 P         
+2016-01-10  Green Bay                35 @Washington               18 P         
+2016-01-16 @New England              27  Kansas City              20 P         
+2016-01-16 @Arizona                  26  Green Bay                20 PO1       
+2016-01-17 @Carolina                 31  Seattle                  24 P         
+2016-01-17 @Denver                   23  Pittsburgh               16 P         
+2016-01-24 @Denver                   20  New England              18 P        AFC Championship 
+2016-01-24 @Carolina                 49  Arizona                  15 P        NFC Championship 
+2016-02-07  Denver                   24  Carolina                 10 P        Super Bowl 50 Santa Clara, CA
