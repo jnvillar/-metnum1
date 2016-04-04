@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 	if (argc != 3){
 		printf("%s [INPUT FILE] [OUTPUT FILE]\n", argv[0]);
 	} else{
-		ifstream in(argv[2]);
+		ifstream in(argv[1]);
 		if (in.is_open()){
 			string str;
 			getline(in, str);
@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
 
 	}
 
-	FILE* out = fopen(argv[3], "w");
+	FILE* out = fopen(argv[2], "w");
 	for(int i = 0; i< equipos; i++){
 		float res = (float) ganados[i]/ (float)jugados[i];
 		fprintf(out, "%f\n", res);

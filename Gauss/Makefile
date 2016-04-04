@@ -3,7 +3,8 @@ all:
 	#g++ -o gen genRand.cpp
 	g++ -o test test.cpp
 	g++ -o victorias victorias.cpp
+	g++ -o pred predicciones.cpp
 
 
 clean:
-	rm -f main gen test victorias
+	rm -f main gen test victorias predicciones
