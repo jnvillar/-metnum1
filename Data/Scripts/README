@@ -1,1 +1,2 @@
 USO: python Futbol.py [INPUT FILE] [OUTPUT FILE] [CANTIDAD DE FECHAS (opcional)]
+USO: python Futbol.py [INPUT FILE] [OUTPUT FILE] [CANTIDAD DE PARTIDOS (opcional. Deben haber jugado todos por lo menos una vez)]

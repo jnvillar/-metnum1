@@ -93,6 +93,7 @@ Matriz parser(char* file)
 		// Parseo del resto del archivo
 		string st;
 		while (getline(in, st)){
+
 			istringstream iss;
 			iss.str(st);
 
@@ -134,6 +135,7 @@ Matriz parser(char* file)
 		}
 		*/
 		colley_matrix = armarColleyMatrix(jugados, ganados, rivales);
+
 	} else {
 		cout << "No se pudo abrir el archivo." << endl;
 	}
