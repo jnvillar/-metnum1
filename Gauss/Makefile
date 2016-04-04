@@ -7,4 +7,4 @@ all:
 
 
 clean:
-	rm -f main gen test victorias predicciones
+	rm -f main gen test victorias pred
