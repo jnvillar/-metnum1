@@ -17,6 +17,7 @@ int main(int argc, char* argv[])
 {
 
 	vector<float> rankingEquipos;
+
 	if (argc != 3){
 		printf("%s [INPUT FILE (ranking)] [INPUT FILE (partidos a analizar)]\n", argv[0]);
 		return 0;
@@ -68,25 +69,38 @@ int main(int argc, char* argv[])
 			int goles2;
 			iss2>> goles2;
 
+
+			float rank1 = rankingEquipos[equipo1];
+			float rank2 = rankingEquipos[equipo2];
+			if (equipo1 >= rankingEquipos.size()){
+				rank1 = 1/2;
+			} 
+			if (equipo2 >= rankingEquipos.size()){
+				rank2 = 1/2;
+			}
+			
 			if (goles1 > goles2){
-				if (rankingEquipos[equipo1] > rankingEquipos[equipo2]){
+				if (rank1 > rank2){
 					predAcertadas++;
 				}
 			} else {
-				if (rankingEquipos[equipo1] < rankingEquipos[equipo2]){
+				if (rank1 < rank2){
 					predAcertadas++;
 				}	
 			}
-			if (rankingEquipos[equipo1] == rankingEquipos[equipo2]){
-				// QUE CARAJO PASA?
+			if (rank1 == rank2){
+				// NO LO CUENTO COMO ACIERTO
 			}
-
+			
+			
 
 		}	
 
 	}
 	
 	cout << predAcertadas << endl;
+	
+
 	return 0;
   
 }
