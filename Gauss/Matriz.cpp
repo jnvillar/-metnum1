@@ -5,6 +5,7 @@
 #include <sstream>
 #include <vector>
 #include <math.h>
+#include <fstream>
 
  using namespace std;
 
@@ -14,7 +15,8 @@ class Matriz{
 		vector< vector <float> > m;
 		int filas;
 		int columnas;
-		vector <float> result;
+		vector <float> result;		
+		vector < pair<int,int> > partidos;		
 
 	public:	
 
@@ -22,6 +24,9 @@ class Matriz{
 
 		Matriz(int n, vector <float> res){
 			m.clear();
+			
+			vector<float> x(n,0);
+		
 			for (int i = 0; i < n; ++i){
 				vector< float> fila;
 				for (int j = 0; j < n; ++j){					
@@ -31,15 +36,20 @@ class Matriz{
 			}
 			filas = n;
 			columnas = n;
-			result = res;
-		
+			result = res;	
 		};
 
-		Matriz(vector< vector<float> > v, vector <float> res){
+		Matriz(vector< vector<float> > v, vector <float> res, vector<pair<int,int> > part){
 			filas = v.size();
 			columnas = v[0].size();
+			vector<float> x(v.size(),0);			
 			m = v;
-			result = res;
+			result = res;			
+			partidos = part;
+		}
+
+		float darValor(int fila, int colum){
+			return m[fila][colum];
 		}
 
 
@@ -167,4 +177,26 @@ class Matriz{
 			}			
 		}
 
+		bool estaPrimero(int equipo){
+			bool res = true;
+			float ranking = devolverRes()[equipo];
+			for (int i = 0; i < devolverRes().size(); ++i){
+				if(i!=equipo && devolverRes()[i]>ranking){
+					res = false;
+					break;
+				}
+			}
+			return res;
+		}
+
+		void estrategia1(int equipo){
+
+		//DEBE USAR LA MATRIZ CREADA CON PARSER(CHAR* FILE,INT EQUIPO)
+			vector<float> termIndp = devolverRes();
+			cholesky();
+
+			while(estaPrimero(equipo)){
+
+			}
+		}
 };
