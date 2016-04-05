@@ -54,9 +54,9 @@ Matriz armarColleyMatrix(vector<int> jugados, vector<int> ganados, vector< vecto
 	}
 	pair<int,int> aux;
 	vector<pair<int,int> > partidos(ganados.size(),aux);
-	for (int i = 0; i < ganados.size(); ++i){
+	for (int i = 0; i < partidos.size(); ++i){
 		partidos[i].first = ganados[i];
-		partidos[i].second = ganados.size()-ganados[i];
+		partidos[i].second = jugados[i]-ganados[i];
 
 	}
 
@@ -148,6 +148,7 @@ Matriz parser(char* file)
 
 Matriz parser(char* file, int equipo) 
 {
+
 	bool debug = true; // Si dejamos esto en true muestra la info que va parseando
 	vector<float> vec;
 	
@@ -194,7 +195,7 @@ Matriz parser(char* file, int equipo)
 			int goles2;
 			iss>> goles2;
 
-			if(equipo1 != equipo || equipo2 != equipo){
+			if(equipo1 != equipo && equipo2 != equipo){
 				if (goles1 < goles2){
 					ganados[equipo2]++;
 				}else{
