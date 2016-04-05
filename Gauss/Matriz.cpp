@@ -52,6 +52,10 @@ class Matriz{
 			return m[fila][colum];
 		}
 
+		void cambiarValor(int fila, int colum,float f){
+			m[fila][colum] = f;
+		}
+
 
 		int Filas(){
 			return filas;
@@ -189,14 +193,50 @@ class Matriz{
 			return res;
 		}
 
-		void estrategia1(int equipo){
+		int peorRanking(int equipo){
+			int res;
+			float menor;
+			int i;
+			if(0 != equipo){
+				menor = result[0];
+				i = 0;
 
-		//DEBE USAR LA MATRIZ CREADA CON PARSER(CHAR* FILE,INT EQUIPO)
+			}else{
+				menor = result[1];
+				i = 1;
+			}
+
+			for ( i ; i < filas; ++i){
+				if(i != equipo && result[i]<menor){
+					res = i;
+					menor = result[i];
+				}
+			}
+			return i;
+		}
+
+		void perderpartido(vector<float> termIndp, int equipo){
+			int peor = peorRanking(equipo);
+			cambiarValor(equipo, peor,darValor(equipo,peor)-1);
+			cambiarValor(equipo, peor,darValor(equipo,peor)-1);
+			termIndp[equipo] = (1 + (partidos[equipo].first-partidos[equipo].second-2)/2);
+			termIndp[peor] = (1 + (partidos[equipo].first-partidos[equipo].second+2)/2);
+			cambiarRes(termIndp);
+		}
+
+		void estrategia1(int equipo){		//DEBE USAR LA MATRIZ CREADA CON PARSER(CHAR* FILE,INT EQUIPO)
+			
 			vector<float> termIndp = devolverRes();
 			cholesky();
+			int gano = partidos[equipo].first;
+			int perdio = partidos[equipo].second;
 
 			while(estaPrimero(equipo)){
-
+				perderpartido(termIndp,equipo);
+				termIndp = devolverRes();
+				cholesky();
+				gano--;
+				perdio++;
 			}
 		}
 };
