@@ -262,6 +262,7 @@ class Matriz{
 					termIndp = devolverRes();
 					resolverTriangInf();
 					resolverTriangSupTraspuesta();
+					ImprimirSolucion(stdout);
 					gano--;
 					perdio++;					
 				}
