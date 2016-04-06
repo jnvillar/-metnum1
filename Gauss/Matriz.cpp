@@ -196,14 +196,14 @@ class Matriz{
 
 		int peorRanking(int equipo, vector<int> &vecesjugadas){
 			int res;
-			float menor = 4;
-
+			float menor = 40;
+/*
 			for (int j = 0; j < vecesjugadas.size(); ++j)
 					{
 						cout << vecesjugadas[j] << ",";
 					}
 					cout << endl;
-		
+*/		
 			for (int i = 0 ; i < filas; ++i){
 				if(i != equipo && result[i]<menor && vecesjugadas[i]<0){									
 					res = i;
@@ -215,15 +215,18 @@ class Matriz{
 		}
 
 		int perderpartido(vector<float> &termIndp, int equipo,vector<int> &vecesjugadas){
-			
-			int peor = peorRanking(equipo,vecesjugadas);			
-			termIndp[equipo] = (1 + (partidos[equipo].first-partidos[equipo].second-2)/2);
-			termIndp[peor] = (1 + (partidos[peor].first-partidos[peor].second+2)/2);		
+			int peor = peorRanking(equipo,vecesjugadas);
+			partidos[equipo].first--;
+			partidos[equipo].second++;
+			termIndp[equipo] = (1 + (partidos[equipo].first-partidos[equipo].second)/2);
+			partidos[peor].first++;
+			partidos[peor].second--;
+			termIndp[peor] = (1 + (partidos[peor].first-partidos[peor].second)/2);		
 			cambiarRes(termIndp);
 			return peor;
 		}
 
-		void ganarpartido(vector<float> termIndp, int equipo,int ganador){
+		void ganarpartido(vector<float> &termIndp, int equipo,int ganador){
 			termIndp[equipo] = (1 + (partidos[equipo].first-partidos[equipo].second+2)/2);
 			termIndp[ganador] = (1 + (partidos[ganador].first-partidos[ganador].second-2)/2);
 			cambiarRes(termIndp);
@@ -242,11 +245,10 @@ class Matriz{
 		}
 
 		void estrategia1(int equipo){		//DEBE USAR LA MATRIZ CREADA CON PARSER(CHAR* FILE,INT EQUIPO)
-			//FILE* hola = fopen("hola", "w");
+			
 			
 			vector<float> termIndp = devolverRes();
 			vector<int> vecesjugadas = partidosContra(equipo);
-			
 			cholesky();
 			resolverTriangInf();
 			resolverTriangSupTraspuesta();		
@@ -254,15 +256,15 @@ class Matriz{
 			int perdio = partidos[equipo].second;
 			int perdioContra;
 
-			//ImprimirSolucion(stdout);
-		
+			int a;
+			
 			if(estaPrimero(equipo)){				
-				while(estaPrimero(equipo)){								
+				while(estaPrimero(equipo)){
 					perdioContra = perderpartido(termIndp,equipo,vecesjugadas);
-					termIndp = devolverRes();
+					termIndp = devolverRes(); // INNECESARIO?
 					resolverTriangInf();
 					resolverTriangSupTraspuesta();
-					ImprimirSolucion(stdout);
+					//ImprimirSolucion(stdout);
 					gano--;
 					perdio++;					
 				}
@@ -273,8 +275,8 @@ class Matriz{
 				perdio--;
 				ImprimirSolucion(stdout);
 				cout << estaPrimero(equipo) << endl;
-				//cout << perdio << endl;
-				//cout << gano << endl;
+				cout << perdio << endl;
+				cout << gano << endl;
 			}else{
 				cout << "No es posible que quede primero, ya gano todos los partidos y aun no alcanza" << endl;
 			}

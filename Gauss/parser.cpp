@@ -231,5 +231,6 @@ Matriz parser(char* file, int equipo)
 	} else {
 		cout << "No se pudo abrir el archivo." << endl;
 	}
+	
 	return colley_matrix;
 }
