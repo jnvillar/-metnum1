@@ -1,12 +1,8 @@
 all:
-	g++ -o main main.cpp
-	g++ -o ../Experimentaciones/Estrategia\ para\ llegar\ al\ primer\ lugar/main ../Experimentaciones/Estrategia\ para\ llegar\ al\ primer\ lugar/main.cpp
-	#g++ -o gen genRand.cpp
-	g++ -o test test.cpp
-	g++ -o victorias victorias.cpp
-	g++ -o pred predicciones.cpp
-
-
+	g++ -std=c++11 -o  main main.cpp	
+	g++ -std=c++11 -o test test.cpp
+	g++ -std=c++11 -o victorias victorias.cpp
+	g++ -std=c++11 -o pred predicciones.cpp
 
 clean:
 	rm -f main gen test victorias pred

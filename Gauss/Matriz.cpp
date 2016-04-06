@@ -6,7 +6,7 @@
 #include <vector>
 #include <math.h>
 #include <fstream>
-
+#include <tuple>
  using namespace std;
 
 class Matriz{
@@ -97,19 +97,22 @@ class Matriz{
 		}
 
 		void ImprimirSolucionOrdeneda(FILE* out){
+
+
 			
-			pair<float,int> aux;
-			vector<pair<float,int> > ord(result.size(),aux);
+			tuple<float,int,int> aux;
+			vector<tuple<float,int,int> > ord(result.size(),aux);
 
 			for (int i = 0; i < result.size(); ++i){
-				ord[i].first = result[i];
-				ord[i].second = i;
+				get<0>(ord[i]) = result[i];
+				get<1>(ord[i]) = i;
+				get<2>(ord[i]) = partidos[i].first;
 			}
 
-			sort(ord.begin(),ord.end());
+			//sort(ord.begin(),ord.end());
 
 			for (int i = ord.size()-1; i > 0; i--){
-				fprintf(out,"%s %d %f\n","Equipo",ord[i].second+1,ord[i].first);			
+				fprintf(out,"%s %d %f\n","Equipo",get<1>(ord[i])+1,get<0>(ord[i]));			
 			}
 		}
 
