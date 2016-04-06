@@ -109,10 +109,10 @@ class Matriz{
 				get<2>(ord[i]) = partidos[i].first;
 			}
 
-			//sort(ord.begin(),ord.end());
+			sort(ord.begin(),ord.end());
 
 			for (int i = ord.size()-1; i > 0; i--){
-				fprintf(out,"%s %d %f\n","Equipo",get<1>(ord[i])+1,get<0>(ord[i]));			
+				fprintf(out,"%s %d %f %s %d\n","Equipo",get<1>(ord[i])+1,get<0>(ord[i]),"Gano",get<2>(ord[i]));			
 			}
 		}
 
@@ -271,10 +271,7 @@ class Matriz{
 			vector<int> vecesjugadas = partidosContra(equipo);
 			cholesky();
 			resolverTriangInf();
-			resolverTriangSupTraspuesta();	
-
-			cout << "Rankings Originales" << endl << endl;
-			ImprimirSolucionOrdeneda(stdout);
+			resolverTriangSupTraspuesta();				
 
 			int gano = partidos[equipo].first;
 			int perdio = partidos[equipo].second;
