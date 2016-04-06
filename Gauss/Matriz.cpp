@@ -92,7 +92,24 @@ class Matriz{
 
 		void ImprimirSolucion(FILE* out){
 			for (int i = 0; i < filas; i++){
-				fprintf(out,"%s %d %f\n","Equipo",i,result[i]);			
+				fprintf(out,"%s %d %f\n","Equipo",i+1,result[i]);			
+			}
+		}
+
+		void ImprimirSolucionOrdeneda(FILE* out){
+			
+			pair<float,int> aux;
+			vector<pair<float,int> > ord(result.size(),aux);
+
+			for (int i = 0; i < result.size(); ++i){
+				ord[i].first = result[i];
+				ord[i].second = i;
+			}
+
+			sort(ord.begin(),ord.end());
+
+			for (int i = ord.size()-1; i > 0; i--){
+				fprintf(out,"%s %d %f\n","Equipo",ord[i].second+1,ord[i].first);			
 			}
 		}
 
@@ -254,7 +271,7 @@ class Matriz{
 			resolverTriangSupTraspuesta();	
 
 			cout << "Rankings Originales" << endl << endl;
-			ImprimirSolucion(stdout);
+			ImprimirSolucionOrdeneda(stdout);
 
 			int gano = partidos[equipo].first;
 			int perdio = partidos[equipo].second;
@@ -278,7 +295,7 @@ class Matriz{
 				gano++;
 				perdio--;
 				cout << "Asi quedaron los Rankings" << endl << endl;
-				ImprimirSolucion(stdout);
+				ImprimirSolucionOrdeneda(stdout);
 				
 				cout << "El equipo elegido quedo primero" << endl;	
 				cout << "Perdio:" << perdio << endl;
