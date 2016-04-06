@@ -302,6 +302,8 @@ class Matriz{
 				cout << "Gano:" << gano << endl;
 			}else{
 				cout << "No es posible que quede primero, ya gano todos los partidos y aun no alcanza" << endl;
+				cout << "Con todos los partidos ganados, el equipo" << equipo << " quedo en la posición" << endl;
+				ImprimirSolucionOrdeneda(stdout);
 			}
 		
 		}
