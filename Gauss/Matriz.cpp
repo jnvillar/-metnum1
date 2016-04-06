@@ -100,19 +100,21 @@ class Matriz{
 
 
 			
-			tuple<float,int,int> aux;
-			vector<tuple<float,int,int> > ord(result.size(),aux);
+			tuple<float,int,int,int> aux;
+			vector<tuple<float,int,int,int> > ord(result.size(),aux);
 
 			for (int i = 0; i < result.size(); ++i){
 				get<0>(ord[i]) = result[i];
 				get<1>(ord[i]) = i;
 				get<2>(ord[i]) = partidos[i].first;
+				get<3>(ord[i]) = partidos[i].second;
+
 			}
 
 			sort(ord.begin(),ord.end());
 
 			for (int i = ord.size()-1; i > 0; i--){
-				fprintf(out,"%s %d %f %s %d\n","Equipo",get<1>(ord[i])+1,get<0>(ord[i]),"Gano",get<2>(ord[i]));			
+				fprintf(out,"%s %d %f %s %d %s %d\n","Equipo",get<1>(ord[i])+1,get<0>(ord[i]),"Gano",get<2>(ord[i]), "Perdio",get<3>(ord[i]));			
 			}
 		}
 
@@ -269,45 +271,31 @@ class Matriz{
 		}
 
 		void estrategia1(int equipo){		//DEBE USAR LA MATRIZ CREADA CON PARSER(CHAR* FILE,INT EQUIPO)
-			
-			
+						
 			vector<float> termIndp = devolverRes();
 			vector<int> vecesjugadas = partidosContra(equipo);
 			cholesky();
 			resolverTriangInf();
-			resolverTriangSupTraspuesta();				
-
-			int gano = partidos[equipo].first;
-			int perdio = partidos[equipo].second;
-			int perdioContra;
-
-			int a;
+			resolverTriangSupTraspuesta();			
+			int perdioContra;			
 			
 			if(estaPrimero(equipo)){				
 				while(estaPrimero(equipo)){
 					perdioContra = perderpartido(termIndp,equipo,vecesjugadas);
-					termIndp = devolverRes(); // INNECESARIO?
+					termIndp = devolverRes();
 					resolverTriangInf();
-					resolverTriangSupTraspuesta();
-					//ImprimirSolucion(stdout);
-					gano--;
-					perdio++;					
+					resolverTriangSupTraspuesta();									
 				}
 
-
-				ganarpartido(termIndp,equipo,perdioContra);
-				gano++;
-				perdio--;
-				cout << "Asi quedaron los Rankings" << endl << endl;
-				ImprimirSolucionOrdeneda(stdout);
+				ganarpartido(termIndp,equipo,perdioContra);			
+				cout << endl << "Asi quedaron los Rankings" << endl << endl;
+				ImprimirSolucionOrdeneda(stdout);				
+				cout << endl << "El equipo elegido quedo primero" << endl;	
 				
-				cout << "El equipo elegido quedo primero" << endl;	
-				cout << "Perdio:" << perdio << endl;
-				cout << "Gano:" << gano << endl;
 			}else{				
 				
 				ImprimirSolucionOrdeneda(stdout);
-				cout << "No es posible que quede primero, ya gano todos los partidos y aun no alcanza" << endl;
+				cout << endl << "No es posible que quede primero, ya gano todos los partidos y aun no alcanza" << endl;
 				cout << "Con todos los partidos ganados, el equipo" << equipo << " quedo en la posición indicada en el ranking de arriba" << endl;
 			}
 		
