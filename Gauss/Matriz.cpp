@@ -255,6 +255,7 @@ class Matriz{
 			partidos[ganador].first--;
 			partidos[ganador].second++;
 			termIndp[ganador] = (1 + (partidos[ganador].first-partidos[ganador].second)/2);
+
 			cambiarRes(termIndp);
 			resolverTriangInf();
 			resolverTriangSupTraspuesta();
@@ -273,21 +274,30 @@ class Matriz{
 		void estrategia1(int equipo){		//DEBE USAR LA MATRIZ CREADA CON PARSER(CHAR* FILE,INT EQUIPO)
 						
 			vector<float> termIndp = devolverRes();
+			
 			vector<int> vecesjugadas = partidosContra(equipo);
 			cholesky();
 			resolverTriangInf();
-			resolverTriangSupTraspuesta();			
+			resolverTriangSupTraspuesta();
+			vector<float> solucion = devolverRes();			
 			int perdioContra;			
+			
 			
 			if(estaPrimero(equipo)){				
 				while(estaPrimero(equipo)){
-					perdioContra = perderpartido(termIndp,equipo,vecesjugadas);
-					termIndp = devolverRes();
+					perdioContra = perderpartido(termIndp,equipo,vecesjugadas);													
 					resolverTriangInf();
-					resolverTriangSupTraspuesta();									
+					resolverTriangSupTraspuesta();
+					if(estaPrimero(equipo)){
+						solucion = termIndp;
+					}										
 				}
-
-				ganarpartido(termIndp,equipo,perdioContra);			
+				
+				cambiarRes(solucion);
+				partidos[equipo].first++;
+				partidos[equipo].second--;
+				partidos[ganador].first--;
+				partidos[ganador].second++;
 				cout << endl << "Asi quedaron los Rankings" << endl << endl;
 				ImprimirSolucionOrdeneda(stdout);				
 				cout << endl << "El equipo elegido quedo primero" << endl;	
