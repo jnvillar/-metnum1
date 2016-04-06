@@ -251,7 +251,11 @@ class Matriz{
 			vector<int> vecesjugadas = partidosContra(equipo);
 			cholesky();
 			resolverTriangInf();
-			resolverTriangSupTraspuesta();		
+			resolverTriangSupTraspuesta();	
+
+			cout << "Rankings Originales" << endl;
+			ImprimirSolucion();
+
 			int gano = partidos[equipo].first;
 			int perdio = partidos[equipo].second;
 			int perdioContra;
@@ -273,10 +277,12 @@ class Matriz{
 				ganarpartido(termIndp,equipo,perdioContra);
 				gano++;
 				perdio--;
+				cout << "Asi quedaron los Rankings" << endl;
 				ImprimirSolucion(stdout);
-				cout << estaPrimero(equipo) << endl;
-				cout << perdio << endl;
-				cout << gano << endl;
+				
+				cout << "El equipo elegido quedo primero" << endl;	
+				cout << "Perdio:" << perdio << endl;
+				cout << "Gano:" << gano << endl;
 			}else{
 				cout << "No es posible que quede primero, ya gano todos los partidos y aun no alcanza" << endl;
 			}
