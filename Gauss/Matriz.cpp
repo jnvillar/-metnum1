@@ -247,8 +247,12 @@ class Matriz{
 		}
 
 		void ganarpartido(vector<float> &termIndp, int equipo,int ganador){
-			termIndp[equipo] = (1 + (partidos[equipo].first-partidos[equipo].second+2)/2);
-			termIndp[ganador] = (1 + (partidos[ganador].first-partidos[ganador].second-2)/2);
+			partidos[equipo].first++;
+			partidos[equipo].second--;
+			termIndp[equipo] = (1 + (partidos[equipo].first-partidos[equipo].second)/2);
+			partidos[ganador].first--;
+			partidos[ganador].second++;
+			termIndp[ganador] = (1 + (partidos[ganador].first-partidos[ganador].second)/2);
 			cambiarRes(termIndp);
 			resolverTriangInf();
 			resolverTriangSupTraspuesta();
