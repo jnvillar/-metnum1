@@ -8,6 +8,7 @@ int main(int argc, char* argv[])
 		printf("%s [METHOD] [INPUT FILE] [OUTPUT FILE]\n", argv[0]);
 		printf("Mete -g para Gauss o -c pa Cholesky amiwo\n");
 	} else{
+		
 		Matriz m = parser(argv[2]);
 		if (argv[1][1] == 'g'){
 			m.Gauss0();
