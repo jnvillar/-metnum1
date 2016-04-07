@@ -203,6 +203,24 @@ class Matriz{
 			}			
 		}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// EXPERIMENTACION
+
+
 		bool estaPrimero(int equipo){
 
 			bool res = true;
@@ -219,13 +237,7 @@ class Matriz{
 		int peorRanking(int equipo, vector<int> &vecesjugadas){
 			int res;
 			float menor = 40;
-/*
-			for (int j = 0; j < vecesjugadas.size(); ++j)
-					{
-						cout << vecesjugadas[j] << ",";
-					}
-					cout << endl;
-*/		
+	
 			for (int i = 0 ; i < filas; ++i){
 				if(i != equipo && result[i]<menor && vecesjugadas[i]<0){									
 					res = i;
