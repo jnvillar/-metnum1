@@ -240,10 +240,10 @@ class Matriz{
 			int peor = peorRanking(equipo,vecesjugadas);
 			partidos[equipo].first--;
 			partidos[equipo].second++;
-			termIndp[equipo] = (1 + (partidos[equipo].first-partidos[equipo].second)/2);
+			termIndp[equipo] = (1 + ((float)partidos[equipo].first-(float)partidos[equipo].second)/2);
 			partidos[peor].first++;
 			partidos[peor].second--;
-			termIndp[peor] = (1 + (partidos[peor].first-partidos[peor].second)/2);		
+			termIndp[peor] = (1 + ((float)partidos[peor].first-(float)partidos[peor].second)/2);		
 			cambiarRes(termIndp);
 			return peor;
 		}
@@ -251,10 +251,10 @@ class Matriz{
 		void ganarpartido(vector<float> &termIndp, int equipo,int ganador){
 			partidos[equipo].first++;
 			partidos[equipo].second--;
-			termIndp[equipo] = (1 + (partidos[equipo].first-partidos[equipo].second)/2);
+			termIndp[equipo] = (1 + ((float)partidos[equipo].first-(float)partidos[equipo].second)/2);
 			partidos[ganador].first--;
 			partidos[ganador].second++;
-			termIndp[ganador] = (1 + (partidos[ganador].first-partidos[ganador].second)/2);
+			termIndp[ganador] = (1 + ((float)partidos[ganador].first-(float)partidos[ganador].second)/2);
 
 			cambiarRes(termIndp);
 			resolverTriangInf();
@@ -277,8 +277,7 @@ class Matriz{
 			vector<int> vecesjugadas = partidosContra(equipo);
 			cholesky();
 			resolverTriangInf();
-			resolverTriangSupTraspuesta();
-			vector<float> solucion = devolverRes();			
+			resolverTriangSupTraspuesta();				
 			int perdioContra;			
 			
 			
@@ -286,17 +285,10 @@ class Matriz{
 				while(estaPrimero(equipo)){
 					perdioContra = perderpartido(termIndp,equipo,vecesjugadas);													
 					resolverTriangInf();
-					resolverTriangSupTraspuesta();
-					if(estaPrimero(equipo)){
-						solucion = devolverRes();
-					}										
+					resolverTriangSupTraspuesta();										
 				}
-				
-				cambiarRes(solucion);
-				partidos[equipo].first++;
-				partidos[equipo].second--;
-				partidos[perdioContra].first--;
-				partidos[perdioContra].second++;
+
+				cambiarRes(termIndp);			
 				cout << endl << "Asi quedaron los Rankings" << endl << endl;
 				ImprimirSolucionOrdeneda(stdout);				
 				cout << endl << "El equipo elegido quedo primero" << endl;	
