@@ -92,30 +92,8 @@ void testMFTamFijo(int cantEquipos, int cantPartidos, int cantSistemas, char* fi
 				m_cholesky.cambiarRes(nuevo_res);
 			}
 			
-			//Medimos el tiempo que toma Gauss
-			FILE * outGauss;
-			if (i == 0)
-			{
-				outGauss = fopen(file_gauss, "w");
-			}
-			else
-			{
-				outGauss = fopen(file_gauss, "a");
-			}
-			clock_t t = clock();
-			m_gauss.Gauss0();
-			m_gauss.resolverTriangSup();
-			t = clock() - t;
-			
-			tiempoGauss = tiempoGauss + (((float)t)/CLOCKS_PER_SEC);
-
-			if(i+1 == 1 || (i+1)%10 == 0)
-			{
-				fprintf(outGauss, "%f\n", tiempoGauss);
-				fclose(outGauss);	
-			}
-
 			// Medimos el tiempo que toma Cholesky
+			clock_t t;
 			FILE * outCholesky;
 			if (i == 0)
 			{
@@ -137,8 +115,28 @@ void testMFTamFijo(int cantEquipos, int cantPartidos, int cantSistemas, char* fi
 
 			tiempoCholesky = tiempoCholesky + (((float)t)/CLOCKS_PER_SEC);
 
+
+			//Medimos el tiempo que toma Gauss
+			FILE * outGauss;
+			if (i == 0)
+			{
+				outGauss = fopen(file_gauss, "w");
+			}
+			else
+			{
+				outGauss = fopen(file_gauss, "a");
+			}
+			t = clock();
+			m_gauss.Gauss0();
+			m_gauss.resolverTriangSup();
+			t = clock() - t;
+			
+			tiempoGauss = tiempoGauss + (((float)t)/CLOCKS_PER_SEC);
+
 			if(i+1 == 1 || (i+1)%10 == 0)
 			{
+				fprintf(outGauss, "%f\n", tiempoGauss);
+				fclose(outGauss);	
 				fprintf(outCholesky, "%f\n", tiempoCholesky);
 				fclose(outCholesky);
 			}
@@ -229,17 +227,10 @@ void testMFTamVar (int cantEquipos, int cantSistemas, char* file_gauss, char* fi
           vector<float> nuevo_res = m_gauss.devolverRes();
           m_cholesky.cambiarRes(nuevo_res);
         }
-        
-        //Medimos el tiempo que toma Gauss
-        clock_t t = clock();
-        m_gauss.Gauss0();
-        m_gauss.resolverTriangSup();
-        t = clock() - t;
-        
-        tiempoGauss = tiempoGauss + (((float)t)/CLOCKS_PER_SEC);
 
 
         // Medimos el tiempo que toma Cholesky
+        clock_t t;
         if (i == 0)
         {
           t = clock();
@@ -257,6 +248,15 @@ void testMFTamVar (int cantEquipos, int cantSistemas, char* file_gauss, char* fi
         }
 
         tiempoCholesky = tiempoCholesky + (((float)t)/CLOCKS_PER_SEC);
+        
+        //Medimos el tiempo que toma Gauss
+        t = clock();
+        m_gauss.Gauss0();
+        m_gauss.resolverTriangSup();
+        t = clock() - t;
+        
+        tiempoGauss = tiempoGauss + (((float)t)/CLOCKS_PER_SEC);
+
 
       }
 
