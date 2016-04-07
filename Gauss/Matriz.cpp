@@ -48,13 +48,7 @@ class Matriz{
 			partidos = part;
 		}
 
-		float darValor(int fila, int colum){
-			return m[fila][colum];
-		}
-
-		void cambiarValor(int fila, int colum,float f){
-			m[fila][colum] = f;
-		}
+		
 
 
 		int Filas(){
@@ -92,7 +86,7 @@ class Matriz{
 
 		void ImprimirSolucion(FILE* out){
 			for (int i = 0; i < filas; i++){
-				fprintf(out,"%s %d %f\n","Equipo",i+1,result[i]);			
+				fprintf(out,"%f\n",result[i]);			
 			}
 		}
 

@@ -1,30 +1,33 @@
 #include "parser.cpp"
+#include "victorias.cpp"
+
 
 int main(int argc, char* argv[])
 {
 
 	
-	if ((argc != 3 && argc != 4 ) || (argv[1][1] != 'g' && argv[1][1] != 'c') ){
-		printf("%s [METHOD] [INPUT FILE] [OUTPUT FILE]\n", argv[0]);
-		printf("Mete -g para Gauss o -c pa Cholesky amiwo\n");
+	if (( argc != 4 ) || (argv[3][0] != '0' && argv[3][0] != '1' && argv[3][0] != '2') ){
+		printf("%s  [INPUT FILE] [OUTPUT FILE] [METHOD]\n", argv[0]);
+		printf("Mete 0 para Gauss, 1 para Cholesky, 2 para WP\n");
 	} else{
 		
-		Matriz m = parser(argv[2]);
-		if (argv[1][1] == 'g'){
+		Matriz m = parser(argv[1]);
+		if (argv[3][0] == '0'){
 			m.Gauss0();
 			m.resolverTriangSup();
-		} else if (argv[1][1] == 'c'){
+		} else if (argv[3][0] == '1'){
 			m.cholesky();
 		    m.resolverTriangInf();
 		    m.resolverTriangSupTraspuesta();		    
-		}
-		if (argc == 4){
-			FILE* out = fopen(argv[3], "w");
-			m.ImprimirSolucion(out);
-			fclose(out);			
 		} else {
-			m.ImprimirSolucion(stdout);			
+			rankingWP(argv[1], argv[2]);
+			return 0;
 		}
+		
+		FILE* out = fopen(argv[2], "w");
+		m.ImprimirSolucion(out);
+		fclose(out);			
+		
 	}
 	
 	return 0;
