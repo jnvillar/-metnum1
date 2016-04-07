@@ -1,7 +1,7 @@
 #include "parser.cpp"
 
 int main(){
-	for (int i = 0; i<300; i++){
+	for (int i = 0; i<3000; i++){
 		srand(time(NULL));
 		int cantEquipos = 100;
 		int cantPartidos = 300;
@@ -34,10 +34,6 @@ int main(){
 		m2.resolverTriangInf();
 		m2.resolverTriangSupTraspuesta();
 
-		FILE* out2 = fopen("resGauss.txt", "w");
-		FILE* out3 = fopen("resCholesky.txt", "w");
-		m1.ImprimirSolucion(out2);
-		m2.ImprimirSolucion(out3);
 
 		vector <float> res1 = m1.devolverRes();
 		vector <float> res2 = m2.devolverRes();
@@ -52,6 +48,7 @@ int main(){
 			cout << "Algo anda mal" << endl;
 			return 0;
 		}
+		remove("test.txt");
 
 	}
 	
