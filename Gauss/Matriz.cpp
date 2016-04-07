@@ -288,7 +288,7 @@ class Matriz{
 					resolverTriangSupTraspuesta();										
 				}
 
-				cambiarRes(termIndp);			
+				ganarpartido(termIndp,equipo,perdioContra)			
 				cout << endl << "Asi quedaron los Rankings" << endl << endl;
 				ImprimirSolucionOrdeneda(stdout);				
 				cout << endl << "El equipo elegido quedo primero" << endl;	
